@@ -194,11 +194,12 @@ Download the code, copy the folder 'bft' on your WordPress instalation/wp-conten
 
     A quick summary for what visibility to use on the functions of your plugin:
 
-    #### Private
+   #### Private
         Don't use private functions, BFT use inheritance on the classes and a private function can't inheritance
 
     #### Protected
         Ideal for the internal functions for security reasons, only your classes can use this functions
+            Ideal for the internal functions for security reasons, only your classes can use this functions
 
     #### Public
         Some functions need to be public due to how WordPress works:
