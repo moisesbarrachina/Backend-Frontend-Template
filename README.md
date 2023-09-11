@@ -269,6 +269,8 @@ Download the code, copy the folder 'bft' on your WordPress instalation/wp-conten
     $error_message = $this->__("This is an error test");
 	$this->error_show ($error_message);
 ```
+
+   ![Backend Frontend Template: error throw](https://moisesbarrachina.online/wp-content/uploads/2023/09/screenshot-4-mini.png)
 </details>
 
 ## License
