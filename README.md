@@ -194,21 +194,20 @@ Download the code, copy the folder 'bft' on your WordPress instalation/wp-conten
 
     A quick summary for what visibility to use on the functions of your plugin:
 
-   #### Private
-        Don't use private functions, BFT use inheritance on the classes and a private function can't inheritance
+  #### Private
+    Don't use private functions, BFT use inheritance on the classes and a private function can't inheritance
 
-    #### Protected
-        Ideal for the internal functions for security reasons, only your classes can use this functions
-            Ideal for the internal functions for security reasons, only your classes can use this functions
+  #### Protected
+    Ideal for the internal functions for security reasons, only your classes can use this functions
 
-    #### Public
-        Some functions need to be public due to how WordPress works:
+  #### Public
+    Some functions need to be public due to how WordPress works:
 
-        * Functions called via $this->admin_pages -> an_admin_page -> 'function_load' data
-        * Functions called via $this->admin_pages -> an_admin_page -> 'function' data
-        * Functions called via install, upgrade or unistall
-        * Functions called via shortcodes
-        * Functions called via AJAX responses
+    * Functions called via $this->admin_pages -> an_admin_page -> 'function_load' data
+    * Functions called via $this->admin_pages -> an_admin_page -> 'function' data
+    * Functions called via install, upgrade or unistall
+    * Functions called via shortcodes
+    * Functions called via AJAX responses
 </details>
 
 ## License
