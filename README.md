@@ -273,6 +273,122 @@ Download the code, copy the folder 'bft' on your WordPress instalation/wp-conten
    ![Backend Frontend Template: error throw](https://moisesbarrachina.online/wp-content/uploads/2023/09/screenshot-4-mini.png)
 </details>
 
+<details>
+  <summary>Internationalization</summary>
+  
+  ### Internationalization: prepare the plugin for future translations
+
+    For specify a text that maybe needs translation, WordPress provides the functions: $this->__("string") for direct translation and $this->esc_html_e("string") for translation and scape the HTML characters
+
+    * $this->__("string"): for direct translation
+    * $this->esc_html_e("string") for translation and scape the HTML characters
+    For more functions search on the WordPress documentation: [link here](https://developer.wordpress.org/plugins/internationalization/how-to-internationalize-your-plugin/)
+
+    With that, a translation plugin will be able to translate your plugin into the visitor language
+
+    But if you want make your own translation for your own plugin: you can allocate the language files on plugin_folder/languages, BFT automatically will set WordPress to search translations on that folder
+
+    The language files are:
+
+    * .pot: Portable Object Template, the master file with all the strings
+    * .po: Portable Object, the file with the strings translated to one language
+    * .mo: Portable Object, Machine Object, the compiled data of the .po file, WordPress use this file
+    
+    For create the files you can use programs like [Poedit](https://poedit.net/) or [EazyPo](http://www.eazypo.ca/)
+</details>
+
+<details>
+  <summary>Frontend</summary>
+  
+  ### Frontend: shorcode system
+
+    It's easy create an manage shotcodes with BFT:
+
+  #### Defining a shortcode
+    The shortcodes on BFT are defined on public -> class-your-plugin-admin -> shortcodes_init_plugin()
+
+    The structure of a shortcode is:
+
+```php
+    add_shortcode("shortcode-name", array($this, "shortcode_function_name"));
+```
+
+  #### Defining a function
+    The structure of a shortcode function is:
+
+```php
+    public function shortcode_function_name ( $atts = [], $content = null, $tag = '' ) {
+	}
+```
+                
+    The variables of the function are:
+
+    * $atts: array with all the data specified on the shortcode
+    * $content: the content inside the two tags, if the shortcode uses a clossing tag
+    * $tag: the shotcode tag
+
+  #### Shortcodes uses examples
+    A shortcode without data on $atts and $content
+
+```
+    [bft-shortcode-test]
+```
+			
+    Shortcode with data on $atts and $content
+
+```
+    [bft-shortcode-test atts_data_1="Lorem ipsum" atts_data_2="Dolor sit amet"]Content data[/bft-shortcode-test]
+```
+	
+  #### Complete example
+
+```php
+    public function shortcodes_init_plugin() {
+		add_shortcode("bft-shortcode-test", array($this, "bft_shortcode_test"));
+	}
+```
+
+```php
+    public function bft_shortcode_test( $atts = [], $content = null, $tag = '' ) {
+
+		$html_aux = "";
+
+		if (isset($atts["aditional_text"])) {
+			$html_aux .= "<h4>".esc_html($atts["aditional_text"])."</h4>";
+		}
+
+		if (!is_null($content)) {
+			$html_aux .= "<p>".esc_html($content)."<p>";
+		}
+
+		ob_start();
+		require plugin_dir_path( dirname( __FILE__ ) ) . "public/partials/your-plugin-shortcode-test.php";
+		$html = ob_get_clean(); 
+
+		return $html;
+	}
+```
+
+  #### Test yourself
+
+    Create a page, insert a shortcode block and put:
+
+```
+    [bft-shortcode-test]
+```
+			
+    Or:
+
+```
+    [bft-shortcode-test aditional_text="This is an aditional text"]The text inside de tags[/bft-shortcode-test]
+```
+
+![Backend Frontend Template: client side: shortcode complete example](https://moisesbarrachina.online/wp-content/uploads/2023/09/screenshot-6.png)
+
+Client side: shortcode results
+![Backend Frontend Template: client side: shortcode results](https://moisesbarrachina.online/wp-content/uploads/2023/09/screenshot-7.png)
+</details>
+
 ## License
 
 Backend Frontend Template is licensed under the GPL v3 or later
