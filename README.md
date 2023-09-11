@@ -210,6 +210,67 @@ Download the code, copy the folder 'bft' on your WordPress instalation/wp-conten
     * Functions called via AJAX responses
 </details>
 
+<details>
+  <summary>Security</summary>
+  
+  ### Secure the functions
+
+  #### Function load
+    The 'function_load' option of the menu is the function that the page executes before sending the HTML headers
+
+    By default all pages execute admin_permission_check_and_ids_required_check_function_load(), the executed function can be changed on
+    class-your-plugin-admin -> $this->admin_pages_function_load_default = "admin_permission_check_and_ids_required_check_function_load"
+
+    The function admin_permission_check_and_ids_required_check_function_load() checks if the admin capabilities are correct and if the id required data is not missing. On this function it works the 'go_to_parent' option of the menu (the id check only on Backend Frontend Template Pro)
+
+    This function can be called at the beginning of a custom function_load to check all before save changes
+
+    NOTE: id required data and go to parent are only BFT Pro options
+
+  #### Function
+    The 'function' option of the menu is the main function that the page executes
+
+    By default all pages execute admin_permission_check_and_ids_required_and_optional_check_page_display(), the executed function can be changed on
+    class-your-plugin-admin -> $this->admin_pages_function_default = "admin_permission_check_and_ids_required_and_optional_check_page_display"
+
+    The function admin_permission_check_and_ids_required_and_optional_check_page_display() checks if the admin capabilities are correct and if the id required data is not missing
+
+    On a custom function there are functions for checking the access and to retrieve the ids:
+
+    * $this->admin_permission_check(): check the admin permissions and throw an error if needed. Recommended for use at the beginning of the function
+    * More functions on BFT Pro
+</details>
+
+<details>
+  <summary>Errors</summary>
+  
+  ### Manage and display errors
+
+  #### Show an error
+    Backend Frontend Template can easily show errors, and it doesn't repeat the same error on the same load. Also: the plugin title will be add to the message
+
+    * $this->error_show ($error_message = "") show an error message. If $error_message = "" it shows "Error detected"
+    * Adding error_message on the GET URL, the error message can be triggered with the functions $this->admin_permission_check() or $this->error_throw()
+
+  #### Throw an error
+    BFT can throw errors with
+    $this->error_throw ($error_message = "", $error_throw_what_do_use_this = NULL, $error_throw_file_change_use_this = NULL, $triggered_on_function_load = false, $page_id = NULL)
+
+    * $error_message: error to send to $this->error_show(), but first it will display the 'error_message' stored on the URL
+    * $error_throw_what_do_use_this: for use this data instead of $this->admin_pages_data_get("error_throw_what_do"), options: show_error, show_error_and_die, go_to_parent
+    * $error_throw_file_change_use_this: default NULL, use this data instead of $this->admin_pages_data_get("error_throw_file_change"), for change the file displayed if error triggerred
+    * $triggered_on_function_load: default false, 'go_to_parent' only works if true == $triggered_on_function_load because it's needed do the redirect before sending the headers
+    * $page_id: the key/page name, if null it's the visualized page
+
+  #### Example
+    This page show an error with:
+
+```php
+    $error_message = $this->__("This is an error test");
+	$this->error_show ($error_message);
+```
+</details>
+
 ## License
 
 Backend Frontend Template is licensed under the GPL v3 or later
