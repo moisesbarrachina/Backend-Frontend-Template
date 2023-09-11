@@ -154,14 +154,60 @@ Download the code, copy the folder 'bft' on your WordPress instalation/wp-conten
     4. Functions load available out of the box (you can create whatever function you need)
         * More functions load on BFT Pro
    
-    Optional parametters
+    5. Optional parametters
         * page_copy_of: copy the data of a page. Only copy the data not found on the page, neither copy id, is_child, page_parent, menu_slug and children
         * More optional parametters on BFT Pro
     
-    Your own parametters
+    6. Your own parametters
         * You can create your own parameter, later on you can access to the info on a function or on a page with: $variable_name = $this->admin_pages_data_get("parametter_name");. And if you want you can retrieve the data of a certain page with $page_name, and retrieve all the array data with $key = false, $variable_name = $this->admin_pages_data_get($key = false, $page_name = NULL)
 
         * You can set later your own parameter by code with: $this->admin_pages_data_set($key, $data, $page_name = NULL)
+</details>
+
+<details>
+  <summary>Log</summary>
+  
+  ### The WordPress log with BFT
+
+    The log in WordPress is activated on wp-config.php, change:
+
+    define( 'WP_DEBUG', true );
+    define( 'WP_DEBUG_LOG', true );
+    Now you can check the log on wp-content/debug.log
+
+    For printing on the log you can use the WordPress function error_log($string_or_number), but with Backend Frontend Template you can use: $this->debug_log_write($whatever)
+
+    $this->debug_log_write() it's a better option because it shows:
+
+    'NULL' if its a NULL variable
+    'TRUE' and 'FALSE' if it's a boolean
+    print_r() if it's an array or object
+    Now you can print on the log whatever variable you want
+
+    Also BFT offers an alternative name for debug_log_write: $this->write_log()
+</details>
+
+<details>
+  <summary>Functions visibility</summary>
+  
+  ### What functions visibility is needed
+
+    A quick summary for what visibility to use on the functions of your plugin:
+
+    #### Private
+        Don't use private functions, BFT use inheritance on the classes and a private function can't inheritance
+
+    #### Protected
+        Ideal for the internal functions for security reasons, only your classes can use this functions
+
+    #### Public
+        Some functions need to be public due to how WordPress works:
+
+        * Functions called via $this->admin_pages -> an_admin_page -> 'function_load' data
+        * Functions called via $this->admin_pages -> an_admin_page -> 'function' data
+        * Functions called via install, upgrade or unistall
+        * Functions called via shortcodes
+        * Functions called via AJAX responses
 </details>
 
 ## License
