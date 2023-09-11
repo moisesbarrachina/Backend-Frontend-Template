@@ -1,0 +1,357 @@
+/**
+ * The admin-specific CSS of Backend Frontend Template
+ *
+ * @link		https://moisesbarrachina.online
+ * @version		1.0.0
+ * @package		BFT
+ * @subpackage	BFT/admin/lib/BFT/css
+ * @author		Moisés Barrachina Planelles <info@moisesbarrachina.online>
+ */
+
+/* Start of fixing boostrap CSS */
+/*
+.bft_wrap body {
+    background: #f0f0f1;
+    color: #3c434a;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-size: 13px;
+    line-height: 1.4em;
+    min-width: 600px;
+}
+
+.bft_wrap h2,.bft_wrap h3 {
+    color: #1d2327;
+    font-size: 1.3em;
+    margin: 1em 0;
+    font-weight: 600;
+}
+
+.bft_wrap h2 {
+    line-height: 1;
+}
+
+.bft_wrap h3 {
+    line-height: 1.4;
+}
+
+.bft_wrap input[type=checkbox] {
+    width: 16px;
+    height: 16px;
+}
+
+.bft_wrap input[type=checkbox]:checked::before {
+    height: 21px;
+    width: 21px;
+    margin: -3px 0px 0px -4px;
+}
+*/
+/* End of fixing boostrap CSS */
+
+.bft_postbox_top {
+    border-bottom: 1px solid #eee;
+    padding: 0 12px 12px;
+}
+
+.bft_button_ok
+{
+    background-color: green !important;
+    border-color: green !important;
+}
+
+.bft_button_warning
+{
+    background-color: #d28800 !important;
+    border-color: #d28800 !important;
+}
+
+.bft_button_danger
+{
+    background-color: #c00000 !important;
+    border-color: #c00000 !important;
+}
+
+.bft_text_ok
+{
+    color: green !important;
+}
+
+.bft_text_warning
+{
+    color: orange !important;
+}
+
+.bft_text_danger
+{
+    color: red !important;
+}
+
+.bft_margin_top
+{
+    margin-top: 13px;
+}
+
+.bft_wrap .bootstrap-select
+{
+    width: 100% !important;
+}
+
+.bft_container_of_h2_with_button {
+    display: flex;
+    align-items: center;
+}
+
+.bft_container_of_h2_with_button h2 {
+    margin-right: 5px;
+}
+
+.bft_wrap > h2 > span,
+.bft_wrap .bft_container_of_h2_with_button h2 > span {
+    font-weight: 400 !important;
+}
+
+.bft_input_image {
+    max-width: 50%;
+    max-height: 30vh;
+}
+
+.bft_input_image_remove_container {
+    margin-top: 5px;
+}
+
+.bft_preview_image {
+    display: none;
+}
+
+.bft_image_500px {
+    width: 100%;
+    max-width: 500px;
+}
+
+.bft_image_100 {
+    width: 100%;
+}
+
+.bft_image_80 {
+    width: 80%;
+}
+
+.bft_sub_postbox {
+    padding: 10px;
+}
+
+.bft_sub_postbox > table {
+    margin: 0px;
+}
+
+.bft_checkbox_detach {
+    border-radius: 0px !important;
+    top: -4px;
+    position: relative;
+}
+
+.bft_checkbox_detach_label {
+    color: red;
+}
+
+
+.bft_file_link {
+    font-size: 1.3em;
+}
+
+.bft_table_link {
+    font-weight: bold;
+}
+
+.bft_list_table_status_displayed {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.bft_wrap .dropdown-menu.open li.selected {
+    background-color: #deebde;
+}
+
+.bft_nav_tab_active {
+    background-color: #fece41;
+    border: 1px solid #c3c4c7;
+}
+
+.bft_nav_tab_active_child {
+    background-color: #2271b1;
+    border: 1px solid #c3c4c7;
+    color: white;
+}
+
+.bft_wrap .nav-tab{
+    border-bottom: 1px solid #c3c4c7 !important;
+    margin-top: 3px !important;
+    margin-left: 3px !important;
+    margin-bottom: 0px !important;
+    top: 1px;
+    position: relative;
+}
+
+.bft_ul_list {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.bft_button_submit,
+.bft_button_submit:link,
+.bft_button_submit:visited,
+.bft_button_submit:hover,
+.bft_button_submit:active {
+    border: none;
+    color: #fff;
+    width: 100%;
+    background: #CA0016;
+    cursor: pointer;
+    padding: 12px 20px;
+    display: inline-block;
+    outline: none;
+    font-size: 13px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+.bft_form_group {
+    /*background-color: #fece4114;*/
+    padding: 0px 7px 17px 15px;
+    margin: 15px 11px;
+    border-left: 4px solid #fece41;
+}
+
+.bft_form_group_disabled {
+    border-left: 4px solid #c82333;
+    opacity: 0.5;
+}
+
+.bft_form_group_error {
+    border-left: 4px solid #c82333;
+}
+
+.bft_button_danger {
+    color: #fff !important;
+    background-color: #c82333 !important;
+    border-color: #bd2130 !important;
+}
+
+
+.bft_alert_container_success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.bft_alert_container_error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.bft_alert_container_primary {
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+}
+
+.bft_wrap input[type=checkbox], .bft_wrap input[type=radio] {
+    transform: scale(0.8);
+    margin: -0.1rem 0 0 0;
+}
+
+.bft_wrap_ol_ul ol {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 2em;
+}
+
+.bft_wrap_ol_ul ol > li {
+    display: table;
+    margin-bottom: 0.6em;
+}
+    
+.bft_wrap_ol_ul li ol > li {
+    margin: 0;
+}
+
+.bft_wrap_ol_ul ol > li:before {
+    display: table-cell;
+    padding-right: 0.6em;    
+}
+
+.bft_wrap_ol_ul ul {
+    padding: 0;
+	margin-left: 2em;
+}
+  
+.bft_wrap_ol_ul ul > li {
+    display: table;
+    margin-bottom: 0.6em;
+}
+  
+.bft_wrap_ol_ul ul > li:before {
+    content: "•";
+    display: table-cell;
+    padding-right: 0.6em;    
+}
+  
+.bft_wrap_ol_ul li ul > li {
+    margin: 0;
+}
+
+.bft_wrap_ol_ul > ol {
+    counter-reset: item1;
+    counter-reset: item2;
+    counter-reset: item3;
+    counter-reset: item4;
+    counter-reset: item5;
+}
+
+.bft_wrap_ol_ul ol > li {
+    counter-increment: item1;
+}
+
+.bft_wrap_ol_ul ol > li:before {
+    content: counters(item1, ".");
+}
+
+.bft_wrap_ol_ul ol ol > li {
+    counter-increment: item2;
+}
+
+.bft_wrap_ol_ul ol ol > li:before {
+   content: counter(item1) "." counter(item2) " ";
+}
+
+.bft_wrap_ol_ul ol ol ol > li {
+    counter-increment: item3;
+}
+
+.bft_wrap_ol_ul ol ol ol > li:before {
+    content: counter(item1) "." counter(item2) "." counter(item3) " ";
+}
+
+.bft_wrap_ol_ul ol ol ol ol > li {
+    counter-increment: item4;
+}
+
+.bft_wrap_ol_ul ol ol ol ol > li:before {
+    content: counter(item1) "." counter(item2) "." counter(item3) "." counter(item4) " ";
+}
+
+.bft_wrap_ol_ul ol ol ol ol ol > li {
+    counter-increment: item5;
+}
+
+.bft_wrap_ol_ul ol ol ol ol ol > li:before {
+    content: counter(item1) "." counter(item2) "." counter(item3) "." counter(item4) "." counter(item5) " ";
+}

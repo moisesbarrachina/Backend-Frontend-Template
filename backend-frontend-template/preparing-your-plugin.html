@@ -1,0 +1,171 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>First steps with BFT Pro</title>
+  <meta name="description" content="Preparing your plugin">
+  <meta name="author" content="Moisés Barrachina Planelles">
+
+  <style>
+	ol {
+		list-style-type: none;
+		/*margin: 0;*/
+		padding: 0;
+	}
+
+	.bft_wrap > ol {
+		counter-reset: item1;
+		counter-reset: item2;
+		counter-reset: item3;
+		counter-reset: item4;
+		counter-reset: item5;
+	}
+
+	ol > li {
+		display: table;
+		counter-increment: item1;
+		margin-bottom: 0.6em;
+	}
+
+	ol > li:before {
+		/*content: counters(item, ".") ". ";*/
+		content: counters(item1, ".");
+		display: table-cell;
+		padding-right: 0.6em;    
+	}
+
+	ol ol li {
+		counter-increment: item2;
+	}
+
+	ol ol > li:before {
+		content: counter(item1) "." counter(item2) " ";
+	}
+
+	ol ol ol li {
+		counter-increment: item3;
+	}
+
+	ol ol ol > li:before {
+		content: counter(item1) "." counter(item2) "." counter(item3) " ";
+	}
+
+	ol ol ol ol li {
+		counter-increment: item4;
+	}
+
+	ol ol ol ol > li:before {
+		content: counter(item1) "." counter(item2) "." counter(item3) "." counter(item4) " ";
+	}
+
+
+	ol ol ol ol ol li {
+		counter-increment: item5;
+	}
+
+	ol ol ol ol ol > li:before {
+		content: counter(item1) "." counter(item2) "." counter(item3) "." counter(item4) "." counter(item5) " ";
+	}
+
+	li ol > li {
+	margin: 0;
+	}
+
+	</style>
+</head>
+
+<body>
+	<div class="wrap bft_wrap">
+		<h1>Backend Frontend Template</h1>
+		<h2>First steps with BFT Pro</h2>
+		<ol>
+			<li>
+				<h3>Make the plugin your own</h3>
+				<ol>
+					<li>Change the folder and files wp-content/plugins/backend-frontend-template with the id of your plugin (like");?> 'your-plugin')</li>
+					<li>Delete the files or change their extension: 
+						<ol>
+							<li><b>wp-content/plugins/backend-frontend-template/backend-frontend-template.php</b></li>
+							<li><b>wp-content/plugins/backend-frontend-template/includes/class-bft.php</b></li>
+						</ol>
+					</li>
+					<li>Change the extension of the files to PHP:
+						<ol>
+							<li><b>wp-content/plugins/backend-frontend-template/your-plugin.txt</b></li>
+							<li><b>wp-content/plugins/backend-frontend-template/includes/class-your-plugin.txt</b></li>
+						</ol>
+					</li>
+					<li>Uncomment: "<b>//$this->admin_pages_main_name = $this->plugin_title;</b> on <b>wp-content/plugins/backend-frontend-template/admin/class-your-plugin-admin.php</b></li>
+					<li>Find and replace all the file names with <b>'your-plugin'</b> like 'class-your-plugin.php' to your plugin id, example: 'class-a-plugin-name.php'.</li>
+					<li>On <b>wp-content/plugins/backend-frontend-template/languages</b> replace the file names with <b>'bft-internationalization'</b> to 'your-plugin', example: 'a-plugin-name-es_ES.mo'</li>
+					<li>Go to search and replace of your editor, active 'match case' and replace this strings:
+						<ol>
+							<li><b>'bft-internationalization'</b> to <b>'your-plugin'</b></li>
+							<li><b>'$plugin_slug = "bft_pro"'</b> to <b>$plugin_slug = "your_plugin"</b></li>
+							<li><b>'bft_shortcode'</b> to <b>your_plugin_shortcode</b></li>
+							<li><b>'bft-shortcode'</b> to <b>your-plugin-shortcode</b></li>
+						</ol>
+					</li>
+					<li>Go to search and replace of your editor, active 'match case' and replace the words with the names and ids of your plugin:
+						<ol>
+							<li><b>Description of Your Plugin</b></li>
+							<li><b>https://yourfuturewebsite/your-plugin/</b></li>
+							<li><b>https://yourfuturewebsite</b></li>
+							<li><b>Plugin Author</b></li>
+							<li><b>pluginauthor@email</b></li>
+							<li><b>Your Plugin</b></li>
+							<li><b>your_plugin</b></li>
+							<li><b>Your_Plugin</b></li>
+							<li><b>your-plugin</b></li>
+							<li><b>YOUR_PLUGIN</b></li>
+						</ol>
+					</li>
+					<li>Replace the icon for you own on <b>wp-content/plugins/backend-frontend-template/admin/img/icon-16px.png</b></li>
+				</ol>
+			</li>
+			<li>
+				<h3>Know the main plugin folders</h3>
+				<ol>
+					<li>/admin -> administration folder</li>
+					<li>/includes -> global folder, for administration and plublic files</li>
+					<li>/languages -> translation files, this binarian files are made with programs like <a href="https://poedit.net/" target="_blank">Poedit</a> or <a href="http://www.eazypo.ca/" target="_blank">EazyPo</a></li>
+					<li>/private -> for sensitive data that only a download script can send the file to the user</li>
+					<li>/admin -> public folder</li>
+				</ol>
+			</li>
+			<li>
+				<h3>Know the plugin sub-folders</h3>
+				<ol>
+					<li>/css -> CSS files</li>
+					<li>/img -> images</li>
+					<li>/js -> JavaScript files</li>
+					<li>/lib -> library, the internal BFT files are stored here</li>
+					<li>/partials -> frontend files</li>
+				</ol>
+			</li>
+			<li>
+				<h3>Know the main files <span>(using the original filenames)</span></h3> 
+				<ol>
+					<li>/includes/<b>class-your-plugin.txt</b> -> main class of the plugin</li>
+					<li>/includes/<b>class-your-plugin-activator.php</b> -> control when the plugin is activated</li>
+					<li>/includes/<b>class-your-plugin-deactivator.php</b> -> control when the plugin is deactivated</li>
+					<li>/includes/<b>class-your-plugin-cronjobs.php</b> -> control the cronjobs of the plugin</li>
+					<li>/includes/<b>class-your-plugin-install-upgrade-deinstall-database.php</b> -> install and erase the plugin database</li>
+					<li>/includes/<b>class-your-plugin-functions-admin-public.php</b> -> class with functions for admin and public classes, it's an extension of the BFT admin-public class</li>
+					<li>/admin/<b>class-your-plugin-admin.php</b> -> class for the admin section, it's an extension of the BFT admin-public class, your admin-public class and BFT admin class</li>
+					<li>/public/<b>class-your-plugin-public.php</b> -> class for the public section, it's an extension of the BFT admin-public class, your admin-public class and BFT public class</li>
+				</ol>
+			</li>
+			<li>
+				<h3>See the examples</h3>
+				<ol>
+					<li>On the next tabs you can see examples of how to work with Backend Frontend Template</li>
+				</ol>
+			</li>
+		</ol>
+	</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<?php
+
+/**
+ * @link				https://yourfuturewebsite
+ * @since				0.0.1
+ * @package				Your_Plugin
+ *
+ * @wordpress-plugin
+ * Plugin Name:			Your Plugin
+ * Plugin URI:			https://yourfuturewebsite/your-plugin/
+ * Description:			Description of Your Plugin
+ * 
+ * Version:				0.0.1
+ * Author:				Plugin Author
+ * Author URI:			https://yourfuturewebsite
+ * License:				GPL-2.0+
+ * License URI:			http://www.gnu.org/licenses/gpl-2.0.txt
+ * Text Domain:			your-plugin
+ * Domain Path:			/languages
+ */
+
+/*
+	Uses Backend Frontend Template 1.0.0
+	https://moisesbarrachina.online
+*/
+
+// If this file is called directly, abort.
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
+
+/**
+ * Currently plugin version.
+ * Use SemVer - https://semver.org
+ */
+$your_plugin_version = "0.0.1";
+define( 'YOUR_PLUGIN_VERSION', $your_plugin_version);
+update_option( 'your_plugin_version', $your_plugin_version);
+
+/**
+ * The code that runs during plugin activation.
+ * 
+ * @since    	0.0.1
+ * @version		0.0.1
+ */
+function activate_your_plugin() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-your-plugin-install-upgrade-deinstall-database.php';
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-your-plugin-activator.php';
+	Your_Plugin_Activator::activate();
+}
+register_activation_hook( __FILE__, 'activate_your_plugin' );
+
+/**
+ * The code that runs during plugin deactivation.
+ * 
+ * @since    	0.0.1
+ * @version		0.0.1
+ */
+function deactivate_your_plugin() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-your-plugin-install-upgrade-deinstall-database.php';
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-your-plugin-deactivator.php';
+	Your_Plugin_Deactivator::deactivate();
+}
+register_deactivation_hook( __FILE__, 'deactivate_your_plugin' );
+
+/**
+ * The core plugin class that is used to define internationalization
+ */
+require plugin_dir_path( __FILE__ ) . 'includes/class-your-plugin.php';
+
+/**
+ * Begins execution of the plugin.
+ * 
+ * @since    	0.0.1
+ * @version		0.0.1
+ */
+function run_your_plugin() {
+	$plugin = new Your_Plugin();
+	$plugin->run();
+}
+run_your_plugin();

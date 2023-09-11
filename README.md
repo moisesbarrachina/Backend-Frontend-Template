@@ -1,99 +1,189 @@
-# WordPress Plugin Boilerplate
+# Backend Frontend Template
 
-A standardized, organized, object-oriented foundation for building high-quality WordPress Plugins.
+A plugin, template and library for develop WordPress plugins easily and quickly. Save time, do more
 
-## Contents
+## Screenshots
 
-The WordPress Plugin Boilerplate includes the following files:
+First steps to make the plugin your own
+![Backend Frontend Template: dashboard: the menu system](https://moisesbarrachina.online/wp-content/uploads/2023/09/screenshot-1.png)
 
-* `.gitignore`. Used to exclude certain files from the repository.
-* `CHANGELOG.md`. The list of changes to the core project.
-* `README.md`. The file that you’re currently reading.
-* A `plugin-name` directory that contains the source code - a fully executable WordPress plugin.
+Dashboard: the menu system
+![Backend Frontend Template: dashboard: the menu system](https://moisesbarrachina.online/wp-content/uploads/2023/09/screenshot-2.png)
 
-## Features
+Dashboard: menu code example
+![Backend Frontend Template: dashboard: menu code example](https://moisesbarrachina.online/wp-content/uploads/2023/09/screenshot-3.png)
 
-* The Boilerplate is based on the [Plugin API](http://codex.wordpress.org/Plugin_API), [Coding Standards](http://codex.wordpress.org/WordPress_Coding_Standards), and [Documentation Standards](https://make.wordpress.org/core/handbook/best-practices/inline-documentation-standards/php/).
-* All classes, functions, and variables are documented so that you know what you need to change.
-* The Boilerplate uses a strict file organization scheme that corresponds both to the WordPress Plugin Repository structure, and that makes it easy to organize the files that compose the plugin.
-* The project includes a `.pot` file as a starting point for internationalization.
+Dashboard: manage and display errors
+![Backend Frontend Template: dashboard: manage and display errors](https://moisesbarrachina.online/wp-content/uploads/2023/09/screenshot-4.png)
+
+Client side: shortcode system
+![Backend Frontend Template: client side: shortcode system](https://moisesbarrachina.online/wp-content/uploads/2023/09/screenshot-5.png)
+
+Client side: shortcode complete example
+![Backend Frontend Template: client side: shortcode complete example](https://moisesbarrachina.online/wp-content/uploads/2023/09/screenshot-6.png)
+
+Client side: shortcode results
+![Backend Frontend Template: client side: shortcode results](https://moisesbarrachina.online/wp-content/uploads/2023/09/screenshot-7.png)
 
 ## Installation
 
-The Boilerplate can be installed directly into your plugins folder "as-is". You will want to rename it and the classes inside of it to fit your needs. For example, if your plugin is named 'example-me' then:
+### Install the code
 
-* rename files from `plugin-name` to `example-me`
-* change `plugin_name` to `example_me`
-* change `plugin-name` to `example-me`
-* change `Plugin_Name` to `Example_Me`
-* change `PLUGIN_NAME_` to `EXAMPLE_ME_`
+Download the code, copy the folder 'bft' on your WordPress instalation/wp-contentplugins and follow 
 
-It's safe to activate the plugin at this point. Because the Boilerplate has no real functionality there will be no menu items, meta boxes, or custom post types added until you write the code.
+### Make the plugin your own
 
-## WordPress.org Preparation
+1. Change the files of wp-content/plugins/bft with the id of your plugin (like 'a-plugin-name')
+2. Delete the files or change their extension:
+    1. wp-content/plugins/bft/bft.php
+    2. wp-content/plugins/bft/includes/class-bft.php
+3. Change the extension of the files to PHP:
+    1. wp-content/plugins/bft/your-plugin.txt
+    2. wp-content/plugins/bft/includes/class-your-plugin.txt
+4. Uncomment: "//$this->admin_pages_main_name = $this->plugin_title; on wp-content/plugins/bft/admin/class-your-plugin-admin.php
+5. Find and replace all the file names with 'your-plugin' like 'class-your-plugin.php' to your plugin id, example: 'class-a-plugin-name.php'.
+6. On wp-content/plugins/bft-mini/languages replace the file names with 'bft-internationalization' to 'your-plugin', example: 'a-plugin-name-es_ES.mo'
+7. Go to search and replace of your editor, active 'match case' and replace this strings:
+    1. 'bft-internationalization' to 'your-plugin'
+    2. '$plugin_slug = "bft_pro"' to $plugin_slug = "your_plugin"
+    3. 'bft_shortcode' to your_plugin_shortcode
+    4. 'bft-shortcode' to your-plugin-shortcode
+8. Go to search and replace of your editor, active 'match case' and replace the words with the names and ids of your plugin:
+    1. Description of Your Plugin
+    2. https://yourfuturewebsite/your-plugin/
+    3. https://yourfuturewebsite
+    4. Plugin Author
+    5. pluginauthor@email
+    6. Your Plugin
+    7. your_plugin
+    8. Your_Plugin
+    9. your-plugin
+    10. YOUR_PLUGIN
+9. Replace the icon for you own on wp-content/plugins/bft/admin/img/icon-16px.png
 
-The original launch of this version of the boilerplate included the folder structure needed for using your plugin on WordPress.org. That folder structure has been moved to its own repo here: https://github.com/DevinVinson/Plugin-Directory-Boilerplate
+## BFT content
 
-## Recommended Tools
+### BFT folders
 
-### i18n Tools
+1. /admin -> administration folder
+2. /includes -> global folder, for administration and plublic files
+3. /languages -> translation files, this binarian files are made with programs like Poedit
+4. /private -> for sensitive data that only a download script can send the file to the user
+5. /admin -> public folder
 
-The WordPress Plugin Boilerplate uses a variable to store the text domain used when internationalizing strings throughout the Boilerplate. To take advantage of this method, there are tools that are recommended for providing correct, translatable files:
+### BFT sub-folders
 
-* [Poedit](http://www.poedit.net/)
-* [makepot](http://i18n.svn.wordpress.org/tools/trunk/)
-* [i18n](https://github.com/grappler/i18n)
+1. /css -> CSS files
+2. /img -> images
+3. /js -> JavaScript files
+4. /lib -> library, the internal BFT files are stored here
+5. /partials -> frontend files
 
-Any of the above tools should provide you with the proper tooling to internationalize the plugin.
+### BFT sub-folders
+
+1. /css -> CSS files
+2. /img -> images
+3. /js -> JavaScript files
+4. /lib -> library, the internal BFT files are stored here
+5. /partials -> frontend files
+
+### BFT main files
+
+1. /includes/class-your-plugin.txt -> main class of the plugin
+2. /includes/class-your-plugin-activator.php -> control when the plugin is activated
+3. /includes/class-your-plugin-deactivator.php -> control when the plugin is deactivated
+4. /includes/class-your-plugin-cronjobs.php -> control the cronjobs of the plugin
+5. /includes/class-your-plugin-install-upgrade-deinstall-database.php -> install and erase the plugin database
+6. /includes/class-your-plugin-functions-admin-public.php -> class with functions for admin and public classes, it's an extension of the BFT admin-public class
+7. /admin/class-your-plugin-admin.php -> class for the admin section, it's an extension of the BFT admin-public class, your admin-public class and BFT admin class
+8. /public/class-your-plugin-public.php -> class for the public section, it's an extension of the BFT admin-public class, your admin-public class and BFT public class
+
+## Documentation
+
+<details>
+  <summary>Menu</summary>
+  
+  ### The menu system
+
+    Edit your menu on the variable $this->admin_pages of the file admin/class-your-plugin-admin.php
+
+    Design a BFT menu look like this:
+    
+```php
+        $this->admin_pages = [
+            "hello_world" => [
+                "page_title" => $this->__("Hello world page"),
+                "menu_title" => $this->__("Hello world"),
+                "file" => "your-plugin-admin-display-hello-world.php",
+            ],
+            "blank_page" => [
+                "page_title" => $this->__("Blank page"),
+                "menu_title" => $this->__("Blank page"),
+                "file" => "bft-admin-display-blank-page-with-title.php",
+            ],	
+        ];	
+```
+
+    $this->admin_pages can have all the pages you want, but in BFT the admin pages can't have children, that's only possible on Backend Frontend Template Pro
+
+    Note: the array data is expanded by the function $this->admin_pages_prepare(), if you make an $this->debug_log_write($this->admin_pages) on a page: you can see the actual state of the array on the WordPress Log
+
+    Explaining the WPTT menu:
+
+    1. Automatic parametters added to the array
+        * id: the array key
+        * More automatic parametters on BFT Pro
+
+    2. Parametters with default data if missing
+        * page_title: title of the page, default: $this->admin_pages_page_title_default
+        * menu_title: title of the tab of the page, default: $this->admin_pages_page_title_default
+        * menu_slug: slug of the page, default: key of the page. The Menu slug will be changed to: $this->admin_pages_slug_name_prefix."_".menu_slug because it's needed a unike page name among the plugins
+        * tab_show: if false it doesn't show the tab of the page, even if is the page selected, default: true
+        * function: the function for when a page is displayed, default: $this->admin_pages_function_default
+        * function_load: loads the function before a page is displayed,default: $this->admin_pages_function_load_default
+        * file: the admin/partials file that will be displayed, default: $this->admin_pages_file_default (If the file starts with 'bft-' the file will be loaded of the folder admin/lib/BFT/partials
+        * error_throw_what_do, it's used on error_throw, options: show_error: show the error (default option), show_error_and_die: show the error and stop the execution, go_to_parent: go to the parent page and anotes on the GET data the error (only works on BFT Pro and if $triggered_on_function_load = true, because on a normal WordPress function will cause the error: 'Cannot modify header information - headers already sent')
+        * error_throw_file_change: change the file option if error_throw_what_do is triggered, default: false
+        * capability, default: "manage_options", WordPress capabilities: https://wordpress.org/support/article/roles-and-capabilities/
+        * More parametters on BFT Pro
+    
+    3. Available functions out of the box (you can create whatever function you need)
+        * admin_menu_page_display: display the page selected on 'file'
+        * More functions on BFT Pro
+
+    4. Functions load available out of the box (you can create whatever function you need)
+        * More functions load on BFT Pro
+   
+    Optional parametters
+        * page_copy_of: copy the data of a page. Only copy the data not found on the page, neither copy id, is_child, page_parent, menu_slug and children
+        * More optional parametters on BFT Pro
+    
+    Your own parametters
+        * You can create your own parameter, later on you can access to the info on a function or on a page with: $variable_name = $this->admin_pages_data_get("parametter_name");. And if you want you can retrieve the data of a certain page with $page_name, and retrieve all the array data with $key = false, $variable_name = $this->admin_pages_data_get($key = false, $page_name = NULL)
+
+        * You can set later your own parameter by code with: $this->admin_pages_data_set($key, $data, $page_name = NULL)
+</details>
 
 ## License
 
-The WordPress Plugin Boilerplate is licensed under the GPL v2 or later.
+Backend Frontend Template is licensed under the GPL v3 or later
 
-> This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License, version 2, as published by the Free Software Foundation.
+## Credits
 
-> This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+Backend Frontend Template uses the basic structure for a plugin established by The WordPress Plugin Boilerplate was started in 2011 by [WordPress Plugin Boilerplate](https://github.com/DevinVinson/WordPress-Plugin-Boilerplate)
 
-> You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+# Backend Frontend Template Pro
 
-A copy of the license is included in the root of the plugin’s directory. The file is named `LICENSE`.
+You can save even more time with [BFT Pro](https://moisesbarrachina.online/en/producto/backend-frontend-template-pro/), upgrade now and you will be able to make submenus, automated or manual data lists, forms without coding, AJAX on the frontend and many more possibilities
 
-## Important Notes
+![Backend Frontend Template Pro: dashboard database manipulation and listing example](https://moisesbarrachina.online/wp-content/uploads/2023/09/teacher_1_notes.png)
 
-### Licensing
+[Check it out on the shop](https://moisesbarrachina.online/en/producto/backend-frontend-template-pro/)
 
-The WordPress Plugin Boilerplate is licensed under the GPL v2 or later; however, if you opt to use third-party code that is not compatible with v2, then you may need to switch to using code that is GPL v3 compatible.
+## Upgrading later
 
-For reference, [here's a discussion](http://make.wordpress.org/themes/2013/03/04/licensing-note-apache-and-gpl/) that covers the Apache 2.0 License used by [Bootstrap](http://twitter.github.io/bootstrap/).
+You can start now with the totally free version and later upgrade to BFT Pro
 
-### Includes
+When you buy Backend Frontend Template Pro you will have two folders in the download, one folder will have everything, a complete plugin, and the other folder will only contain the new BFT Pro licensed files, so it will not replace any existing files
 
-Note that if you include your own classes, or third-party libraries, there are three locations in which said files may go:
-
-* `plugin-name/includes` is where functionality shared between the admin area and the public-facing parts of the site reside
-* `plugin-name/admin` is for all admin-specific functionality
-* `plugin-name/public` is for all public-facing functionality
-
-Note that previous versions of the Boilerplate did not include `Plugin_Name_Loader` but this class is used to register all filters and actions with WordPress.
-
-The example code provided shows how to register your hooks with the Loader class.
-
-### What About Other Features?
-
-The previous version of the WordPress Plugin Boilerplate included support for a number of different projects such as the [GitHub Updater](https://github.com/afragen/github-updater).
-
-These tools are not part of the core of this Boilerplate, as I see them as being additions, forks, or other contributions to the Boilerplate.
-
-The same is true of using tools like Grunt, Composer, etc. These are all fantastic tools, but not everyone uses them. In order to  keep the core Boilerplate as light as possible, these features have been removed and will be introduced in other editions, and will be listed and maintained on the project homepage.
-
-# Credits
-
-The WordPress Plugin Boilerplate was started in 2011 by [Tom McFarlin](http://twitter.com/tommcfarlin/) and has since included a number of great contributions. In March of 2015 the project was handed over by Tom to Devin Vinson.
-
-The current version of the Boilerplate was developed in conjunction with [Josh Eaton](https://twitter.com/jjeaton), [Ulrich Pogson](https://twitter.com/grapplerulrich), and [Brad Vincent](https://twitter.com/themergency).
-
-The homepage is based on a design as provided by [HTML5Up](http://html5up.net), the Boilerplate logo was designed by Rob McCaskill of [BungaWeb](http://bungaweb.com), and the site `favicon` was created by [Mickey Kay](https://twitter.com/McGuive7).
-
-## Documentation, FAQs, and More
-
-If you’re interested in writing any documentation or creating tutorials please [let me know](http://devinvinson.com/contact/) .
+In addition, BFT checks if the BFT Pro folders exist, in which case it automatically loads the classes with the extra tools
