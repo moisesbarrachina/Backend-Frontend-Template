@@ -5,25 +5,25 @@ A plugin, template and library for develop WordPress plugins easily and quickly.
 ## Screenshots
 
 First steps to make the plugin your own
-![Backend Frontend Template: dashboard: the menu system](https://moisesbarrachina.online/wp-content/uploads/2023/09/screenshot-1.png)
+![Backend Frontend Template: dashboard: the menu system](https://moisesbarrachina.online/wp-content/uploads/2023/09/bft-screenshot-1.png)
 
 Dashboard: the menu system
-![Backend Frontend Template: dashboard: the menu system](https://moisesbarrachina.online/wp-content/uploads/2023/09/screenshot-2.png)
+![Backend Frontend Template: dashboard: the menu system](https://moisesbarrachina.online/wp-content/uploads/2023/09/bft-screenshot-2.png)
 
 Dashboard: menu code example
-![Backend Frontend Template: dashboard: menu code example](https://moisesbarrachina.online/wp-content/uploads/2023/09/screenshot-3.png)
+![Backend Frontend Template: dashboard: menu code example](https://moisesbarrachina.online/wp-content/uploads/2023/09/bft-screenshot-3.png)
 
 Dashboard: manage and display errors
-![Backend Frontend Template: dashboard: manage and display errors](https://moisesbarrachina.online/wp-content/uploads/2023/09/screenshot-4.png)
+![Backend Frontend Template: dashboard: manage and display errors](https://moisesbarrachina.online/wp-content/uploads/2023/09/bft-screenshot-4.png)
 
 Client side: shortcode system
-![Backend Frontend Template: client side: shortcode system](https://moisesbarrachina.online/wp-content/uploads/2023/09/screenshot-5.png)
+![Backend Frontend Template: client side: shortcode system](https://moisesbarrachina.online/wp-content/uploads/2023/09/bft-screenshot-5.png)
 
 Client side: shortcode complete example
-![Backend Frontend Template: client side: shortcode complete example](https://moisesbarrachina.online/wp-content/uploads/2023/09/screenshot-6.png)
+![Backend Frontend Template: client side: shortcode complete example](https://moisesbarrachina.online/wp-content/uploads/2023/09/bft-screenshot-6.png)
 
 Client side: shortcode results
-![Backend Frontend Template: client side: shortcode results](https://moisesbarrachina.online/wp-content/uploads/2023/09/screenshot-7.png)
+![Backend Frontend Template: client side: shortcode results](https://moisesbarrachina.online/wp-content/uploads/2023/09/bft-screenshot-7.png)
 
 ## Installation
 
@@ -270,7 +270,7 @@ Download the code, copy the folder 'bft' on your WordPress instalation/wp-conten
 	$this->error_show ($error_message);
 ```
 
-   ![Backend Frontend Template: error throw](https://moisesbarrachina.online/wp-content/uploads/2023/09/screenshot-4-mini.png)
+   ![Backend Frontend Template: error throw](https://moisesbarrachina.online/wp-content/uploads/2023/09/bft-screenshot-4-mini.png)
 </details>
 
 <details>
@@ -383,10 +383,10 @@ Download the code, copy the folder 'bft' on your WordPress instalation/wp-conten
     [bft-shortcode-test aditional_text="This is an aditional text"]The text inside de tags[/bft-shortcode-test]
 ```
 
-![Backend Frontend Template: client side: shortcode complete example](https://moisesbarrachina.online/wp-content/uploads/2023/09/screenshot-6.png)
+![Backend Frontend Template: client side: shortcode complete example](https://moisesbarrachina.online/wp-content/uploads/2023/09/bft-screenshot-6.png)
 
 Client side: shortcode results
-![Backend Frontend Template: client side: shortcode results](https://moisesbarrachina.online/wp-content/uploads/2023/09/screenshot-7.png)
+![Backend Frontend Template: client side: shortcode results](https://moisesbarrachina.online/wp-content/uploads/2023/09/bft-screenshot-7.png)
 </details>
 
 ## License
