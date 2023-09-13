@@ -259,18 +259,42 @@ Download the code, copy the folder 'bft' on your WordPress instalation/wp-conten
     * $error_message: error to send to $this->error_show(), but first it will display the 'error_message' stored on the URL
     * $error_throw_what_do_use_this: for use this data instead of $this->admin_pages_data_get("error_throw_what_do"), options: show_error, show_error_and_die, go_to_parent
     * $error_throw_file_change_use_this: default NULL, use this data instead of $this->admin_pages_data_get("error_throw_file_change"), for change the file displayed if error triggerred
-    * $triggered_on_function_load: default false, 'go_to_parent' only works if true == $triggered_on_function_load because it's needed do the redirect before sending the headers
+    * $triggered_on_function_load: default false, 'go_to_parent' only works if true == $triggered_on_function_load because it's needed do the redirect before sending the headers (id required data and go to parent are only BFT Pro options)
     * $page_id: the key/page name, if null it's the visualized page
 
   #### Example
     This page show an error with:
 
 ```php
-    $error_message = $this->__("This is an error test");
+  $error_message = $this->__("This is an error test");
 	$this->error_show ($error_message);
 ```
 
-   ![Backend Frontend Template: error throw](https://moisesbarrachina.online/wp-content/uploads/2023/09/bft-screenshot-4-mini.png)
+   ![Backend Frontend Template: error throw on this page](https://moisesbarrachina.online/wp-content/uploads/2023/09/bft-screenshot-4-mini.png)
+
+    The children page throws an error and return to this page with:
+
+```php
+  $this->admin_pages = [
+			"errors_manage" => [
+				"menu_title" => $this->__("Errors"),
+				"page_title" => $this->__("Manage and display errors"),
+				"file" => "bft-admin-display-errors-manage-show.php",
+				"children" => [
+					"throw_error_and_return_to_parent" => [
+						"menu_title" => $this->__("Throw error and return to parent"),
+						"page_title" => $this->__("Throw error and return to parent"),
+						"ids_required" => [
+							"nonexistent_id" => "nonexistent_id",
+						],
+						"error_throw_what_do" => "go_to_parent",
+					],
+				]
+			],	
+		];
+```
+    id required data and go to parent are only BFT Pro options
+   ![Backend Frontend Template: error throw on child page](https://moisesbarrachina.online/wp-content/uploads/2023/09/bft-screenshot-4-go_to_parent.png)
 </details>
 
 <details>
@@ -383,10 +407,121 @@ Download the code, copy the folder 'bft' on your WordPress instalation/wp-conten
     [bft-shortcode-test aditional_text="This is an aditional text"]The text inside de tags[/bft-shortcode-test]
 ```
 
-![Backend Frontend Template: client side: shortcode complete example](https://moisesbarrachina.online/wp-content/uploads/2023/09/bft-screenshot-6.png)
+  ![Backend Frontend Template: client side: shortcode complete example](https://moisesbarrachina.online/wp-content/uploads/2023/09/bft-screenshot-6.png)
 
-Client side: shortcode results
-![Backend Frontend Template: client side: shortcode results](https://moisesbarrachina.online/wp-content/uploads/2023/09/bft-screenshot-7.png)
+  Client side: shortcode results
+  ![Backend Frontend Template: client side: shortcode results](https://moisesbarrachina.online/wp-content/uploads/2023/09/bft-screenshot-7.png)
+</details>
+
+<details>
+  <summary>Languages</summary>
+  
+  ### Language functions
+
+    Backend Frontend Template provides several functions about languages:
+
+  #### $this->languages_codes_names_get()
+
+    Returns a language list
+
+```php
+  $languages_codes_names = [
+		'ab' => $this->__('Abkhazian'),
+		'aa' => $this->__('Afar'),
+		'af' => $this->__('Afrikaans'),
+		'ak' => $this->__('Akan'),
+		'sq' => $this->__('Albanian'),
+		'am' => $this->__('Amharic'),
+		[...]
+```
+
+  #### $this->languages_get($country_code)
+
+    Returns the data stored on the setting $this->option_field_get("languages")
+
+  #### $this->language_admin_get($country_code)
+
+    Returns the data stored on the setting $this->option_field_get("language_admin") if exists on $this->option_field_get("languages")
+
+    If languages empty it will set the lenguages 'en' and 'es'
+    If language_admin empty or not found on languages, it will set the first language stored on languages
+</details>
+
+<details>
+  <summary>Countries</summary>
+  
+  ### County function
+
+    Backend Frontend Template provides several functions about countries:
+
+  #### $this->countries_codes_names_get()
+
+    Returns a country list
+
+```php
+  $countries_codes_names = [
+		'AF'=> $this->__('Afghanistan'),
+		'AX'=> $this->__('Aland Islands'),
+		'AL'=> $this->__('Albania'),
+		'DZ'=> $this->__('Algeria'),
+		'AS'=> $this->__('American Samoa'),
+		'AD'=> $this->__('Andorra'),	
+		[...]
+```
+
+  #### $this->country_code_name_get($country_code)
+
+    Returns a country name through the country code
+</details>
+
+<details>
+  <summary>Currencies</summary>
+  
+  ### Currency functions
+
+    Backend Frontend Template provides several functions about currencies:
+
+  #### $this->currencies_array_get()
+
+    Returns a currency list with all the data, including the numer of currency on the ISO 4217 standard
+
+```php
+  $currencies_name_and_symbol = [
+		'ARS' => [
+			'id'   => 'ARS',
+			'name'   => 'Argentina Peso',
+			'symbol' => '$',
+			'code' => '032',
+		],
+		'AWG' => [
+			'id'   => 'AWG',
+			'name'   => 'Aruba Guilder',
+			'symbol' => 'ƒ',
+			'code' => '533',
+		],
+		[...]
+```
+
+  #### $this->currencies_selector_get()
+
+    Returns a currency list
+
+```php
+  $currencies_name_and_symbol = [
+		'ALL' => 'L - Albania Lek',
+		'AFN' => '؋ Afghanistan Afghani',
+		'ARS' => '$ Argentina Peso',
+		'AWG' => 'ƒ Aruba Guilder',
+		[...]
+```
+
+  #### $this->currency_symbol_get($currency_id)
+
+    Returns a currency symbol through the currency code
+
+  #### $this->currency_code_get($currency_id)
+
+    Returns a the ISO 4217 number through the currency id
 </details>
 
 ## License
