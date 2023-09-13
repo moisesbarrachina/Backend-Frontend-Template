@@ -53,7 +53,7 @@ class BFT {
 	 * @access	protected
 	 * @var		string	 $plugin_slug	 "bft_pro"
 	 */
-	protected $plugin_slug = "bft_pro";
+	protected $plugin_slug = "bft";
 
 	/**
 	 * The current version of the plugin.
