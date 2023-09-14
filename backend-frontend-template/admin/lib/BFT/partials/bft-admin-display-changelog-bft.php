@@ -19,7 +19,7 @@ $this->admin_permission_check();
 	<h2><?=$this->esc_html_e($title)?></h2>
 	<div>
 		<h3>1.0.0</h3>
-		<p>2023-09-11</p>
+		<p>2023-09-14</p>
 		<p><?=$this->esc_html_e("First stable version of Backend Frontend Template")?></p>
 		<h4>BFT</h4>
 		<ul>
