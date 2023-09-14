@@ -1324,7 +1324,7 @@ msgstr ""
 #: admin/lib/BFT/partials/bft-admin-display-do-more-with-bft-pro.php:30
 #: admin/lib/BFT-PRO/partials/bft-admin-display-changelog-bft.php:35
 #: admin/lib/BFT-PRO/partials/bft-admin-display-do-more-with-bft-pro.php:30
-msgid "Menú system with childs"
+msgid "Menú system with children"
 msgstr ""
 
 #: admin/lib/BFT/partials/bft-admin-display-changelog-bft.php:36
@@ -1641,6 +1641,26 @@ msgstr ""
 #: admin/lib/BFT/partials/bft-admin-display-do-more-with-bft-pro.php:202
 #: admin/lib/BFT-PRO/partials/bft-admin-display-do-more-with-bft-pro.php:202
 msgid "Buy Backend Frontend Template Pro now and save time!"
+msgstr ""
+
+#: admin/lib/BFT/partials/bft-admin-display-do-more-with-bft-pro.php:204
+#: admin/lib/BFT-PRO/partials/bft-admin-display-do-more-with-bft-pro.php:204
+msgid "Upgrading later"
+msgstr ""
+
+#: admin/lib/BFT/partials/bft-admin-display-do-more-with-bft-pro.php:205
+#: admin/lib/BFT-PRO/partials/bft-admin-display-do-more-with-bft-pro.php:205
+msgid "You can start now with the totally free version and later upgrade to BFT Pro"
+msgstr ""
+
+#: admin/lib/BFT/partials/bft-admin-display-do-more-with-bft-pro.php:206
+#: admin/lib/BFT-PRO/partials/bft-admin-display-do-more-with-bft-pro.php:206
+msgid "When you buy Backend Frontend Template Pro you will have two folders in the download, one folder has everything, a complete plugin, and the other folder only contains the new BFT Pro licensed files, so it will not replace any existing files"
+msgstr ""
+
+#: admin/lib/BFT/partials/bft-admin-display-do-more-with-bft-pro.php:207
+#: admin/lib/BFT-PRO/partials/bft-admin-display-do-more-with-bft-pro.php:207
+msgid "In addition, BFT checks if the BFT Pro folders exist, in which case it automatically loads the classes with the extra tools"
 msgstr ""
 
 #: admin/lib/BFT/partials/bft-admin-display-errors-manage-show.php:16

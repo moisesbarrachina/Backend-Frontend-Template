@@ -27,7 +27,7 @@ $this->admin_permission_check();
 	<p>Backend Frontend Template Pro <?=$this->esc_html_e("expand your posibilities, make a lot more on less time")?>. <a target="_blank" href="https://moisesbarrachina.online/en/producto/backend-frontend-template-pro/"><?=$this->esc_html_e("Check it out on the shop and save time!")?></a></p>
 	<ol>
 		<li>
-			<h3><?=$this->esc_html_e("Menú system with childs")?></h3>
+			<h3><?=$this->esc_html_e("Menú system with children")?></h3>
 			<p><?=$this->esc_html_e("Add child pages and organize better your plugin")?></p>
 			<p><img src="https://moisesbarrachina.online/wp-content/uploads/2023/09/nested_menu_basic.png" class="bft_image_80"/></p>
 		</li>
@@ -200,5 +200,10 @@ $this->admin_permission_check();
 		</li>
 	</ol>
 	<p><a target="_blank" href="https://moisesbarrachina.online/en/producto/backend-frontend-template-pro/"><?=$this->esc_html_e("Buy Backend Frontend Template Pro now and save time!")?></a></p>
+	<hr>
+	<h2><?=$this->esc_html_e("Upgrading later")?></h2>
+	<p><?=$this->esc_html_e("You can start now with the totally free version and later upgrade to BFT Pro")?></p>
+	<p><?=$this->esc_html_e("When you buy Backend Frontend Template Pro you will have two folders in the download, one folder has everything, a complete plugin, and the other folder only contains the new BFT Pro licensed files, so it will not replace any existing files")?></p>
+	<p><?=$this->esc_html_e("In addition, BFT checks if the BFT Pro folders exist, in which case it automatically loads the classes with the extra tools")?></p>
 </div>
 

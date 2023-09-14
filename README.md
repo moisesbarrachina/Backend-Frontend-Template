@@ -785,6 +785,6 @@ You can save even more time with [BFT Pro](https://moisesbarrachina.online/en/pr
 
 You can start now with the totally free version and later upgrade to BFT Pro
 
-When you buy Backend Frontend Template Pro you will have two folders in the download, one folder will have everything, a complete plugin, and the other folder will only contain the new BFT Pro licensed files, so it will not replace any existing files
+When you buy Backend Frontend Template Pro you will have two folders in the download, one folder has everything, a complete plugin, and the other folder only contains the new BFT Pro licensed files, so it will not replace any existing files
 
 In addition, BFT checks if the BFT Pro folders exist, in which case it automatically loads the classes with the extra tools
