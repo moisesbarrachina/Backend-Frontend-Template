@@ -518,6 +518,7 @@ You can save even more time with [BFT Pro](https://moisesbarrachina.online/en/pr
 
 <details>
   <summary>Children</summary>
+
   ### Menú system with children
 
   Add child pages and organize better your plugin
@@ -526,6 +527,7 @@ You can save even more time with [BFT Pro](https://moisesbarrachina.online/en/pr
 
 <details>
   <summary>Settings</summary>
+
   ### Settings system
 
   Create, manage and store WordPress variables with setting pages, it's really easy
@@ -554,6 +556,7 @@ You can save even more time with [BFT Pro](https://moisesbarrachina.online/en/pr
 
 <details>
   <summary>Inputs</summary>
+
   ### Advance inputs
 
   Add inputs like images, select multiples, etc.
@@ -563,6 +566,7 @@ You can save even more time with [BFT Pro](https://moisesbarrachina.online/en/pr
 
 <details>
   <summary>BBDD</summary>
+
   ### Example database
 
   Play around with the example data all you want
@@ -572,6 +576,7 @@ You can save even more time with [BFT Pro](https://moisesbarrachina.online/en/pr
 
 <details>
   <summary>BBDD reinstall</summary>
+
   ### Install or delete the plugin database
 
   Add menu for (de)install your plugin database
@@ -581,6 +586,7 @@ You can save even more time with [BFT Pro](https://moisesbarrachina.online/en/pr
 
 <details>
   <summary>Automated data</summary>
+
   ### Automated data manipulation
 
   Manage all the data only specifying the table and the fields. The table can have internationalized fields
@@ -660,6 +666,7 @@ You can save even more time with [BFT Pro](https://moisesbarrachina.online/en/pr
 
 <details>
   <summary>Manual data</summary>
+
   ### Manual data manipulation
 
   More functions to manage manually the database
@@ -679,6 +686,7 @@ You can save even more time with [BFT Pro](https://moisesbarrachina.online/en/pr
 
 <details>
   <summary>Listings by query</summary>
+
   ### Paginated listing by query
 
   A WordPress paginated listing style thanks to a SQL query in pieces
@@ -704,6 +712,7 @@ You can save even more time with [BFT Pro](https://moisesbarrachina.online/en/pr
 
 <details>
   <summary>Listings by array</summary>
+
   ### Direct listing by array
 
   A WordPress listing style thanks to a array
@@ -735,6 +744,7 @@ You can save even more time with [BFT Pro](https://moisesbarrachina.online/en/pr
 
 <details>
   <summary>Download private files</summary>
+
   ### Download system for private files
 
   Easy method for download private files
@@ -744,6 +754,7 @@ You can save even more time with [BFT Pro](https://moisesbarrachina.online/en/pr
 
 <details>
   <summary>Iframes</summary>
+
   ### Iframe system
 
   Insert easy iframes, PDFs too
@@ -755,9 +766,10 @@ You can save even more time with [BFT Pro](https://moisesbarrachina.online/en/pr
 
 <details>
   <summary>AJAX</summary>
+
   ### AJAX frontend system
 
-  More functions and examples for the frontend, AJAX forms too
+  More functions and examples for the WordPress frontend, AJAX forms too
 
   An static shortcode is cached by a cache system, but the AJAX responses are dynamic and the cache plugin doesn't interfere with the response
 
