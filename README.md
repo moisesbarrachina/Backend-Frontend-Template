@@ -508,11 +508,229 @@ Backend Frontend Template is licensed under the GPL v3 or later
 
 Backend Frontend Template uses the basic structure for a plugin established by The WordPress Plugin Boilerplate was started in 2011 by [WordPress Plugin Boilerplate](https://github.com/DevinVinson/WordPress-Plugin-Boilerplate)
 
+___
+
 # Backend Frontend Template Pro
 
 You can save even more time with [BFT Pro](https://moisesbarrachina.online/en/producto/backend-frontend-template-pro/), upgrade now and you will be able to make submenus, automated or manual data lists, forms without coding, AJAX on the frontend and many more possibilities
 
-![Backend Frontend Template Pro: dashboard database manipulation and listing example](https://moisesbarrachina.online/wp-content/uploads/2023/09/teacher_1_notes.png)
+[Backend Frontend Template Pro](https://moisesbarrachina.online/en/producto/backend-frontend-template-pro/)
+Backend Frontend Template Pro expand your posibilities, make a lot more on less time.
+
+## Additional features
+
+### Menú system with childs
+
+Add child pages and organize better your plugin
+![Backend Frontend Template Pro: example of the menu with child pages](https://moisesbarrachina.online/wp-content/uploads/2023/09/nested_menu_basic.png)
+
+### Settings system
+
+Create, manage and store WordPress variables with setting pages, it's really easy
+
+```php
+  $this->admin_settings = [
+    "general" => [
+      "title" =>  $this->__("Test settings"),
+      "fields" => [
+        "text_test" => [
+          "title" => $this->__("Text input"),
+        ],
+        "number_test" => [
+          "title" => $this->__("Number input"),
+          "args" => [
+            "type" => "number",
+          ],
+        ],
+      ],
+    ],
+  ];
+```
+
+![Backend Frontend Template Pro: example of the WordPress settings](https://moisesbarrachina.online/wp-content/uploads/2023/09/settings.png)
+
+### Advance inputs
+
+Add inputs like images, select multiples, etc.
+
+![Backend Frontend Template Pro: example of inputs types](https://moisesbarrachina.online/wp-content/uploads/2023/09/inputs.png)
+
+### Example database
+
+Play around with the example data all you want
+
+![Backend Frontend Template Pro: diagram os the example database](https://moisesbarrachina.online/wp-content/uploads/2023/09/BBDD.png)
+
+### Install or delete the plugin database
+
+Add menu for (de)install your plugin database
+
+![Backend Frontend Template Pro: menu for install and deinstall the plugin database](https://moisesbarrachina.online/wp-content/uploads/2023/09/de_install.png)
+
+### Automated data manipulation
+
+Manage all the data only specifying the table and the fields. The table can have internationalized fields
+
+```php
+  $this->admin_forms = [
+    "courses" => [
+      "table" => $wpdb->prefix.$this->plugin_slug."_"."courses",
+      "column_key" => "id",
+      "column_title_name" => "name_i18n",
+      "i18n_foreign_key" => "course_id",
+      "columns" => [
+        $this->database_status_column_name => [
+          "label" => $this->database_status_column_text,
+          "type" => "select",
+          "options" => $this->database_status_options,
+        ],
+        "id" => [
+          "label" => $this->__("Nº"),
+          "placeholder" => "",
+          "type" => "text",
+          "display_table" => true,
+          "readonly" => true,
+        ],
+        $this->database_datetime_created_name => [
+          "label" => $this->database_datetime_created_text,
+          "placeholder" => "",
+          "type" => "datetime",
+          "display_table" => false,
+          "readonly" => true,
+        ],
+        $this->database_datetime_modified_name => [
+          "label" => $this->database_datetime_modified_text,
+          "placeholder" => "",
+          "type" => "datetime",
+          "display_table" => false,
+          "readonly" => true,
+          "only_on_active" => true,
+        ],
+        $this->database_datetime_removed_name => [
+          "label" => $this->database_datetime_removed_text,
+          "placeholder" => "",
+          "type" => "datetime",
+          "display_table" => true,
+          "readonly" => true,
+          "only_on_removed" => true,
+        ],
+        "hours" => [
+          "label" => $this->__("Total hours of the course"),
+          "placeholder" => $this->__("Hours"),
+          "type" => "number",
+          "i18n" => false,
+          "readonly" => true,
+          "display_table" => true,
+        ],
+        "name_i18n" => [
+          "label" => $this->__("Course name"),
+          "placeholder" => $this->__("Name"),
+          "type" => "text",
+          "i18n" => true,
+          "display_table" => true,
+        ],
+        "image" => [
+          "label" => $this->__("Course logo"),
+          "placeholder" => $this->__("Image"),
+          "type" => "image",
+          "i18n" => true,
+          "display_table" => true,
+        ],
+        [...]
+```
+
+![Backend Frontend Template Pro: example of an automated form](https://moisesbarrachina.online/wp-content/uploads/2023/09/course_math.png)
+
+![Backend Frontend Template Pro: example of an automated list](https://moisesbarrachina.online/wp-content/uploads/2023/09/teacher_1_notes.png)
+
+### Manual data manipulation
+
+More functions to manage manually the database
+
+```php
+$this->wpdb_get_results_array($query); //returns a two dimensional array with all the data
+$this->wpdb_get_results_with_index($query); //returns a two dimensional array with all the data, the index of every row will be the first column data
+$this->wpdb_get_results_one_data_per_row($query); //returns a mono dimensional array, only returns the first column of every row
+$this->wpdb_get_results_index_and_data_per_row($query); //returns a mono dimensional array, the first column data will be the index, the second the data
+$this->wpdb_get_result_one_data($query); //returns a string, only return the first column of the first row
+$this->wpdb_insert_update_on_duplicate_key($table, $data, $multi_row = false, $modified_value = NULL, $data_for_update = array()); //insert or update several data, more explanation below (the function sanitizes the inputs)
+$this->wpdb_insert_update_on_duplicate_key_delete_others($table, $data, $column_where_delete, $value_where_delete); //insert or update several data, then delete the not updated rows, more explanation below (the function sanitizes the inputs)
+```
+
+![Backend Frontend Template Pro: example of a group form manually declared](https://moisesbarrachina.online/wp-content/uploads/2023/09/manage_data_manually_form_1.png)
+
+### Paginated listing by query
+
+A WordPress paginated listing style thanks to a SQL query in pieces
+
+```php
+  $this->display_table_query_custom(
+		$query_select_inside,
+		$query_from_inside,
+		$query_where_inside,
+		$group_inside,
+		$ids,
+		$columns_tables_dont_search,
+		$search_concat,
+		$column_key,
+		$columns_tables,
+		$columns_labels,
+		$column_action_add,
+		$status_system = false,
+		$write_log_query = false
+	);
+```
+
+### Direct listing by array
+
+A WordPress listing style thanks to a array
+
+```php
+	$display_table_data = [
+		"data" => [
+			[
+				"id" => "1",
+				"name" => "Lorem Ipsum Name",
+			],
+		],
+		"columns" => [
+			"id" => "Nº",
+			"name" => "Name",
+		],
+	];
+
+	$args = [
+		"ids" => $ids,
+		"display_table" => true,
+		"display_table_data" => $display_table_data,
+	];
+
+	$this->admin_menu_page_display($args);
+```
+![Backend Frontend Template Pro: example of a WordPress listing by array](https://moisesbarrachina.online/wp-content/uploads/2023/09/listing_by_array.png)
+
+### Download system for private files
+
+Easy method for download private files
+
+![Backend Frontend Template Pro: example of downloading a private file](https://moisesbarrachina.online/wp-content/uploads/2023/09/download_private_file.png)
+
+### Iframe system
+
+Insert easy iframes, PDFs too
+
+![Backend Frontend Template Pro: example of an iframe on a page of the admin plugin menu](https://moisesbarrachina.online/wp-content/uploads/2023/09/iframe_1.png)
+
+![Backend Frontend Template Pro: example of an PDF by iframe on a page of the admin plugin menu](https://moisesbarrachina.online/wp-content/uploads/2023/09/iframe_2.png)
+
+### AJAX frontend system
+
+More functions and examples for the frontend
+
+![Backend Frontend Template Pro: frontend options include shortcodes, AJAX and AJAX forms](https://moisesbarrachina.online/wp-content/uploads/2023/09/ajax_form_1.png)
+
+![Backend Frontend Template Pro: example of menu and response by AJAX through jQuery](https://moisesbarrachina.online/wp-content/uploads/2023/09/ajax_form_2.png)
+
 
 [Check it out on the shop](https://moisesbarrachina.online/en/producto/backend-frontend-template-pro/)
 
