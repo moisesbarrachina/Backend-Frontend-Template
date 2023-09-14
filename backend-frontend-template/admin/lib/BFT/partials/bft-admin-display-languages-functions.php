@@ -17,7 +17,7 @@ $this->admin_permission_check();
 	<h1><?=$this->esc_html_e($this->admin_title)?></h1>
 	<?=$this->html_tabs(false)?>
 	<h2><?=$this->esc_html_e($title)?></h2>
-	<p>Backend Frontend Template provides several functions about countries:</p>
+	<p>B<?=$this->esc_html_e("Backend Frontend Template provides several functions about languages")?>:</p>
 	<ol>
 		<li>
 			<h3>$this->languages_codes_names_get()</h3>

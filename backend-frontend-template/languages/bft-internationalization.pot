@@ -1464,6 +1464,17 @@ msgstr ""
 msgid "Backend Frontend Template provides several functions about countries"
 msgstr ""
 
+#: admin/lib/BFT/partials/bft-admin-display-currencies-functions.php:20
+#: admin/lib/BFT-PRO/partials/bft-admin-display-currencies-functions.php:20
+msgid "Backend Frontend Template provides several functions about currencies"
+msgstr ""
+
+#: admin/lib/BFT/partials/bft-admin-display-languages-functions.php:20
+#: admin/lib/BFT-PRO/partials/bft-admin-display-languages-functions.php:20
+msgid "Backend Frontend Template provides several functions about languages"
+msgstr ""
+
+
 #: admin/lib/BFT/partials/bft-admin-display-countries-functions.php:24
 #: admin/lib/BFT-PRO/partials/bft-admin-display-countries-functions.php:24
 msgid "Returns a country list"

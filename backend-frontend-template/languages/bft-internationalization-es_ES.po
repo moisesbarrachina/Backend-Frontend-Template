@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-03 23:35+0100\n"
-"PO-Revision-Date: 2023-09-11 12:36+0200\n"
+"PO-Revision-Date: 2023-09-14 20:52+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -1020,7 +1020,15 @@ msgstr "Además BFT ofrece un nombre alternativo para"
 
 #: admin/lib/BFT/partials/bft-admin-display-countries-functions.php:20 admin/lib/BFT-PRO/partials/bft-admin-display-countries-functions.php:20
 msgid "Backend Frontend Template provides several functions about countries"
-msgstr "Backend Frontend Template ofrece  varias funciones sobre los países"
+msgstr "Backend Frontend Template ofrece varias funciones sobre los países"
+
+#: admin/lib/BFT/partials/bft-admin-display-currencies-functions.php:20 admin/lib/BFT-PRO/partials/bft-admin-display-currencies-functions.php:20
+msgid "Backend Frontend Template provides several functions about currencies"
+msgstr "Backend Frontend Template ofrece  varias funciones sobre las monedas"
+
+#: admin/lib/BFT/partials/bft-admin-display-languages-functions.php:20 admin/lib/BFT-PRO/partials/bft-admin-display-languages-functions.php:20
+msgid "Backend Frontend Template provides several functions about languages"
+msgstr "Backend Frontend Template ofrece  varias funciones sobre los idiomas"
 
 #: admin/lib/BFT/partials/bft-admin-display-countries-functions.php:24 admin/lib/BFT-PRO/partials/bft-admin-display-countries-functions.php:24
 msgid "Returns a country list"
