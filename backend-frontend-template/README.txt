@@ -32,7 +32,7 @@ Yes, first follow the instructions on the first steps page to make it your own p
 
 = Can I start creating my plugin with BFT and later upgrade to BFT Pro? =
 
-Yes, when you buy Backend Frontend Template Pro you will have two folders in the download, one folder will have everything, a complete plugin, and the other folder will only contain the new BFT Pro licensed files, so it will not replace any existing files.
+Yes, when you buy Backend Frontend Template Pro you will have two folders in the download, one folder has everything, a complete plugin, and the other folder only contains the new BFT Pro licensed files, so it will not replace any existing files.
 
 In addition, BFT checks if the BFT Pro folders exist, in which case it automatically loads the classes with the extra tools
 
