@@ -271,30 +271,6 @@ Download the code, copy the folder 'bft' on your WordPress instalation/wp-conten
 ```
 
    ![Backend Frontend Template: error throw on this page](https://moisesbarrachina.online/wp-content/uploads/2023/09/bft-screenshot-4-mini.png)
-
-    The children page throws an error and return to this page with:
-
-```php
-  $this->admin_pages = [
-			"errors_manage" => [
-				"menu_title" => $this->__("Errors"),
-				"page_title" => $this->__("Manage and display errors"),
-				"file" => "bft-admin-display-errors-manage-show.php",
-				"children" => [
-					"throw_error_and_return_to_parent" => [
-						"menu_title" => $this->__("Throw error and return to parent"),
-						"page_title" => $this->__("Throw error and return to parent"),
-						"ids_required" => [
-							"nonexistent_id" => "nonexistent_id",
-						],
-						"error_throw_what_do" => "go_to_parent",
-					],
-				]
-			],	
-		];
-```
-    id required data and go to parent are only BFT Pro options
-   ![Backend Frontend Template: error throw on child page](https://moisesbarrachina.online/wp-content/uploads/2023/09/bft-screenshot-4-go_to_parent.png)
 </details>
 
 <details>
