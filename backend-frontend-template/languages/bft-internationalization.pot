@@ -2893,16 +2893,21 @@ msgstr ""
 
 #: admin/lib/BFT/partials/bft-admin-display-what-is-bft.php:23
 #: admin/lib/BFT-PRO/partials/bft-admin-display-what-is-bft.php:23
+msgid "Backend Frontend Template is available on GitHub"
+msgstr ""
+
+#: admin/lib/BFT/partials/bft-admin-display-what-is-bft.php:25
+#: admin/lib/BFT-PRO/partials/bft-admin-display-what-is-bft.php:25
 msgid "Do you want more capabilities/possibilities and save more time?"
 msgstr ""
 
-#: admin/lib/BFT/partials/bft-admin-display-what-is-bft.php:23
-#: admin/lib/BFT-PRO/partials/bft-admin-display-what-is-bft.php:23
+#: admin/lib/BFT/partials/bft-admin-display-what-is-bft.php:25
+#: admin/lib/BFT-PRO/partials/bft-admin-display-what-is-bft.php:25
 msgid "check"
 msgstr ""
 
-#: admin/lib/BFT/partials/bft-admin-display-what-is-bft.php:24
-#: admin/lib/BFT-PRO/partials/bft-admin-display-what-is-bft.php:24
+#: admin/lib/BFT/partials/bft-admin-display-what-is-bft.php:26
+#: admin/lib/BFT-PRO/partials/bft-admin-display-what-is-bft.php:26
 msgid "are libraries in continuous growth and developed by"
 msgstr ""
 

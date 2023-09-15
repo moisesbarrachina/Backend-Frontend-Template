@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-03 23:35+0100\n"
-"PO-Revision-Date: 2023-09-14 23:38+0200\n"
+"PO-Revision-Date: 2023-09-15 18:52+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -2823,16 +2823,21 @@ msgstr "página de primeros pasos"
 
 #: admin/lib/BFT/partials/bft-admin-display-what-is-bft.php:23
 #: admin/lib/BFT-PRO/partials/bft-admin-display-what-is-bft.php:23
+msgid "Backend Frontend Template is available on GitHub"
+msgstr "Backend Frontend Template está disponible en GitHub"
+
+#: admin/lib/BFT/partials/bft-admin-display-what-is-bft.php:25
+#: admin/lib/BFT-PRO/partials/bft-admin-display-what-is-bft.php:25
 msgid "Do you want more capabilities/possibilities and save more time?"
 msgstr "¿Quieres más capacidades/posibilidades y ahorrar más tiempo?"
 
-#: admin/lib/BFT/partials/bft-admin-display-what-is-bft.php:23
-#: admin/lib/BFT-PRO/partials/bft-admin-display-what-is-bft.php:23
+#: admin/lib/BFT/partials/bft-admin-display-what-is-bft.php:25
+#: admin/lib/BFT-PRO/partials/bft-admin-display-what-is-bft.php:25
 msgid "check"
 msgstr "comprueba"
 
-#: admin/lib/BFT/partials/bft-admin-display-what-is-bft.php:24
-#: admin/lib/BFT-PRO/partials/bft-admin-display-what-is-bft.php:24
+#: admin/lib/BFT/partials/bft-admin-display-what-is-bft.php:26
+#: admin/lib/BFT-PRO/partials/bft-admin-display-what-is-bft.php:26
 msgid "are libraries in continuous growth and developed by"
 msgstr "son librerías en continuo crecimiento y desarrolladas por"
 
