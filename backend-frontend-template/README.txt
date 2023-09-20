@@ -7,7 +7,7 @@ Stable tag: 1.0.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-BFT is a plugin, template and library for develop WordPress plugins easily and quickly. Save time, do more
+A WordPress plugin template for develop plugins easily, quickly and professional. Save time, do more with this plugin, template and library
 
 == Description ==
 

@@ -1,6 +1,8 @@
 # Backend Frontend Template
 
-A plugin, template and library for develop WordPress plugins easily and quickly. Save time, do more
+A WordPress Plugin Template for develop plugins easily, quickly and professional. Save time, do more with this plugin, template and library
+
+![Backend Frontend Template is a WordPress Plugin Template](https://moisesbarrachina.online/wp-content/uploads/2023/09/Logo-BFT-Github-2.png)
 
 ## Screenshots
 
@@ -783,7 +785,7 @@ You can save even more time with [BFT Pro](https://moisesbarrachina.online/en/pr
 
 ## Upgrading later
 
-You can start now with the totally free version and later upgrade to BFT Pro
+You can start now with the totally free version of this WordPress Plugin Template and later upgrade to BFT Pro
 
 When you buy Backend Frontend Template Pro you will have two folders in the download, one folder has everything, a complete plugin, and the other folder only contains the new BFT Pro licensed files, so it will not replace any existing files
 
