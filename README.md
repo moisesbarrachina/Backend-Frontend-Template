@@ -2,7 +2,7 @@
 
 A WordPress Plugin Template for develop plugins easily, quickly and professional. Save time, do more with this plugin, template and library
 
-![Backend Frontend Template is a WordPress Plugin Template](https://moisesbarrachina.online/wp-content/uploads/2023/09/Logo-BFT-Github-2.png)
+![Backend Frontend Template is a WordPress Plugin Template](https://moisesbarrachina.online/wp-content/uploads/2023/09/Logo-BFT-Github-3.png)
 
 ## Screenshots
 
