@@ -508,7 +508,7 @@ Backend Frontend Template is licensed under the GPL v3 or later
 
 ## Credits
 
-Backend Frontend Template uses the basic structure for a plugin established by The WordPress Plugin Boilerplate was started in 2011 by [WordPress Plugin Boilerplate](https://github.com/DevinVinson/WordPress-Plugin-Boilerplate)
+Backend Frontend Template uses the basic structure [WordPress Plugin Boilerplate](https://github.com/DevinVinson/WordPress-Plugin-Boilerplate)
 
 ___
 
