@@ -7,7 +7,7 @@ Stable tag: 1.0.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-A WordPress plugin template for develop plugins easily, quickly and professional. Save time, do more with this plugin, template and library
+A WordPress plugin template for develop plugins easily, quickly and professionally. Save time, do more with this plugin, template and library
 
 == Description ==
 
