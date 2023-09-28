@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-03 23:35+0100\n"
-"PO-Revision-Date: 2023-09-15 18:52+0200\n"
+"PO-Revision-Date: 2023-09-28 19:10+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -7385,3 +7385,11 @@ msgstr "esto es un formulario estático y cacheable"
 #: public/partials/your-plugin-shortcode-form-test-static.php:31
 msgid "Test form"
 msgstr "Formulario de prueba"
+
+#: backend-frontend-template-pro.php:11
+msgid "The plugin CANNOT BE ACTIVATED if Backend Frontend Template (non Pro version) if is already activated"
+msgstr "El plugin NO SE PUEDE ACTIVAR si Backend Frontend Template (versión no Pro) está activado también!"
+
+#: backend-frontend-template-pro.php:11
+msgid "first deactive it"
+msgstr "primero desactívelo"

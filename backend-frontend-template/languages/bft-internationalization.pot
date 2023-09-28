@@ -7557,3 +7557,11 @@ msgstr ""
 #: public/partials/your-plugin-shortcode-form-test-static.php:31
 msgid "Test form"
 msgstr ""
+
+#: backend-frontend-template-pro.php:11
+msgid "The plugin CANNOT BE ACTIVATED if Backend Frontend Template (non Pro version) if is already activated"
+msgstr ""
+
+#: backend-frontend-template-pro.php:11
+msgid "first deactive it"
+msgstr ""
