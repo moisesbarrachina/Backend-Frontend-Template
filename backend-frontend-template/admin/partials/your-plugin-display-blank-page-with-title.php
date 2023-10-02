@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Area view for the plugin: blank page with the menu tabs and title of the page
+ * Area view for the plugin: blank page with the menu tabs and page title
  *
  * @link		https://yourfuturewebsite
  * @since		0.0.1

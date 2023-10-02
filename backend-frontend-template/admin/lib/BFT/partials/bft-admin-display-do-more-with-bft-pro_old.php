@@ -5,7 +5,7 @@
  *
  * @link		https://moisesbarrachina.online/
  * @since		1.0.0
- * @version		1.0.0
+ * @version		1.1.0
  * @package		BFT
  * @subpackage	BFT/admin/lib/BFT/partials
  * @author		Moisés Barrachina Planelles <info@moisesbarrachina.online>
@@ -27,7 +27,7 @@ $this->admin_permission_check();
 	<p>Backend Frontend Template Pro <?=$this->esc_html_e("expand your posibilities, make a lot more on less time")?>. <a target="_blank" href="https://moisesbarrachina.online/en/producto/backend-frontend-template-pro/"><?=$this->esc_html_e("Check it out on the shop and save time!")?></a></p>
 	<ol>
 		<li>
-			<h3><?=$this->esc_html_e("Menú system with childs")?></h3>
+			<h3><?=$this->esc_html_e("Menu system with children")?></h3>
 			<p><?=$this->esc_html_e("Add child pages and organize better your plugin")?></p>
 			<p><img src="<?=plugin_dir_url( __FILE__ )?>../img/nested_menu_basic.png" class="bft_image_80"/></p>
 		</li>
@@ -105,7 +105,7 @@ $this->admin_permission_check();
 					"type" => "datetime",
 					"display_table" => false,
 					"readonly" => true,
-					"only_on_active" => true,
+					"only_in_active" => true,
 				],
 				$this->database_datetime_removed_name => [
 					"label" => $this->database_datetime_removed_text,
@@ -113,7 +113,7 @@ $this->admin_permission_check();
 					"type" => "datetime",
 					"display_table" => true,
 					"readonly" => true,
-					"only_on_removed" => true,
+					"only_in_removed" => true,
 				],
 				"hours" => [
 					"label" => $this->__("Total hours of the course"),
@@ -156,7 +156,7 @@ $this->admin_permission_check();
 		</li>
 		<li>
 			<h3><?=$this->esc_html_e("Direct listing by array")?></h3>
-			<p><?=$this->esc_html_e("A WordPress listing style thanks to a array")?></p>
+			<p><?=$this->esc_html_e("A WordPress listing style thanks to an array")?></p>
 			<pre>
 	$display_table_data = [
 		"data" => [

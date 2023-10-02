@@ -5,7 +5,7 @@
  *
  * @link		https://moisesbarrachina.online
  * @since		1.0.0
- * @version		1.0.0
+ * @version		1.1.0
  * @package		BFT
  * @subpackage	BFT/public/lib/BFT
  * @author		Moisés Barrachina Planelles <info@moisesbarrachina.online>
@@ -60,7 +60,7 @@ class Your_Plugin_BFT_Public extends Your_Plugin_Admin_Public {
 	 * Initialize the class and set its properties.
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		array		$plugin_info 		title, id, slug and version of the plugin
 	 * @return		null
 	 */
@@ -87,7 +87,7 @@ class Your_Plugin_BFT_Public extends Your_Plugin_Admin_Public {
 	 * Register the stylesheets for the public area
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		null
 	 */
 	public function enqueue_styles() {
@@ -104,7 +104,7 @@ class Your_Plugin_BFT_Public extends Your_Plugin_Admin_Public {
 	 * Register the JavaScript for the public  area
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		null
 	 */
 	public function enqueue_scripts() {
@@ -121,7 +121,7 @@ class Your_Plugin_BFT_Public extends Your_Plugin_Admin_Public {
 	 * Function where create all shortcodes.
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		null
 	 */
 	public function shortcodes_init() {
@@ -143,7 +143,7 @@ class Your_Plugin_BFT_Public extends Your_Plugin_Admin_Public {
 	 * BFT Mini version
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		boolean				$print
 	 * @return		string|echo			
 	 */
@@ -155,7 +155,7 @@ class Your_Plugin_BFT_Public extends Your_Plugin_Admin_Public {
 	 * Prepare the variables
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		null
 	 */
 	public function custom_variables_set() {
@@ -183,10 +183,10 @@ class Your_Plugin_BFT_Public extends Your_Plugin_Admin_Public {
 	 * 
 	 * Display a Hello World
 	 * 
-	 * Example: [bft-shortcode-test aditional_text="This is an aditional text"]The text inside de tags[/bft-shortcode-test]
+	 * Example: [bft-shortcode-test additional_text="This is an additional text"]The text inside de tags[/bft-shortcode-test]
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		array				$atts		Shortcode attributes. Default empty.
 	 * @param		string				$content	Shortcode content. Default null.
 	 * @param		string				$tag		Shortcode tag (name). Default empty.
@@ -198,8 +198,8 @@ class Your_Plugin_BFT_Public extends Your_Plugin_Admin_Public {
 
 		$html_aux = "";
 
-		if (isset($atts["aditional_text"])) {
-			$html_aux .= "<h4>".esc_html($atts["aditional_text"])."</h4>";
+		if (isset($atts["additional_text"])) {
+			$html_aux .= "<h4>".esc_html($atts["additional_text"])."</h4>";
 		}
 
 		if (!is_null($content)) {
@@ -290,7 +290,7 @@ class Your_Plugin_BFT_Public extends Your_Plugin_Admin_Public {
 	 * Enclosing tags
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string		$content	
 	 * @return		string|echo				
 	 */
@@ -311,7 +311,7 @@ class Your_Plugin_BFT_Public extends Your_Plugin_Admin_Public {
 	 * BFT Mini version
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		array		$_POST
 	 * @param		boolean		$print
 	 * @return		echo				

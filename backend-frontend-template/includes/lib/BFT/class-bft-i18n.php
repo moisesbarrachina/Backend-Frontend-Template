@@ -7,7 +7,7 @@
  *
  * @link		https://moisesbarrachina.online
  * @since		1.0.0
- * @version		1.0.0
+ * @version		1.1.0
  * @package		BFT
  * @subpackage	BFT/includes/lib/BFT
  * @author		Moisés Barrachina Planelles <info@moisesbarrachina.online>
@@ -19,7 +19,7 @@ class Your_Plugin_BFT_i18n {
 	 * Load the plugin text domain for translation.
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 */
 	public function load_plugin_textdomain() {
 

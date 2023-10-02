@@ -5,7 +5,7 @@
  *
  * @link		https://moisesbarrachina.online
  * @since		1.0.0
- * @version		1.0.0
+ * @version		1.1.0
  * @package		BFT
  * @subpackage	BFT/admin/lib/BFT/partials
  * @author		Moisés Barrachina Planelles <info@moisesbarrachina.online>
@@ -37,7 +37,7 @@ $this->admin_permission_check();
 				<li><?=$this->esc_html_e("Uncomment")?>: "<b>//$this->admin_pages_main_name = $this->plugin_title;</b> on <b>wp-content/plugins/backend-frontend-template/admin/class-your-plugin-admin.php</b></li>
 				<li><?=$this->esc_html_e("Find and replace all the file names with")?> <b>'your-plugin'</b> <?=$this->esc_html_e("like")?> 'class-your-plugin.php' <?=$this->esc_html_e("to your plugin id")?>, <?=$this->esc_html_e("example")?>: 'class-a-plugin-name.php'.</li>
 				<li><?=$this->esc_html_e("On")?> <b>wp-content/plugins/backend-frontend-template/languages</b> <?=$this->esc_html_e("replace the file names with")?> <b>'bft-internationalization'</b> <?=$this->esc_html_e("to")?> 'your-plugin', <?=$this->esc_html_e("example")?>: 'a-plugin-name-es_ES.mo'</li>
-				<li><?=$this->esc_html_e("Go to search and replace of your editor, active 'match case' and replace this strings")?>:
+				<li><?=$this->esc_html_e("Go to search and replace of your editor, active 'match case' and replace these strings")?>:
 					<ol>
 						<li><b>'bft-internationalization'</b> <?=$this->esc_html_e("to")?> <b>'your-plugin'</b></li>
 						<li><b>'$plugin_slug = "bft_pro"'</b> <?=$this->esc_html_e("to")?> <b>$plugin_slug = "your_plugin"</b></li>
@@ -67,7 +67,7 @@ $this->admin_permission_check();
 			<ol>
 				<li>/admin -> <?=$this->esc_html_e("administration folder")?></li>
 				<li>/includes -> <?=$this->esc_html_e("global folder")?>, <?=$this->esc_html_e("for administration and plublic files")?></li>
-				<li>/languages -> <?=$this->esc_html_e("translation files")?>, <?=$this->esc_html_e("this binarian files are made with programs like")?> <a href="https://poedit.net/" target="_blank">Poedit</a> <?=$this->esc_html_e("or")?> <a href="http://www.eazypo.ca/" target="_blank">Eazy Po</a></li>
+				<li>/languages -> <?=$this->esc_html_e("translation files")?>, <?=$this->esc_html_e("these binarian files are made with programs like")?> <a href="https://poedit.net/" target="_blank">Poedit</a> <?=$this->esc_html_e("or")?> <a href="http://www.eazypo.ca/" target="_blank">Eazy Po</a></li>
 				<li>/private -> <?=$this->esc_html_e("for sensitive data that only a download script can send the file to the user")?></li>
 				<li>/admin -> <?=$this->esc_html_e("public folder")?></li>
 			</ol>

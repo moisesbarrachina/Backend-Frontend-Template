@@ -62,7 +62,7 @@ class Your_Plugin_Admin_Public extends Your_Plugin_BFT_Admin_Public {
 	 * Prepare the variables for the admin and public class
 	 *
 	 * @since		0.0.1
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 */
 	protected function custom_variables_admin_public_set() {
 

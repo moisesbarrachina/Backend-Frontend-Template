@@ -5,7 +5,7 @@
  *
  * @link		https://moisesbarrachina.online
  * @since		1.0.0
- * @version		1.0.0
+ * @version		1.1.0
  * @package		BFT
  * @subpackage	BFT/admin/lib/BFT/partials
  * @author		Moisés Barrachina Planelles <info@moisesbarrachina.online>
@@ -17,8 +17,8 @@ $this->admin_permission_check();
 	<h1><?=$this->esc_html_e($this->admin_title)?></h1>
 	<?=$this->html_tabs(false)?>
 	<h2><?=$this->esc_html_e($title)?></h2>
-	<p><?=$this->esc_html_e("Edit your menu on the variable")?> <b>$this->admin_pages</b> <?=$this->esc_html_e("of the file")?> <b>admin/class-your-plugin-admin.php</b></p>
-	<p><?=$this->esc_html_e("Design a BFT menu look like this")?>:</p>
+	<p><?=$this->esc_html_e("Edit your menu in the variable")?> <b>$this->admin_pages</b> <?=$this->esc_html_e("of the file")?> <b>admin/class-your-plugin-admin.php</b></p>
+	<p><?=$this->esc_html_e("Designing a BFT menu look like this")?>:</p>
 	<pre>
 	$this->admin_pages = [
 		"hello_world" => [
@@ -38,19 +38,19 @@ $this->admin_permission_check();
 	<p><?=$this->esc_html_e("Explaining the WPTT menu")?>:</p>
 	<ol>
 		<li>
-			<h3><?=$this->esc_html_e("Automatic parametters added to the array")?></h3>
+			<h3><?=$this->esc_html_e("Automatic parameters added to the array")?></h3>
 			<ul>
 				<li><b>id</b>: <?=$this->esc_html_e("the array key")?></li>
-				<li><?=$this->esc_html_e("More automatic parametters on BFT Pro")?></li>
+				<li><?=$this->esc_html_e("More automatic parameters on BFT Pro")?></li>
 			</ul>
 		</li>
 		<li>
 			<h3><?=$this->esc_html_e("Parametters with default data if missing")?></h3>
 			<ul>
-				<li><b>page_title</b>: <?=$this->esc_html_e("title of the page")?>, <?=$this->esc_html_e("default")?>: $this->admin_pages_page_title_default</li>
-				<li><b>menu_title</b>: <?=$this->esc_html_e("title of the tab of the page")?>, <?=$this->esc_html_e("default")?>: $this->admin_pages_page_title_default</li>
-				<li><b>menu_slug</b>: <?=$this->esc_html_e("slug of the page")?>, <?=$this->esc_html_e("default")?>: <?=$this->esc_html_e("key of the page")?>. <?=$this->esc_html_e("The Menu slug will be changed to")?>: $this->admin_pages_slug_name_prefix."_".menu_slug <?=$this->esc_html_e("because it's needed a unike page name among the plugins")?></li>
-				<li><b>tab_show</b>: <?=$this->esc_html_e("if false it doesn't show the tab of the page, even if is the page selected")?>, <?=$this->esc_html_e("default")?>: true</li>
+				<li><b>page_title</b>: <?=$this->esc_html_e("page title")?>, <?=$this->esc_html_e("default")?>: $this->admin_pages_page_title_default</li>
+				<li><b>menu_title</b>: <?=$this->esc_html_e("page tab title")?>, <?=$this->esc_html_e("default")?>: $this->admin_pages_page_title_default</li>
+				<li><b>menu_slug</b>: <?=$this->esc_html_e("page slug")?>, <?=$this->esc_html_e("default")?>: <?=$this->esc_html_e("key page")?>. <?=$this->esc_html_e("The menu slug will be changed to")?>: $this->admin_pages_slug_name_prefix."_".menu_slug <?=$this->esc_html_e("because it's needed a unique page name among the plugins")?></li>
+				<li><b>tab_show</b>: <?=$this->esc_html_e("if false does not display the page tab, even if the page is selected")?>, <?=$this->esc_html_e("default")?>: true</li>
 				<li><b>function</b>: <?=$this->esc_html_e("the function for when a page is displayed")?>, <?=$this->esc_html_e("default")?>: $this->admin_pages_function_default</li>
 				<li><b>function_load</b>: <?=$this->esc_html_e("loads the function before a page is displayed")?>,<?=$this->esc_html_e("default")?>: $this->admin_pages_function_load_default</li>
 				<li><b>file</b>: <?=$this->esc_html_e("the")?> admin/partials <?=$this->esc_html_e("file that will be displayed")?>, default: $this->admin_pages_file_default (<?=$this->esc_html_e("If the file starts with")?> 'bft-' <?=$this->esc_html_e("the file will be loaded of the folder")?> admin/lib/BFT/partials</li>
@@ -63,13 +63,13 @@ $this->admin_permission_check();
 				</li>
 				<li><b>error_throw_file_change</b>: <?=$this->esc_html_e("change the file option if")?> error_throw_what_do <?=$this->esc_html_e("is triggered")?>, <?=$this->esc_html_e("default")?>: false</li>
 				<li><b>capability</b>, <?=$this->esc_html_e("default")?>: "manage_options", <?=$this->esc_html_e("WordPress capabilities")?>: https://wordpress.org/support/article/roles-and-capabilities/</li>
-				<li><?=$this->esc_html_e("More parametters on BFT Pro")?></li>
+				<li><?=$this->esc_html_e("More parameters on BFT Pro")?></li>
 			</ul>
 		</li>
 		<li>
 			<h3><?=$this->esc_html_e("Available functions out of the box")?> (<?=$this->esc_html_e("you can create whatever function you need")?>)</h3>
 			<ul>
-				<li><b>admin_menu_page_display</b>: <?=$this->esc_html_e("display the page selected on")?> 'file'</li>
+				<li><b>admin_menu_page_display</b>: <?=$this->esc_html_e("displays the page selected on")?> 'file'</li>
 				<li><?=$this->esc_html_e("More functions on")?> BFT Pro</li>
 			</ul>
 		</li>
@@ -80,14 +80,14 @@ $this->admin_permission_check();
 			</ul>
 		</li>
 		<li>
-			<h3><?=$this->esc_html_e("Optional parametters")?></h3>
+			<h3><?=$this->esc_html_e("Optional parameters")?></h3>
 			<ul>
 				<li><b>page_copy_of</b>: <?=$this->esc_html_e("copy the data of a page. Only copy the data not found on the page, neither copy id, is_child, page_parent, menu_slug and children")?></li>
-				<li><?=$this->esc_html_e("More optional parametters on")?> BFT Pro</li>
+				<li><?=$this->esc_html_e("More optional parameters on")?> BFT Pro</li>
 			</ul>
 		</li>
 		<li>
-			<h3><?=$this->esc_html_e("Your own parametters")?></h3>
+			<h3><?=$this->esc_html_e("Your own parameters")?></h3>
 			<ul>
 				<li>
 					<?=$this->esc_html_e("You can create your own parameter, later on you can access to the info on a function or on a page with")?>:

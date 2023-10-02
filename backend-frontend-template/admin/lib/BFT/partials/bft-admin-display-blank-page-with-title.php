@@ -1,11 +1,11 @@
 <?php
 
 /**
- * Area view for the plugin: blank page with the menu tabs and title of the page
+ * Area view for the plugin: blank page with the menu tabs and page title
  *
  * @link		https://moisesbarrachina.online
  * @since		1.0.0
- * @version		1.0.0
+ * @version		1.1.0
  * @package		BFT
  * @subpackage	BFT/admin/lib/BFT/partials
  * @author		Moisés Barrachina Planelles <info@moisesbarrachina.online>

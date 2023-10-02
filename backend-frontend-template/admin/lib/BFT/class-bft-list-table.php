@@ -8,7 +8,7 @@
  * 
  * @link		https://moisesbarrachina.online
  * @since		1.0.0
- * @version		1.0.0
+ * @version		1.1.0
  * @package		BFT-PRO
  * @subpackage	BFT-PRO/includes/lib/BFT-PRO
  * @author		Moisés Barrachina Planelles <info@moisesbarrachina.online>
@@ -18,7 +18,7 @@ class Your_Plugin_BFT_Display_Table extends Your_Plugin_BFT_List_Table{
 	 * Retrieve columns
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @var			array
 	 */
 	protected $columns_original_copy = array();
@@ -27,7 +27,7 @@ class Your_Plugin_BFT_Display_Table extends Your_Plugin_BFT_List_Table{
 	 * List of columns
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @var			array
 	 */
 	protected $columns = array();
@@ -36,7 +36,7 @@ class Your_Plugin_BFT_Display_Table extends Your_Plugin_BFT_List_Table{
 	 * Key of the first colum retrieve
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @var			string
 	 */
 	protected $column_first_key = "";
@@ -45,7 +45,7 @@ class Your_Plugin_BFT_Display_Table extends Your_Plugin_BFT_List_Table{
 	 * Items per page
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @var			int
 	 */
 	protected $items_per_page = 99999;	
@@ -54,7 +54,7 @@ class Your_Plugin_BFT_Display_Table extends Your_Plugin_BFT_List_Table{
 	 * Name of the colum with actions
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @var			string | boolean
 	 */
 	protected $column_action_key = false;
@@ -63,7 +63,7 @@ class Your_Plugin_BFT_Display_Table extends Your_Plugin_BFT_List_Table{
 	 * Fixed get for all rows
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @var			string | boolean
 	 */
 	protected $get_extra_all_rows = "";
@@ -72,7 +72,7 @@ class Your_Plugin_BFT_Display_Table extends Your_Plugin_BFT_List_Table{
 	 * Target slug for the edit action
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @var			string | boolean
 	 */
 	protected $column_action_edit_slug = false;
@@ -81,7 +81,7 @@ class Your_Plugin_BFT_Display_Table extends Your_Plugin_BFT_List_Table{
 	 * Name of the colum with the id of the item
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @var			string
 	 */
 	protected $items_column_key = false;
@@ -90,7 +90,7 @@ class Your_Plugin_BFT_Display_Table extends Your_Plugin_BFT_List_Table{
 	 * Total number of items, pagination aside
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @var			boolean
 	 */
 	protected $items_count = 0;
@@ -99,7 +99,7 @@ class Your_Plugin_BFT_Display_Table extends Your_Plugin_BFT_List_Table{
 	 * Total number of items actives
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @var			boolean
 	 */
 	protected $items_count_status_active = false;
@@ -108,7 +108,7 @@ class Your_Plugin_BFT_Display_Table extends Your_Plugin_BFT_List_Table{
 	 * Total number of items on bin
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @var			boolean
 	 */
 	protected $items_count_status_bin = false;
@@ -117,7 +117,7 @@ class Your_Plugin_BFT_Display_Table extends Your_Plugin_BFT_List_Table{
 	 * The user is searching
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @var			boolean
 	 */
 	protected $search_active = false;
@@ -136,7 +136,7 @@ class Your_Plugin_BFT_Display_Table extends Your_Plugin_BFT_List_Table{
 	 * BFT Mini version
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param 		array		$display_table_data		All the data of the table
 	 * @return		echo
 	 * 
@@ -148,7 +148,7 @@ class Your_Plugin_BFT_Display_Table extends Your_Plugin_BFT_List_Table{
 	 * Return the columns
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		array
 	 */
 	public function get_columns() {
@@ -159,7 +159,7 @@ class Your_Plugin_BFT_Display_Table extends Your_Plugin_BFT_List_Table{
 	 * Return data of defined and undefined columns
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		string
 	 * 
 	 * BFT Mini version
@@ -175,7 +175,7 @@ class Your_Plugin_BFT_Display_Table extends Your_Plugin_BFT_List_Table{
 	 * BFT Mini version
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		array
 	 */
 	public function get_sortable_columns() {
@@ -190,7 +190,7 @@ class Your_Plugin_BFT_Display_Table extends Your_Plugin_BFT_List_Table{
 	 * BFT Mini version
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		string
 	 */
 	public function prepare_items() {
@@ -202,7 +202,7 @@ class Your_Plugin_BFT_Display_Table extends Your_Plugin_BFT_List_Table{
 	 * BFT Mini version
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		array
 	 */
 	function get_bulk_actions() {
@@ -214,7 +214,7 @@ class Your_Plugin_BFT_Display_Table extends Your_Plugin_BFT_List_Table{
 	 * BFT Mini version
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		array
 	 */
 	function column_cb($item) {
@@ -222,10 +222,10 @@ class Your_Plugin_BFT_Display_Table extends Your_Plugin_BFT_List_Table{
 	}
 
 	/**
-	 * Echo on the log
+	 * Echo in the log
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string		$log		Text to insert
 	 * @return		echo					on the WordPress log if WP_DEBUG is ON
 	 */
@@ -241,10 +241,10 @@ class Your_Plugin_BFT_Display_Table extends Your_Plugin_BFT_List_Table{
     }
 
 	/**
-	 * Echo on the log, alternative name
+	 * Echo in the log, alternative name
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string		$log		Text to insert
 	 * @return		echo					on the WordPress log if WP_DEBUG is ON
 	 */
@@ -256,7 +256,7 @@ class Your_Plugin_BFT_Display_Table extends Your_Plugin_BFT_List_Table{
 	 * Adds the domain to the WordPress function __
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string			$text				text to translate
 	 * @param		string|null		$domain				domain to use
 	 * @return		string|echo
@@ -270,7 +270,7 @@ class Your_Plugin_BFT_Display_Table extends Your_Plugin_BFT_List_Table{
 	 * Check what internationalization domain to use
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string		$domain				domain to use
 	 * @return		string
 	 */

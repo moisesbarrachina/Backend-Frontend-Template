@@ -1,11 +1,11 @@
 <?php
 
 /**
- * Area view for the plugin: blank page with the menu tabs, title of the page and var_dump of the $data variable
+ * Area view for the plugin: blank page with the menu tabs, page title and var_dump of the $data variable
  *
  * @link		https://moisesbarrachina.online
  * @since		1.0.0
- * @version		1.0.0
+ * @version		1.1.0
  * @package		BFT
  * @subpackage	BFT/admin/lib/BFT/partials
  * @author		Moisés Barrachina Planelles <info@moisesbarrachina.online>

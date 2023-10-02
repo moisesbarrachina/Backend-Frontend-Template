@@ -5,7 +5,7 @@
  *
  * @link		https://moisesbarrachina.online
  * @since		1.0.0
- * @version		1.0.0
+ * @version		1.1.0
  * @package		BFT
  * @subpackage	BFT/admin/lib/BFT/partials
  * @author		Moisés Barrachina Planelles <info@moisesbarrachina.online>
@@ -53,11 +53,11 @@ $this->admin_permission_check();
 		</li>
 		<li>
 			<h3>$this->currency_symbol_get($currency_id)</h3>
-			<p><?=$this->esc_html_e("Returns a currency symbol through the currency code")?></p>
+			<p><?=$this->esc_html_e("Returns the currency symbol through the currency code")?></p>
 		</li>
 		<li>
 			<h3>$this->currency_code_get($currency_id)</h3>
-			<p><?=$this->esc_html_e("Returns a the ISO 4217 number through the currency id")?></p>
+			<p><?=$this->esc_html_e("Returns the ISO 4217 number through the currency id")?></p>
 		</li>
 	</ol>
 </div>

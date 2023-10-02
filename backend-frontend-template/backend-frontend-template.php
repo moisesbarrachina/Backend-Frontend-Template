@@ -7,7 +7,7 @@
  *
  * @wordpress-plugin
  * Plugin Name:			Backend Frontend Template
- * Plugin URI:			https://github.com/moisesbarrachina/Backend-Frontend-Template
+ * Plugin URI:			https://github.com/moisesbarrachina/Backend-Frontend-Template-the-WordPress-Plugin-Template
  * Description:			Create an advanced plugin quickly and easily. BFT is not only a template, it's also a library for WordPress plugin developers
  * 
  * Version:				1.0.0
@@ -38,7 +38,7 @@ update_option( 'bft_version', $plugin_version);
  * The code that runs during plugin activation.
  * 
  * @since    	1.0.0
- * @version		1.0.0
+ * @version		1.1.0
  */
 function activate_bft() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-your-plugin-install-upgrade-deinstall-database.php';
@@ -51,7 +51,7 @@ register_activation_hook( __FILE__, 'activate_bft' );
  * The code that runs during plugin deactivation.
  * 
  * @since    	1.0.0
- * @version		1.0.0
+ * @version		1.1.0
  */
 function deactivate_bft() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-your-plugin-install-upgrade-deinstall-database.php';
@@ -69,7 +69,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-bft.php';
  * Begins execution of the plugin.
  * 
  * @since    	1.0.0
- * @version		1.0.0
+ * @version		1.1.0
  */
 function run_bft() {
 	$plugin = new BFT();

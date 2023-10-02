@@ -5,7 +5,7 @@
  *
  * @link		https://moisesbarrachina.online
  * @since		1.0.0
- * @version		1.0.0
+ * @version		1.1.0
  * @package		BFT
  * @subpackage	BFT/admin/lib/BFT/partials
  * @author		Moisés Barrachina Planelles <info@moisesbarrachina.online>
@@ -37,7 +37,7 @@ $this->admin_permission_check();
 			<p><?=$this->esc_html_e("The variables of the function are")?>:</p>
 			<ul>
 				<li><b>$atts</b>: <?=$this->esc_html_e("array with all the data specified on the shortcode")?></li>
-				<li><b>$content</b>: <?=$this->esc_html_e("the content inside the two tags, if the shortcode uses a clossing tag")?></li>
+				<li><b>$content</b>: <?=$this->esc_html_e("the content within the two tags, if the shortcode uses a clossing tag")?></li>
 				<li><b>$tag</b>: <?=$this->esc_html_e("the shotcode tag")?></li>
 				<li></li>
 			</ul>
@@ -65,8 +65,8 @@ $this->admin_permission_check();
 
 		$html_aux = "";
 
-		if (isset($atts["aditional_text"])) {
-			$html_aux .= "<?=esc_html("<h4>")?>".esc_html($atts["aditional_text"])."<?=esc_html("</h4>")?>";
+		if (isset($atts["additional_text"])) {
+			$html_aux .= "<?=esc_html("<h4>")?>".esc_html($atts["additional_text"])."<?=esc_html("</h4>")?>";
 		}
 
 		if (!is_null($content)) {
@@ -82,14 +82,14 @@ $this->admin_permission_check();
 			</pre>
 		</li>
 		<li>
-			<h3><?=$this->esc_html_e("Test yourself")?></h3>
+			<h3><?=$this->esc_html_e("Try it for yourself")?></h3>
 			<p><?=$this->esc_html_e("Create a page, insert a shortcode block and put")?>:</p>
 			<pre>
 		[bft-shortcode-test]
 			</pre>
 			<p><?=$this->esc_html_e("Or")?>:</p>
 			<pre>
-		[bft-shortcode-test aditional_text="<?=$this->esc_html_e("This is an aditional text")?>"]<?=$this->esc_html_e("The text inside de tags")?>[/bft-shortcode-test]
+		[bft-shortcode-test additional_text="<?=$this->esc_html_e("This is an additional text")?>"]<?=$this->esc_html_e("The text inside de tags")?>[/bft-shortcode-test]
 			</pre>
 		</li>
 	</ol>

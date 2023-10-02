@@ -5,7 +5,7 @@
  *
  * @link		https://moisesbarrachina.online
  * @since		1.0.0
- * @version		1.0.0
+ * @version		1.1.0
  * @package		BFT
  * @subpackage	BFT/admin/lib/BFT/partials
  * @author		Moisés Barrachina Planelles <info@moisesbarrachina.online>
@@ -40,9 +40,9 @@ $url_test = admin_url()."admin.php?page=".$this->plugin_slug."_throw_error_and_r
 					<b>$this->error_throw ($error_message = "", $error_throw_what_do_use_this = NULL, $error_throw_file_change_use_this = NULL, $triggered_on_function_load = false, $page_id = NULL)</b>
 				</p>
 				<ul>
-					<li><b>$error_message</b>: <?=$this->esc_html_e("error to send to")?> $this->error_show(), <?=$this->esc_html_e("but first it will display the 'error_message' stored on the URL")?></li>
+					<li><b>$error_message</b>: <?=$this->esc_html_e("error to send to")?> $this->error_show(), <?=$this->esc_html_e("but first it will display the 'error_message' stored in the URL")?></li>
 					<li><b>$error_throw_what_do_use_this</b>: <?=$this->esc_html_e("for use this data instead of")?> $this->admin_pages_data_get("error_throw_what_do"), <?=$this->esc_html_e("options")?>: show_error, show_error_and_die, go_to_parent</li>
-					<li><b>$error_throw_file_change_use_this</b>: <?=$this->esc_html_e("default NULL")?>, <?=$this->esc_html_e("use this data instead of")?> $this->admin_pages_data_get("error_throw_file_change"), <?=$this->esc_html_e("for change the file displayed if error triggerred")?></li>
+					<li><b>$error_throw_file_change_use_this</b>: <?=$this->esc_html_e("default NULL")?>, <?=$this->esc_html_e("it use this data instead of")?> $this->admin_pages_data_get("error_throw_file_change"), <?=$this->esc_html_e("for change the file displayed if error triggered")?></li>
 					<li><b>$triggered_on_function_load</b>: <?=$this->esc_html_e("default false")?>, 'go_to_parent' <?=$this->esc_html_e("only works if")?> true == $triggered_on_function_load <?=$this->esc_html_e("because it's needed do the redirect before sending the headers")?> (<?=$this->esc_html_e("id required data and go to parent are only BFT Pro options")?>)</li>
 					<li><b>$page_id</b>: <?=$this->esc_html_e("the key/page name, if null it's the visualized page")?></li>
 				</ul>

@@ -1,8 +1,15 @@
-# Backend Frontend Template
+# Backend Frontend Template: a WordPress Plugin Template
 
-A WordPress Plugin Template for develop plugins easily, quickly and professional. Save time, do more with this plugin, template and library
+Backend Frontend Template Pro is a template and library with which to develop plugins for WordPress easily and quickly. You won't have to reinvent the wheel to get a WordPress plugin created, just develop your idea.
 
-![Backend Frontend Template is a WordPress Plugin Template](https://moisesbarrachina.online/wp-content/uploads/2023/09/Logo-BFT-Github-3.png)
+Get started now, it's not necessary to know all the [WordPress plugin developments documentation](https://developer.wordpress.org/plugins/intro/) because you won't need to know WordPress functions like [add_menu_page](https://developer.wordpress.org/reference/functions/add_menu_page/), [add_submenu_page](https://developer.wordpress.org/reference/functions/add_submenu_page/), [add_settings_section](https://developer.wordpress.org/reference/functions/add_settings_section/), [add_settings_field](https://developer.wordpress.org/reference/functions/add_settings_field/), [register_setting](https://developer.wordpress.org/reference/functions/register_setting/) among others. Nor will it be necessary to reinvent the wheel or investigate, this WordPress plugin template makes it easy and explains step by step unlike a simple WordPress boilerplate that only generates doubts and will make you waste too many hours
+
+Withthis template/library you can develop your plugin right now just by following the installation, making the plugin yours, checking the content, and seeing the examples only of what you need
+
+Save time and focus on developing your idea.
+
+![Backend Frontend Template is a WordPress Plugin Template](https://moisesbarrachina.online/wp-content/uploads/2023/10/Logo-BFT-Github-4.png)
+
 
 ## Screenshots
 
@@ -31,20 +38,20 @@ Client side: shortcode results
 
 ### Install the code
 
-Download the code, copy the folder 'bft' on your WordPress instalation/wp-contentplugins and follow 
+Download the code, copy the folder 'backend-frontend-template' on your WordPress instalation/wp-content/plugins and follow 
 
 ### Make the plugin your own
 
-1. Change the files of wp-content/plugins/bft with the id of your plugin (like 'a-plugin-name')
+1. Change the files of wp-content/plugins/backend-frontend-template with the id of your plugin (like 'a-plugin-name')
 2. Delete the files or change their extension:
-    1. wp-content/plugins/bft/bft.php
-    2. wp-content/plugins/bft/includes/class-bft.php
+    1. wp-content/plugins/backend-frontend-template/backend-frontend-template.php
+    2. wp-content/plugins/backend-frontend-template/includes/class-backend-frontend-template.php
 3. Change the extension of the files to PHP:
-    1. wp-content/plugins/bft/your-plugin.txt
-    2. wp-content/plugins/bft/includes/class-your-plugin.txt
-4. Uncomment: "//$this->admin_pages_main_name = $this->plugin_title; on wp-content/plugins/bft/admin/class-your-plugin-admin.php
+    1. wp-content/plugins/backend-frontend-template/your-plugin.txt
+    2. wp-content/plugins/backend-frontend-template/includes/class-your-plugin.txt
+4. Uncomment: "//$this->admin_pages_main_name = $this->plugin_title; on wp-content/plugins/backend-frontend-template/admin/class-your-plugin-admin.php
 5. Find and replace all the file names with 'your-plugin' like 'class-your-plugin.php' to your plugin id, example: 'class-a-plugin-name.php'.
-6. On wp-content/plugins/bft-mini/languages replace the file names with 'bft-internationalization' to 'your-plugin', example: 'a-plugin-name-es_ES.mo'
+6. On wp-content/plugins/backend-frontend-template/languages replace the file names with 'bft-internationalization' to 'your-plugin', example: 'a-plugin-name-es_ES.mo'
 7. Go to search and replace of your editor, active 'match case' and replace this strings:
     1. 'bft-internationalization' to 'your-plugin'
     2. '$plugin_slug = "bft_pro"' to $plugin_slug = "your_plugin"
@@ -61,7 +68,7 @@ Download the code, copy the folder 'bft' on your WordPress instalation/wp-conten
     8. Your_Plugin
     9. your-plugin
     10. YOUR_PLUGIN
-9. Replace the icon for you own on wp-content/plugins/bft/admin/img/icon-16px.png
+9. Replace the icon for you own on wp-content/plugins/backend-frontend-template/admin/img/icon-16px.png
 
 ## BFT content
 
@@ -72,14 +79,6 @@ Download the code, copy the folder 'bft' on your WordPress instalation/wp-conten
 3. /languages -> translation files, this binarian files are made with programs like Poedit
 4. /private -> for sensitive data that only a download script can send the file to the user
 5. /admin -> public folder
-
-### BFT sub-folders
-
-1. /css -> CSS files
-2. /img -> images
-3. /js -> JavaScript files
-4. /lib -> library, the internal BFT files are stored here
-5. /partials -> frontend files
 
 ### BFT sub-folders
 
@@ -132,35 +131,35 @@ Download the code, copy the folder 'bft' on your WordPress instalation/wp-conten
 
     Explaining the WPTT menu:
 
-    1. Automatic parametters added to the array
+    1. Automatic parameters added to the array
         * id: the array key
-        * More automatic parametters on BFT Pro
+        * More automatic parameters on BFT Pro
 
     2. Parametters with default data if missing
-        * page_title: title of the page, default: $this->admin_pages_page_title_default
-        * menu_title: title of the tab of the page, default: $this->admin_pages_page_title_default
-        * menu_slug: slug of the page, default: key of the page. The Menu slug will be changed to: $this->admin_pages_slug_name_prefix."_".menu_slug because it's needed a unike page name among the plugins
-        * tab_show: if false it doesn't show the tab of the page, even if is the page selected, default: true
+        * page_title: page title, default: $this->admin_pages_page_title_default
+        * menu_title: page tab title, default: $this->admin_pages_page_title_default
+        * menu_slug: page slug, default: key page. The menu slug will be changed to: $this->admin_pages_slug_name_prefix."_".menu_slug because it's needed a unique page name among the plugins
+        * tab_show: if false does not display the page tab, even if the page is selected, default: true
         * function: the function for when a page is displayed, default: $this->admin_pages_function_default
         * function_load: loads the function before a page is displayed,default: $this->admin_pages_function_load_default
         * file: the admin/partials file that will be displayed, default: $this->admin_pages_file_default (If the file starts with 'bft-' the file will be loaded of the folder admin/lib/BFT/partials
         * error_throw_what_do, it's used on error_throw, options: show_error: show the error (default option), show_error_and_die: show the error and stop the execution, go_to_parent: go to the parent page and anotes on the GET data the error (only works on BFT Pro and if $triggered_on_function_load = true, because on a normal WordPress function will cause the error: 'Cannot modify header information - headers already sent')
         * error_throw_file_change: change the file option if error_throw_what_do is triggered, default: false
         * capability, default: "manage_options", WordPress capabilities: https://wordpress.org/support/article/roles-and-capabilities/
-        * More parametters on BFT Pro
+        * More parameters on BFT Pro
     
     3. Available functions out of the box (you can create whatever function you need)
-        * admin_menu_page_display: display the page selected on 'file'
+        * admin_menu_page_display: displays the page selected on 'file'
         * More functions on BFT Pro
 
     4. Functions load available out of the box (you can create whatever function you need)
         * More functions load on BFT Pro
    
-    5. Optional parametters
+    5. Optional parameters
         * page_copy_of: copy the data of a page. Only copy the data not found on the page, neither copy id, is_child, page_parent, menu_slug and children
-        * More optional parametters on BFT Pro
+        * More optional parameters on BFT Pro
     
-    6. Your own parametters
+    6. Your own parameters
         * You can create your own parameter, later on you can access to the info on a function or on a page with: $variable_name = $this->admin_pages_data_get("parametter_name");. And if you want you can retrieve the data of a certain page with $page_name, and retrieve all the array data with $key = false, $variable_name = $this->admin_pages_data_get($key = false, $page_name = NULL)
 
         * You can set later your own parameter by code with: $this->admin_pages_data_set($key, $data, $page_name = NULL)
@@ -171,20 +170,20 @@ Download the code, copy the folder 'bft' on your WordPress instalation/wp-conten
   
   ### The WordPress log with BFT
 
-    The log in WordPress is activated on wp-config.php, change:
+    The log in WordPress is activated in wp-config.php, change:
 
     define( 'WP_DEBUG', true );
     define( 'WP_DEBUG_LOG', true );
-    Now you can check the log on wp-content/debug.log
+    Now you can check the log in wp-content/debug.log
 
-    For printing on the log you can use the WordPress function error_log($string_or_number), but with Backend Frontend Template you can use: $this->debug_log_write($whatever)
+    For printing to the log you can use the WordPress function error_log($string_or_number), but with Backend Frontend Template you can use: $this->debug_log_write($whatever)
 
     $this->debug_log_write() it's a better option because it shows:
 
     'NULL' if its a NULL variable
     'TRUE' and 'FALSE' if it's a boolean
     print_r() if it's an array or object
-    Now you can print on the log whatever variable you want
+    Now you can print in the log whatever variable you want
 
     Also BFT offers an alternative name for debug_log_write: $this->write_log()
 </details>
@@ -200,14 +199,14 @@ Download the code, copy the folder 'bft' on your WordPress instalation/wp-conten
     Don't use private functions, BFT use inheritance on the classes and a private function can't inheritance
 
   #### Protected
-    Ideal for the internal functions for security reasons, only your classes can use this functions
+    Ideal for the internal functions for security reasons, only your classes can use these functions
 
   #### Public
     Some functions need to be public due to how WordPress works:
 
     * Functions called via $this->admin_pages -> an_admin_page -> 'function_load' data
     * Functions called via $this->admin_pages -> an_admin_page -> 'function' data
-    * Functions called via install, upgrade or unistall
+    * Functions called via install, upgrade or uninstall
     * Functions called via shortcodes
     * Functions called via AJAX responses
 </details>
@@ -223,7 +222,7 @@ Download the code, copy the folder 'bft' on your WordPress instalation/wp-conten
     By default all pages execute admin_permission_check_and_ids_required_check_function_load(), the executed function can be changed on
     class-your-plugin-admin -> $this->admin_pages_function_load_default = "admin_permission_check_and_ids_required_check_function_load"
 
-    The function admin_permission_check_and_ids_required_check_function_load() checks if the admin capabilities are correct and if the id required data is not missing. On this function it works the 'go_to_parent' option of the menu (the id check only on Backend Frontend Template Pro)
+    The function admin_permission_check_and_ids_required_check_function_load() checks if the admin capabilities are correct and if the id required data is not missing. In this function it works the 'go_to_parent' option of the menu (the id check only on Backend Frontend Template Pro)
 
     This function can be called at the beginning of a custom function_load to check all before save changes
 
@@ -258,9 +257,9 @@ Download the code, copy the folder 'bft' on your WordPress instalation/wp-conten
     BFT can throw errors with
     $this->error_throw ($error_message = "", $error_throw_what_do_use_this = NULL, $error_throw_file_change_use_this = NULL, $triggered_on_function_load = false, $page_id = NULL)
 
-    * $error_message: error to send to $this->error_show(), but first it will display the 'error_message' stored on the URL
+    * $error_message: error to send to $this->error_show(), but first it will display the 'error_message' stored in the URL
     * $error_throw_what_do_use_this: for use this data instead of $this->admin_pages_data_get("error_throw_what_do"), options: show_error, show_error_and_die, go_to_parent
-    * $error_throw_file_change_use_this: default NULL, use this data instead of $this->admin_pages_data_get("error_throw_file_change"), for change the file displayed if error triggerred
+    * $error_throw_file_change_use_this: default NULL, use this data instead of $this->admin_pages_data_get("error_throw_file_change"), for change the file displayed if error triggered
     * $triggered_on_function_load: default false, 'go_to_parent' only works if true == $triggered_on_function_load because it's needed do the redirect before sending the headers (id required data and go to parent are only BFT Pro options)
     * $page_id: the key/page name, if null it's the visualized page
 
@@ -279,16 +278,34 @@ Download the code, copy the folder 'bft' on your WordPress instalation/wp-conten
   <summary>Internationalization</summary>
   
   ### Internationalization: prepare the plugin for future translations
+ 
+  #### Preparing the text
 
-    For specify a text that maybe needs translation, WordPress provides the functions: $this->__("string") for direct translation and $this->esc_html_e("string") for translation and scape the HTML characters
+    For specify a text that maybe needs translation, WordPress provides the functions:
 
-    * $this->__("string"): for direct translation
-    * $this->esc_html_e("string") for translation and scape the HTML characters
+    * __('string', 'translation domain/plugin id'): for direct translation
+    * _e('string', 'translation domain/plugin id'): for direct translation and display the translated text
+    * esc_html_('string', 'translation domain/plugin id') for translation and escape the HTML characters
+    * esc_html_('string', 'translation domain/plugin id') for translation and escape the HTML characters
+    
     For more functions search on the WordPress documentation: [link here](https://developer.wordpress.org/plugins/internationalization/how-to-internationalize-your-plugin/)
 
-    With that, a translation plugin will be able to translate your plugin into the visitor language
+    With that, WordPress will use a translation file if it exists and has that sentence, or a external plugin will be able to translate your plugin into the visitor language
 
-    But if you want make your own translation for your own plugin: you can allocate the language files on plugin_folder/languages, BFT automatically will set WordPress to search translations on that folder
+    BFT also provides the option of use its intermediary functions to avoid having to put the domain in every string prepared for a future translation. With ALL the WordPress translation functions
+
+    For that, call the function through '$this' and don't put the translation domain
+
+    * $this->__('string'): for direct translation
+    * $this->_e('string'): for direct translation and display the translated text
+    * $this->esc_html_('string') for translation and escape the HTML characters
+    * $this->esc_html_e('string') for translation, escape the HTML characters and display the resulting text
+
+    NOTE: the functions allow the domain field, if you put a domain then that domain will be use
+
+  #### Preparing the translation files
+
+    The translation files are allocated in plugin_folder/languages, BFT automatically will set WordPress to search translations on that folder
 
     The language files are:
 
@@ -296,7 +313,17 @@ Download the code, copy the folder 'bft' on your WordPress instalation/wp-conten
     * .po: Portable Object, the file with the strings translated to one language
     * .mo: Portable Object, Machine Object, the compiled data of the .po file, WordPress use this file
     
-    For create the files you can use programs like [Poedit](https://poedit.net/) or [EazyPo](http://www.eazypo.ca/)
+    Steps for translating a plugin:
+  1. Create a new .pot file of your plugin
+  2. Update/merge the original .pot with the new .pot file
+  3. Delete the old .pot files and rename the new merged file if needed
+  4. Prepare the .po language file
+    1. If it's a new translation language: duplicate the .pot file and change the name and extension to the designed language, like bft-pro - copy.pot to bft-pro-es.po or bft-pro-es_ES.po
+    2. If it's a existing translation language: update/merge the file with the new .pot file
+  5. Translate the sentences of the .po file
+  6. Create the .mo file from the .po file
+
+    To create and merge the files and translate the sentences you can use programs such as [Poedit](https://poedit.net/) or [EazyPo](http://www.eazypo.ca/)
 </details>
 
 <details>
@@ -326,7 +353,7 @@ Download the code, copy the folder 'bft' on your WordPress instalation/wp-conten
     The variables of the function are:
 
     * $atts: array with all the data specified on the shortcode
-    * $content: the content inside the two tags, if the shortcode uses a clossing tag
+    * $content: the content within the two tags, if the shortcode uses a clossing tag
     * $tag: the shotcode tag
 
   #### Shortcodes uses examples
@@ -355,8 +382,8 @@ Download the code, copy the folder 'bft' on your WordPress instalation/wp-conten
 
 		$html_aux = "";
 
-		if (isset($atts["aditional_text"])) {
-			$html_aux .= "<h4>".esc_html($atts["aditional_text"])."</h4>";
+		if (isset($atts["additional_text"])) {
+			$html_aux .= "<h4>".esc_html($atts["additional_text"])."</h4>";
 		}
 
 		if (!is_null($content)) {
@@ -371,7 +398,7 @@ Download the code, copy the folder 'bft' on your WordPress instalation/wp-conten
 	}
 ```
 
-  #### Test yourself
+  #### Try it for yourself
 
     Create a page, insert a shortcode block and put:
 
@@ -382,7 +409,7 @@ Download the code, copy the folder 'bft' on your WordPress instalation/wp-conten
     Or:
 
 ```
-    [bft-shortcode-test aditional_text="This is an aditional text"]The text inside de tags[/bft-shortcode-test]
+    [bft-shortcode-test additional_text="This is an additional text"]The text inside de tags[/bft-shortcode-test]
 ```
 
   ![Backend Frontend Template: client side: shortcode complete example](https://moisesbarrachina.online/wp-content/uploads/2023/09/bft-screenshot-6.png)
@@ -415,14 +442,14 @@ Download the code, copy the folder 'bft' on your WordPress instalation/wp-conten
 
   #### $this->languages_get($country_code)
 
-    Returns the data stored on the setting $this->option_field_get("languages")
+    Returns the data stored in the setting $this->option_field_get("languages")
 
   #### $this->language_admin_get($country_code)
 
-    Returns the data stored on the setting $this->option_field_get("language_admin") if exists on $this->option_field_get("languages")
+    Returns the data stored in the setting $this->option_field_get("language_admin") if exists in $this->option_field_get("languages")
 
     If languages empty it will set the lenguages 'en' and 'es'
-    If language_admin empty or not found on languages, it will set the first language stored on languages
+    If language_admin empty or not found on languages, it will set the first language stored in languages
 </details>
 
 <details>
@@ -449,7 +476,7 @@ Download the code, copy the folder 'bft' on your WordPress instalation/wp-conten
 
   #### $this->country_code_name_get($country_code)
 
-    Returns a country name through the country code
+    Returns the country name through the country code
 </details>
 
 <details>
@@ -495,12 +522,23 @@ Download the code, copy the folder 'bft' on your WordPress instalation/wp-conten
 
   #### $this->currency_symbol_get($currency_id)
 
-    Returns a currency symbol through the currency code
+    Returns the currency symbol through the currency code
 
   #### $this->currency_code_get($currency_id)
 
-    Returns a the ISO 4217 number through the currency id
+    Returns the ISO 4217 number through the currency id
 </details>
+
+## Upgrade guide
+
+### From 1.0.0 to 1.1.0
+
+Select the entire plugin, give to find and replace, select Caps Match and Replace
+
+* “only_on” by “only_in
+* “admin_forms_relations_many_to_many” by “admin_forms_many_to_many_relationships
+* “relation_many_to_many” by “many_to_many_relationship
+* “aditional_text” by “additional_text
 
 ## License
 
@@ -519,18 +557,18 @@ You can save even more time with [BFT Pro](https://moisesbarrachina.online/en/pr
 ## Additional features
 
 <details>
-  <summary>Children</summary>
+  <summary>Children on the menu</summary>
 
-  ### Menú system with children
+  ### Menu system with children
 
   Add child pages and organize better your plugin
   ![Backend Frontend Template Pro: example of the menu with child pages](https://moisesbarrachina.online/wp-content/uploads/2023/09/nested_menu_basic.png)
 </details>
 
 <details>
-  <summary>Settings</summary>
+  <summary>Settings system by WP</summary>
 
-  ### Settings system
+  ### Settings/data system stored via WP
 
   Create, manage and store WordPress variables with setting pages, it's really easy
 
@@ -567,9 +605,9 @@ You can save even more time with [BFT Pro](https://moisesbarrachina.online/en/pr
 </details>
 
 <details>
-  <summary>BBDD</summary>
+  <summary>Example BBDD</summary>
 
-  ### Example database
+  ### Example and complete database
 
   Play around with the example data all you want
 
@@ -589,7 +627,7 @@ You can save even more time with [BFT Pro](https://moisesbarrachina.online/en/pr
 <details>
   <summary>Automated data</summary>
 
-  ### Automated data manipulation
+  ### Automated data manipulation of the plugin database
 
   Manage all the data only specifying the table and the fields. The table can have internationalized fields
 
@@ -626,7 +664,7 @@ You can save even more time with [BFT Pro](https://moisesbarrachina.online/en/pr
             "type" => "datetime",
             "display_table" => false,
             "readonly" => true,
-            "only_on_active" => true,
+            "only_in_active" => true,
           ],
           $this->database_datetime_removed_name => [
             "label" => $this->database_datetime_removed_text,
@@ -634,7 +672,7 @@ You can save even more time with [BFT Pro](https://moisesbarrachina.online/en/pr
             "type" => "datetime",
             "display_table" => true,
             "readonly" => true,
-            "only_on_removed" => true,
+            "only_in_removed" => true,
           ],
           "hours" => [
             "label" => $this->__("Total hours of the course"),
@@ -669,18 +707,18 @@ You can save even more time with [BFT Pro](https://moisesbarrachina.online/en/pr
 <details>
   <summary>Manual data</summary>
 
-  ### Manual data manipulation
+  ### Manual data manipulation of the plugin database
 
   More functions to manage manually the database
 
   ```php
   $this->wpdb_get_results_array($query); //returns a two dimensional array with all the data
-  $this->wpdb_get_results_with_index($query); //returns a two dimensional array with all the data, the index of every row will be the first column data
-  $this->wpdb_get_results_one_data_per_row($query); //returns a mono dimensional array, only returns the first column of every row
+  $this->wpdb_get_results_with_index($query); //returns a two dimensional array with all the data, the index of each row will be the first column data
+  $this->wpdb_get_results_one_data_per_row($query); //returns a mono dimensional array, only returns the first column of each row
   $this->wpdb_get_results_index_and_data_per_row($query); //returns a mono dimensional array, the first column data will be the index, the second the data
   $this->wpdb_get_result_one_data($query); //returns a string, only return the first column of the first row
-  $this->wpdb_insert_update_on_duplicate_key($table, $data, $multi_row = false, $modified_value = NULL, $data_for_update = array()); //insert or update several data, more explanation below (the function sanitizes the inputs)
-  $this->wpdb_insert_update_on_duplicate_key_delete_others($table, $data, $column_where_delete, $value_where_delete); //insert or update several data, then delete the not updated rows, more explanation below (the function sanitizes the inputs)
+  $this->wpdb_insert_update_on_duplicate_key($table, $data, $multi_row = false, $modified_value = NULL, $data_for_update = array()); //insert or update multiple data, more explanation below (the function sanitizes the inputs)
+  $this->wpdb_insert_update_on_duplicate_key_delete_others($table, $data, $column_where_delete, $value_where_delete); //insert or update multiple data, then delete the non updated rows, more explanation below (the function sanitizes the inputs)
   ```
 
   ![Backend Frontend Template Pro: example of a group form manually declared](https://moisesbarrachina.online/wp-content/uploads/2023/09/manage_data_manually_form_1.png)
@@ -717,7 +755,7 @@ You can save even more time with [BFT Pro](https://moisesbarrachina.online/en/pr
 
   ### Direct listing by array
 
-  A WordPress listing style thanks to a array
+  A WordPress listing style thanks to an array
 
   ```php
     $display_table_data = [

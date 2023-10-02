@@ -5,7 +5,7 @@
  *
  * @link		https://moisesbarrachina.online
  * @since		1.0.0
- * @version		1.0.0
+ * @version		1.1.0
  * @package		BFT
  * @subpackage	BFT/admin/lib/BFT/partials
  * @author		Moisés Barrachina Planelles <info@moisesbarrachina.online>
@@ -35,7 +35,7 @@ $this->admin_permission_check();
 		</li>
 		<li>
 			<h3>$this->country_code_name_get($country_code)</h3>
-			<p><?=$this->esc_html_e("Returns a country name through the country code")?></p>
+			<p><?=$this->esc_html_e("Returns the country name through the country code")?></p>
 		</li>
 	</ol>
 </div>

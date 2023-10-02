@@ -8,7 +8,7 @@
  *
  * @link		https://moisesbarrachina.online
  * @since		1.0.0
- * @version		1.0.0
+ * @version		1.1.0
  * @package		BFT
  * @subpackage	BFT/includes/lib/BFT
  * @author		Moisés Barrachina Planelles <info@moisesbarrachina.online>
@@ -19,7 +19,7 @@ class Your_Plugin_BFT_Loader {
 	 * The array of actions registered with WordPress.
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @access   protected
 	 * @var      array    $actions    The actions registered with WordPress to fire when the plugin loads.
 	 */
@@ -29,7 +29,7 @@ class Your_Plugin_BFT_Loader {
 	 * The array of filters registered with WordPress.
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @access   	protected
 	 * @var			array    $filters    The filters registered with WordPress to fire when the plugin loads.
 	 */
@@ -40,7 +40,7 @@ class Your_Plugin_BFT_Loader {
 	 * Initialize the collections used to maintain the actions and filters.
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		null
 	 */
 	public function __construct() {
@@ -55,7 +55,7 @@ class Your_Plugin_BFT_Loader {
 	 * Add a new action to the collection to be registered with WordPress.
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string               $hook             The name of the WordPress action that is being registered.
 	 * @param		object               $component        A reference to the instance of the object on which the action is defined.
 	 * @param		string               $callback         The name of the function definition on the $component.
@@ -72,7 +72,7 @@ class Your_Plugin_BFT_Loader {
 	 * Add a new filter to the collection to be registered with WordPress.
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		array
 	 * @param		string               $hook             The name of the WordPress filter that is being registered.
 	 * @param		object               $component        A reference to the instance of the object on which the filter is defined.
@@ -91,7 +91,7 @@ class Your_Plugin_BFT_Loader {
 	 * collection.
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @access		private
 	 * @param		array                $hooks            The collection of hooks that is being registered (that is, actions or filters).
 	 * @param		string               $hook             The name of the WordPress filter that is being registered.
@@ -119,7 +119,7 @@ class Your_Plugin_BFT_Loader {
 	 * Register the filters and actions with WordPress.
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		null
 	 */
 	public function run() {

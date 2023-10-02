@@ -169,7 +169,7 @@ class Your_Plugin_Public extends Your_Plugin_BFT_Public {
 	 * 
 	 * Display a Hello World
 	 * 
-	 * Example: [bft-shortcode-test aditional_text="This is an aditional text"]The text inside de tags[/bft-shortcode-test]
+	 * Example: [bft-shortcode-test additional_text="This is an additional text"]The text inside de tags[/bft-shortcode-test]
 	 *
 	 * @since		0.0.1
 	 * @version		0.0.1
@@ -182,8 +182,8 @@ class Your_Plugin_Public extends Your_Plugin_BFT_Public {
 
 		$html_aux = "";
 
-		if (isset($atts["aditional_text"])) {
-			$html_aux .= "<h4>".esc_html($atts["aditional_text"])."</h4>";
+		if (isset($atts["additional_text"])) {
+			$html_aux .= "<h4>".esc_html($atts["additional_text"])."</h4>";
 		}
 
 		if (!is_null($content)) {

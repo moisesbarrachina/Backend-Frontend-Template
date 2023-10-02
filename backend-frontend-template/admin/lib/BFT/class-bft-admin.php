@@ -5,7 +5,7 @@
  *
  * @link		https://moisesbarrachina.online
  * @since		1.0.0
- * @version		1.0.0
+ * @version		1.1.0
  * @package		BFT
  * @subpackage	BFT/admin/lib/BFT
  * @author		Moisés Barrachina Planelles <info@moisesbarrachina.online>
@@ -210,7 +210,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * @since		1.0.0
 	 * @var			array
 	 */
-	protected  $admin_forms_relations_many_to_many = array();
+	protected  $admin_forms_many_to_many_relationships = array();
 
 	/**
 	 * Messages already shown
@@ -270,7 +270,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 *	];
 
 
-	 * select: input select, args mut have "options", it stores string wiht checked options, ej: "en,es" , optional args: search (default false), multiple (default false)
+	 * select: input select, args must have "options", it stores string wiht checked options, ej: "en,es" , optional args: search (default false), multiple (default false)
 	 * 	$input_data = [
 	 * 		"type" => "select",
 	 * 		"search" => true,
@@ -292,13 +292,13 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * 	];
 	 * 
 	 * 
-	 * date: input text with a calendar, the date will be the MySQL style "2023-01-01"
+	 * date: input text with a calendar, the date will be in MySQL style "2023-01-01"
 	 * 	$input_data = [
 	 * 		"type" => "date",
 	 *	];
 	 * 	
 	 * 
-	 * checkbox, single and multiple, on multiple is needed "options" on args
+	 * checkbox, single and multiple, in multiple is needed "options" on args
 	 * 	$input_data = [
 	 * 		"type" => "checkbox",
 	 * 		"multiple" => false,
@@ -351,7 +351,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * Initialize the class and set its properties.
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		array		$plugin_info 		title, id, slug and version of the plugin
 	 * @return		null
 	 */
@@ -388,7 +388,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * Set the bft variables
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		null
 	 */
 	protected function bft_variables_set () {
@@ -429,7 +429,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 				"children" => [
 					"settings_explanation" => [
 						"menu_title" => $this->__("Settings explanation"),
-						"page_title" => $this->__("The settings system"),
+						"page_title" => $this->__("The settings/data system stored via WP"),
 						"file" => "bft-admin-display-settings-system.php",
 					],	
 					"settings_general" => [
@@ -713,7 +713,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 					"errors_manage_pro" => [
 						"menu_title" => $this->__("Errors"),
 						"page_title" => $this->__("Manage and display errors"),
-						"file" => "bft-admin-display-errors-manage-show.php",
+						"file" => "bft-admin-display-errors-manage-show-pro.php",
 						"children" => [
 							"throw_error_and_return_to_parent" => [
 								"menu_title" => $this->__("Throw error and return to parent"),
@@ -819,7 +819,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 			],
 			"hello_world" => [
 				"menu_title" => $this->__("Your page"),
-				"page_title" => $this->__("Try to modify")." admin/partials/your-plugin-admin-display-hello-world.php",
+				"page_title" => $this->__("Try to modify admin/partials/your-plugin-admin-display-hello-world.php"),
 				"file" => "your-plugin-admin-display-hello-world.php",
 			],
 		];*/
@@ -889,7 +889,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 			],
 			"hello_world" => [
 				"menu_title" => $this->__("Your page"),
-				"page_title" => $this->__("Try to modify")." admin/partials/your-plugin-admin-display-hello-world.php",
+				"page_title" => $this->__("Try to modify admin/partials/your-plugin-admin-display-hello-world.php"),
 				"file" => "your-plugin-admin-display-hello-world.php",
 			],
 			"want_more" => [
@@ -916,7 +916,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 
 
 		/**
-		 * The lenguage data
+		 * The language data
 		 */
 		$languages_codes = $this->languages_codes_names_get();
 		$languages_codes_selected = $this->languages_selected_get();
@@ -1164,7 +1164,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 						"type" => "datetime",
 						"display_table" => false,
 						"readonly" => true,
-						"only_on_active" => true,
+						"only_in_active" => true,
 					],
 					$this->database_datetime_removed_name => [
 						"label" => $this->database_datetime_removed_text,
@@ -1172,7 +1172,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 						"type" => "datetime",
 						"display_table" => true,
 						"readonly" => true,
-						"only_on_removed" => true,
+						"only_in_removed" => true,
 					],
 					"hours" => [
 						"label" => $this->__("Total hours of the course"),
@@ -1213,8 +1213,8 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 					"students_courses" => [
 						"label" => $this->__("Enrolled students"),
 						"placeholder" => $this->__("Students"),
-						"type" => "relation_many_to_many",
-						//Display table doesn't work for now with relation_many_to_many
+						"type" => "many_to_many_relationship",
+						//Display table doesn't work for now with many_to_many_relationship
 						"display_table" => false,
 						"search" => true,
 					],
@@ -1251,7 +1251,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 						"type" => "hidden",
 						"display_table" => false,
 						"readonly" => true,
-						"only_on_active" => true,
+						"only_in_active" => true,
 					],
 					$this->database_datetime_removed_name => [
 						"label" => $this->database_datetime_removed_text,
@@ -1259,7 +1259,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 						"type" => "hidden",
 						"display_table" => true,
 						"readonly" => true,
-						"only_on_removed" => true,
+						"only_in_removed" => true,
 					],
 					"name" => [
 						"label" => $this->__("Name"),
@@ -1351,8 +1351,8 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 					"students_courses" => [
 						"label" => $this->__("Enrolled courses"),
 						"placeholder" => $this->__("Courses"),
-						"type" => "relation_many_to_many",
-						//Display table doesn't work for now with relation_many_to_many
+						"type" => "many_to_many_relationship",
+						//Display table doesn't work for now with many_to_many_relationship
 						"display_table" => false,
 						"search" => true,
 					],
@@ -1389,7 +1389,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 						"type" => "datetime",
 						"display_table" => false,
 						"readonly" => true,
-						"only_on_active" => true,
+						"only_in_active" => true,
 					],
 					$this->database_datetime_removed_name => [
 						"label" => $this->database_datetime_removed_text,
@@ -1397,7 +1397,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 						"type" => "datetime",
 						"display_table" => true,
 						"readonly" => true,
-						"only_on_removed" => true,
+						"only_in_removed" => true,
 					],
 					"name" => [
 						"label" => $this->__("Name"),
@@ -1538,7 +1538,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 						"type" => "datetime",
 						"display_table" => false,
 						"readonly" => true,
-						"only_on_active" => true,
+						"only_in_active" => true,
 					],
 					$this->database_datetime_removed_name => [
 						"label" => $this->database_datetime_removed_text,
@@ -1546,7 +1546,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 						"type" => "datetime",
 						"display_table" => true,
 						"readonly" => true,
-						"only_on_removed" => true,
+						"only_in_removed" => true,
 					],
 					"title" => [
 						"label" => $this->__("Title"),
@@ -1572,7 +1572,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 		$this->admin_forms = [];
 
 		//BFT Pro
-		/*$this->admin_forms_relations_many_to_many = [
+		/*$this->admin_forms_many_to_many_relationships = [
 			"students_courses" => [
 				"table" => $wpdb->prefix.$this->plugin_slug."_"."students_courses",
 				"forms" => [
@@ -1583,7 +1583,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 		];*/
 
 		//BFT Mini
-		$this->admin_forms_relations_many_to_many = [];
+		$this->admin_forms_many_to_many_relationships = [];
 	}
 
 	/**
@@ -1593,10 +1593,10 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * $this->admin_pages								The administration pages
 	 * $this->admin_settings							The forms for save WordPress options
 	 * $this->admin_forms								The custom automated forms for save data on custom database tables
-	 * $this->admin_forms_relations_many_to_many		Relations many to many for automated forms
+	 * $this->admin_forms_many_to_many_relationships		Relations many to many for automated forms
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		null
 	 */
 	protected function custom_variables_set () {
@@ -1644,25 +1644,25 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 		 *	],
 		 *
 		 * 
-		 * There are automatic parametters: parametters that BFT will create, needed and optional parametters, and parametters optionals that BFT will create with default data if missing 
+		 * There are automatic parameters: parameters that BFT will create, needed and optional parameters, and parameters optionals that BFT will create with default data if missing 
 		 * 
 		 * 
 		 * ------------------------------------------------------------------------------
 		 * 
 		 * 
-		 * Automatic parametters:
+		 * Automatic parameters:
 		 *  
 		 * id: the array key
-		 * is_child: isset and true if is a child
+		 * is_child: isset and true if it's a child
 		 * page_parent: key of the parent
 		 * 
-		 * ids_required_get_data: the $_GET data found with the ids "ids_required"
-		 * ids_optional_get_data: the $_GET data found with the ids "ids_optional"
-		 * ids_aux_required_get_data: the $_GET data found with the ids "ids_aux_required"
-		 * ids_aux_optional_get_data: the $_GET data found with the ids "ids_aux_optional"
+		 * ids_required_get_data: the $_GET data found within the ids "ids_required"
+		 * ids_optional_get_data: the $_GET data found within the ids "ids_optional"
+		 * ids_aux_required_get_data: the $_GET data found within the ids "ids_aux_required"
+		 * ids_aux_optional_get_data: the $_GET data found within the ids "ids_aux_optional"
 		 * 
 		 * ids_all: "ids_required", "ids_optional", "ids_aux_required", "ids_aux_optional" all combined, this order is the priority for maintain the data
-		 * ids_all_get_data: the $_GET data found with the ids "ids_all", uses the "key_final" as "key"
+		 * ids_all_get_data: the $_GET data found within the ids "ids_all", uses the "key_final" as "key"
 		 * ids_all_get_data_excluded_zeros: ids_all_get_data without the ids with get data == "0"
 		 * ids_all_get_url: ids_all_get_data transformed on a URL GET string: "&key=dato"
 		 * ids_all_get_data_excluded_zeros: ids_all_get_url without the ids with get data == "0"
@@ -1677,17 +1677,17 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 		 * 		]
 		 * 
 		 * ids_required_all: "ids_required", "ids_aux_required" all combined, this order is the priority for maintain the data
-		 * ids_required_all_get_data: the $_GET data found with the ids "ids_required_all", uses the "key_final" as "key"
+		 * ids_required_all_get_data: the $_GET data found within the ids "ids_required_all", uses the "key_final" as "key"
 		 * ids_required_all_get_data_excluded_zeros: ids_required_all_get_data without the ids with get data == "0"
 		 * 
 		 * ids_optional_all: "ids_optional", "ids_aux_optional" all combined, this order is the priority for maintain the data
-		 * ids_optional_all_get_data: the $_GET data found with the ids "ids_optional_all", uses the "key_final" as "key"
+		 * ids_optional_all_get_data: the $_GET data found within the ids "ids_optional_all", uses the "key_final" as "key"
 		 * 
 		 * ids_principal_all: "ids_required", "ids_optional" all combined, this order is the priority for maintain the data
-		 * ids_principal_all_get_data: the $_GET data found with the ids "ids_principal_all", uses the "key_final" as "key"
+		 * ids_principal_all_get_data: the $_GET data found within the ids "ids_principal_all", uses the "key_final" as "key"
 		 * 
 		 * ids_aux_all: "ids_aux_required", "ids_aux_optional" all combined, this order is the priority for maintain the data
-		 * ids_aux_all_get_data: the $_GET data found with the ids "ids_aux_all", uses the "key_final" as "key"
+		 * ids_aux_all_get_data: the $_GET data found within the ids "ids_aux_all", uses the "key_final" as "key"
 		 * 
 		 * 
 		 * ------------------------------------------------------------------------------
@@ -1695,9 +1695,9 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 		 * 
 		 * Parametters with default data if missing:
 		 * 
-		 * page_title: title of the page, default: $this->admin_pages_page_title_default
-		 * menu_title: title of the tab of the page, default: $this->admin_pages_page_title_default
-		 * menu_slug: slug of the page, default: key of the pae. The Menu slug will be changed to: $this->admin_pages_slug_name_prefix."_".menu_slug because it's needed a unike page name among the plugins
+		 * page_title: page title, default: $this->admin_pages_page_title_default
+		 * menu_title: page tab title, default: $this->admin_pages_page_title_default
+		 * menu_slug: page slug, default: key of the pae. The menu slug will be changed to: $this->admin_pages_slug_name_prefix."_".menu_slug because it's needed a unique page name among the plugins
 		 * 
 		 * IDs: they are data arrays with "name on the GET data" => "id internal to use", default empty array
 		 * On the GET data it's needed to put a unique id, example: "book_id", but on the page/function maybe it's needed like "id", then use: ' "book_id" => "id", '
@@ -1712,8 +1712,8 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 		 * then the page has all the missing ids like an id optional on ids_optional
 		 * 
 		 * 
-		 * tab_show: if false it doesn't show the tab of the page, even if is the page selected, default: true
-		 * tabs_new_or_edit_on_url: if true it adds "&action=edit" or "&action=new" on the link of a tab, new if there are a id detected on the GET data, default false
+		 * tab_show: if false does not display the page tab, even if the page is selected, default: true
+		 * tabs_new_or_edit_on_url: if true it adds "&action=edit" or "&action=new" in the tab link, new if there are an id detected on the GET data, default false
 		 * tabs_show_children: if false doesn't show the first line children tabs of a page, default true
 		 *  
 		 * function: the function for load the data of the page, default: $this->admin_pages_function_default (per example: function for load the data of the table, then load the file with the table with the part "file")
@@ -1763,13 +1763,13 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 		 * Display the page selected on "file"
 		 * 
 		 * admin_menu_page_table_display_first_menu_child (Only on Backend Frontend Template Pro)
-		 * Display a table with the data of the first child and the form stored on $this->admin_forms[]
+		 * Display a table with the data of the first child and the form stored in $this->admin_forms[]
 		 * 
 		 * admin_menu_page_table_display (Only on Backend Frontend Template Pro)
 		 * Same function like admin_menu_page_table_display_first_menu_child but it doesn't search the data on the children, and don't go to the child
 		 * 
 		 * admin_menu_admin_form_page_display (Only on Backend Frontend Template Pro)
-		 * Display a custom automated form form stored on $this->admin_forms[]
+		 * Display a custom automated form form stored in $this->admin_forms[]
 		 * 
 		 * 
 		 * ------------------------------------------------------------------------------
@@ -1796,7 +1796,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 		 * ------------------------------------------------------------------------------
 		 * 
 		 * 
-		 * Optional parametters:
+		 * Optional parameters:
 		 * 
 		 * admin_page_settings_id: for select the key to use of $this->admin_settings[] , (Only on Backend Frontend Template Pro)
 		 * Prepared for use with the function $this->settings_section_form($this->admin_pages_data_get("admin_page_settings_id")) (Only on Backend Frontend Template Pro)
@@ -1810,9 +1810,9 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 		 * file_aux_folder_includes: for use a second full path with the variable $file_aux_url (parametter "file" generates the variable $file_url )
 		 * 
 		 * new_text: the text of the new entry button, it can be added on the parent or on the child, the priority is on the child data
-		 * For use on the function admin_menu_page_table_display_first_menu_child() and file bft-admin-display-list-table.php (Only on Backend Frontend Template Pro)
+		 * For use in the function admin_menu_page_table_display_first_menu_child() and file bft-admin-display-list-table.php (Only on Backend Frontend Template Pro)
 		 * It creates the variable $button_add
-		 * It will be finally used on $this->html_button_action
+		 * It will be finally used in $this->html_button_action
 		 * If new_text is boolean true it will be used the text: $this->__("New")
 		 * 
 		 * admin_forms_aux_id, for the pages with automatic data (function: admin_pages_data_title_from_admin_forms_aux()) (Only on Backend Frontend Template Pro)
@@ -1833,7 +1833,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 		 * ------------------------------------------------------------------------------
 		 * 
 		 * 
-		 * Your own parametters:
+		 * Your own parameters:
 		 * 
 		 * You can create your own parameter, later on you can access to the info on a function or on a page with:
 		 * $variable_name = $this->admin_pages_data_get("parametter_name");
@@ -1857,7 +1857,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 
 
 		/**
-		 * The lenguage data
+		 * The language data
 		 */
 		//$languages_codes = $this->languages_codes_names_get();
 		//$languages_codes_selected = $this->languages_selected_get();
@@ -1888,7 +1888,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 		 * 
 		 * 
 		 * 
-		 * There are automatic parametters: parametters that BFT will create, needed and optional parametters, and parametters optionals that BFT will create with default data if missing 
+		 * There are automatic parameters: parameters that BFT will create, needed and optional parameters, and parameters optionals that BFT will create with default data if missing 
 		 * 
 		 * 
 		 * ------------------------------------------------------------------------------
@@ -1896,7 +1896,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 		 * Settings part:
 		 * 
 		 * 
-		 * Automatic parametters:
+		 * Automatic parameters:
 		 * 
 		 * id: array key
 		 * id_wordpress: $this->admin_pages_settings_prefix."_".array key
@@ -1917,7 +1917,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 		 * Field array part: 
 		 * 
 		 * 
-		 * Automatic parametters added on the field array part:
+		 * Automatic parameters added on the field array part:
 		 * 
 		 * id: the array key
 		 * id_wordpress: $this->plugin_slug."_".the array key
@@ -1941,7 +1941,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 		 * How the fields are stored:
 		 * 
 		 * On the array a "field" id is a simple sentence, ej: "languages"
-		 * But on WordPress is necessary use "plugin name"."_"."languages (id_wordpress) to avoid repetitions with others plugins 
+		 * But on WordPress is necessary to use "plugin name"."_"."languages (id_wordpress) to avoid repetitions with others plugins 
 		 * That's why for read and update the stored data we use $this->plugin_slug."_".key of the field (id_wordpress)
 		 * 
 		 * It's possible to use
@@ -1989,31 +1989,31 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 		 *		],
 		 *	],
 		 * 
-		 * key_form: internal id of the form
-		 * 		table: name of the table
-		 * 		column_key: name of the key ("id" usually)
-		 * 		column_title_name: field where it's stored the name of the row (the name of a user, the name of a book, etc.)
+		 * key_form: internal form id
+		 * 		table: table name
+		 * 		column_key: key name ("id" usually)
+		 * 		column_title_name: field where it's stored the row name (the name of a user, the name of a book, etc.)
 		 * 		i18n_foreign_key: foreign key on the internationalization table 
 		 * 		columns: list of fields
-		 * 			key_field: the name of the field on the database
+		 * 			key_field: the field name on the database
 		 * 				array data of the field
 		 * 
 		 * 
 		 * 
-		 * Optional parametters of the fields:
+		 * Optional field parameters:
 		 * 
 		 * label: text to show on the admin. Default: ""
-		 * placeholder: placeholder if the type data can have placeholder
-		 * display_table: display the field on the list table. Note: display_table doesn't work for now with relation_many_to_many fields (Only on Backend Frontend Template Pro)
-		 * i18n: if the data of the field is stored on a internationalization table
-		 * only_on_active: display the field only if the data is active
-		 * only_on_removed: display the field only if the data is on the bin
-		 * readonly: readonly field, for column key for example
-		 * value_from_get: catch the data from the GET data on the URL if there aren't data stored of this field. For a dependand data, example: teachers notes, a new note need to know the teacher id of the note
-		 * value_empty_is_null: a empty data will be transform to NULL (the NULL data always is printed like value="")
+		 * placeholder: placeholder if the data type can have placeholder
+		 * display_table: display the field on the list table. Note: display_table doesn't work for now with many_to_many_relationship fields (Only on Backend Frontend Template Pro)
+		 * i18n: if the data of the field is stored in a internationalization table
+		 * only_in_active: display the field only if the data is active
+		 * only_in_removed: display the field only if the data is on the bin
+		 * readonly: readonly field, for the column key for example
+		 * value_from_get: catch the data from the GET data on the URL if there aren't data stored of this field. For a dependant data, example: teachers' notes, a new note needs to know the teacher id of the note
+		 * value_empty_is_null: an empty data will be transformed to NULL (the NULL data always is printed like value="")
 		 * foreign_key: it stores a foreign key 
-		 * foreign_key_null_text: text to show when NULL is stored on a foreign key with optional NULL 
-		 * type: type data, see the explanation for custom_form_html_input for the types available , plus there are the type "relation_many_to_many", it's a select. Default "text"
+		 * foreign_key_null_text: text to show when NULL is stored in a foreign key with optional NULL 
+		 * type: data type, see the explanation for custom_form_html_input for the types available , plus there are the type "many_to_many_relationship", it's a select. Default "text"
 		 * Whatever data for the HTML forms that admits custom_form_html_input(), like: options (array of the options), search, rows and cols for a textarea, etc.
 		 * 
 		 * 
@@ -2053,7 +2053,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 		 * 				"type" => "datetime",
 		 * 				"display_table" => false,
 		 * 				"readonly" => true,
-		 * 				"only_on_active" => true,
+		 * 				"only_in_active" => true,
 		 * 			],
 		 * 			$this->database_datetime_removed_name => [
 		 * 				"label" => $this->database_datetime_removed_text,
@@ -2061,7 +2061,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 		 * 				"type" => "datetime",
 		 * 				"display_table" => true,
 		 * 				"readonly" => true,
-		 * 				"only_on_removed" => true,
+		 * 				"only_in_removed" => true,
 		 * 			],
 		 * 
 		 * 
@@ -2069,7 +2069,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 		 * 
 		 * Warning: "name" can't be used for a column a i18n table
 		 * WordPress clean the data automatically of all "name" appearances
-		 * And WordPress doesn't expect an array of data (it's an array because its the text for every language)
+		 * And WordPress doesn't expect an array of data (it's an array because its the text in each language)
 		 */
 		//$this->admin_forms = [];
 		 
@@ -2083,16 +2083,16 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 		 *	*	* form 1 key of $this->admin_forms => foreign key 1 on the table
 		 *	*	* form 2 key of $this->admin_forms => foreign key 2 on the table
 		 */
-		//$this->admin_forms_relations_many_to_many = [];
+		//$this->admin_forms_many_to_many_relationships = [];
 
 	}
 
 	/**
-	 * Prepare the variables for a empty database
+	 * Prepare the variables for an empty database
 	 * Almost all display pages are deleted
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		null
 	 */
 	protected function database_check() {
@@ -2115,7 +2115,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * Check user capabilities and the existence of $this->page_name
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string			$triggered_on_function_load				default false, "go_to_parent" only works if true == $triggered_on_function_load because it's needed do the redirect before sending the headers 
 	 * @return		array
 	 */
@@ -2151,7 +2151,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * Register the stylesheets for the admin area.
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		null
 	 */
 	public function enqueue_styles() {
@@ -2205,7 +2205,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * Register the JavaScript for the admin area.
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		null
 	 */
 	public function enqueue_scripts() {
@@ -2244,7 +2244,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * BFT Mini version
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		string
 	 */
 	public function Your_Plugin_bft_get_image() {
@@ -2257,7 +2257,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * BFT Mini version
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		string
 	 */
 	public function Your_Plugin_bft_get_file() {
@@ -2269,7 +2269,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * BFT Mini version
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		null
 	 */
 	public function admin_menu_add_settings_sections() {
@@ -2282,7 +2282,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * BFT Mini version
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string		$args		Array with the all optional data: $display_table, $title
 	 * @return		echo
 	 */
@@ -2298,7 +2298,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * BFT Mini version
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string		$args		Array with the all optional data: $display_table, $title
 	 * @return		echo
 	 */
@@ -2380,7 +2380,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * BFT Mini version
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		boolean			
 	 */
 	public function admin_permission_check_and_ids_required_check_function_load () {
@@ -2397,7 +2397,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * BFT Mini version
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		boolean			
 	 */
 	public function ids_required_check_function_load () {
@@ -2412,7 +2412,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * BFT Mini version
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		boolean			
 	 */
 	public function ids_required_check () {
@@ -2421,10 +2421,10 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	
 	
 	/**
-	 * Get several data of admin_pages_data_get through an array
+	 * Get multiple data of admin_pages_data_get through an array
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		array					$keys
 	 * @param		NULL|string				$page_id
 	 * @return		array				
@@ -2452,7 +2452,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * Get the data keys ids_required and ids_optional of a page
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		NULL|string				$page_id
 	 * @return		array				
 	 */
@@ -2474,7 +2474,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * Get the data keys ids_aux_required and ids_aux_optional of a page
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		NULL|string				$page_id
 	 * @return		array				
 	 */
@@ -2496,10 +2496,10 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * Throw an error for the admin area
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string			$error_message
 	 * @param		string			$error_throw_what_do_use_this			default NULL, use this data instead of $this->admin_pages_data_get("error_throw_what_do");, options: show_error, show_error_and_die, go_to_parent
-	 * @param		string			$error_throw_file_change_use_this		default NULL, use this data instead of $this->admin_pages_data_get("error_throw_file_change");, for change the file displayed if error triggerred
+	 * @param		string			$error_throw_file_change_use_this		default NULL, use this data instead of $this->admin_pages_data_get("error_throw_file_change");, for change the file displayed if error triggered
 	 * @param		string			$triggered_on_function_load				default false, "go_to_parent" only works if true == $triggered_on_function_load because it's needed do the redirect before sending the headers 
 	 * @param		string			$page_id								default NULL -> the visualized page
 	 * @return 		boolean
@@ -2574,7 +2574,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * Display a error message for the admin area
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		echo
 	 */
 	protected function error_show ($error_message = "") {
@@ -2600,7 +2600,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * Display a success message
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		echo
 	 */
 	public function admin_notice_success($message = NULL) {
@@ -2623,7 +2623,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * Remove of the data the column datetime modified or column datetime removed
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		array
 	 */
 	protected function data_remove_modified_or_removed_datetime($data) {
@@ -2681,7 +2681,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * BFT Mini version
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		array			$ids									list of ids used, if $ids is not array, then is transformed to $ids["id"] = $value;, the new identifiers have priority over the default IDs taken of the GET data
 	 * @param		array|NULL		$page_id								page name of the hyperlink, if NULL use the visualized page
 	 * @param		array|NULL		$ids_required_completed_with_zeros		for new data, the ids_required_all are completed with zeros, ej: &id=0
@@ -2762,7 +2762,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * Return and show if needed the HTML of all the tabs of the admin area
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		boolean		$print		echo the data
 	 * @param		array		$ids		list of ids used
 	 * @return		string|echo
@@ -2791,7 +2791,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * HTML of a row of tabs
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string			$row_to_tabs			pages data of the same level
 	 * @param		boolean			$print					echo the html
 	 * @param		string			$url_extra_get			add this get data on all the tabs
@@ -2865,7 +2865,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * HTML of a button like link
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string				$page_id		page_id to go
 	 * @param		string|boolean		$text			text of the link
 	 * @param		string|boolean		$action			action for the GET data
@@ -2911,7 +2911,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * Languages selected by the user
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		array
 	 */
 	protected function languages_selected_get() {
@@ -2930,12 +2930,12 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	
 	/**
 	 * A page name can be for a parent page o a child page,
-	 * with the function retrieve the data of whatever page described on $this->admin_pages
+	 * with the function retrieve the data of whatever page described in $this->admin_pages
 	 * 
 	 * BFT Mini version
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string		$key			
 	 * @param		string		$data			
 	 * @param		string		$page_name		the page name of the data, default: the visualized page
@@ -2961,12 +2961,12 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 
 	/**
 	 * A page name can be for a parent page o a child page,
-	 * with the function retrieve the data of whatever page described on $this->admin_pages
+	 * with the function retrieve the data of whatever page described in $this->admin_pages
 	 * 
 	 * BFT Mini version
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string		$key			if false => return an array with all the page data, if string => returns the seledted data
 	 * @param		string		$page_name		the page name of the data, default: the visualized page
 	 * @return		string|array|boolean
@@ -2995,7 +2995,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * Repetitive code of admin_pages_data_get
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string		$key		if false => return an array with all the page data, if string => returns the seledted data
 	 * @param		string		$data		data of the page
 	 * @return		string|array|boolean
@@ -3018,7 +3018,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * BFT Mini version
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string		$page_name			page used, if null will be used $this->page_name
 	 * @param		string		$self_page_too		include the keys of the selected page
 	 * @return		array
@@ -3062,7 +3062,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * Get the url of the page
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string		$slug			if NULL => retrieve the actual page slug
 	 * @param		boolean		$get_extra		get data to add on the URL
 	 * @param		string		$id				id of the tab for retrieve the extra get of that tab
@@ -3095,7 +3095,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * Change the key of an array item but maintain the same order
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		array		$arr		array to change
 	 * @param		boolean		$oldkey		old key to change
 	 * @param		boolean		$newkey		new key to change
@@ -3123,7 +3123,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * BFT Mini version
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		null
 	 */
 	protected function admin_pages_prepare() {
@@ -3173,7 +3173,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * get the slug $this->admin_pages_slug_name_prefix formated with "_" 
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string	$page_key	
 	 * @param		array	$page_data	
 	 * @return		array
@@ -3194,7 +3194,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * BFT Mini version
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string	$page_key	
 	 * @param		array	$page_data	
 	 * @return		array
@@ -3305,7 +3305,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * BFT Mini version
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string	$page_key	
 	 * @param		array	$page_data	
 	 * @return		array
@@ -3320,7 +3320,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * BFT Mini version
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		null
 	 */
 	protected function admin_forms_prepare() {
@@ -3333,7 +3333,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * BFT Mini version
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		string
 	 */
 	protected function page_name_set () {
@@ -3388,7 +3388,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * Repetitive code of page_name_set
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string		$menu_slug		page slug used
 	 * @param		string		$page_key		key of a page
 	 * @param		string		$page_data		data of a page
@@ -3428,7 +3428,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * BFT Mini version
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		null
 	 */
 	public function admin_menu_add_menus() {
@@ -3455,7 +3455,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * Register one admin page
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string		$page_data		page data to register
 	 * @return		null
 	 */
@@ -3518,7 +3518,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * BFT Mini version
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		string
 	 */
 	protected function rows_to_tabs () {
@@ -3559,7 +3559,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * For the first line
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return	array
 	 */
 	protected function rows_to_tabs_aux_first_row () {
@@ -3583,7 +3583,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * Do a update_option with the id_wordpress calculated
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		boolean
 	 */
 	protected function update_option_field($id, $value) {
@@ -3597,7 +3597,7 @@ class Your_Plugin_BFT_Admin extends Your_Plugin_Admin_Public {
 	 * Do a delete_option with the id_wordpress calculated
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		boolean
 	 */
 	protected function delete_option_field($id) {

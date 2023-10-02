@@ -5,7 +5,7 @@
  *
  * @link		https://moisesbarrachina.online
  * @since		1.0.0
- * @version		1.0.0
+ * @version		1.1.0
  * @package		BFT
  * @subpackage	BFT/admin/lib/BFT/partials
  * @author		Moisés Barrachina Planelles <info@moisesbarrachina.online>
@@ -26,7 +26,7 @@ $this->admin_permission_check();
 				</br>
 				<b>class-your-plugin-admin -> $this->admin_pages_function_load_default = "admin_permission_check_and_ids_required_check_function_load"</b>
 			</p>
-			<p><?=$this->esc_html_e("The function")?> admin_permission_check_and_ids_required_check_function_load() <?=$this->esc_html_e("checks if the admin capabilities are correct and if the id required data is not missing. On this function it works the")?> 'go_to_parent' <?=$this->esc_html_e("option of the menu (the id check only on Backend Frontend Template Pro)")?></p>
+			<p><?=$this->esc_html_e("The function")?> admin_permission_check_and_ids_required_check_function_load() <?=$this->esc_html_e("checks if the admin capabilities are correct and if the id required data is not missing. In this function it works the")?> 'go_to_parent' <?=$this->esc_html_e("option of the menu (the id check only on Backend Frontend Template Pro)")?></p>
 			<p><?=$this->esc_html_e("This function can be called at the beginning of a custom function_load to check all before save changes")?></p>
 			<p><?=$this->esc_html_e("NOTE")?>: <?=$this->esc_html_e("id required data and go to parent are only BFT Pro options")?></p>
 		</li>

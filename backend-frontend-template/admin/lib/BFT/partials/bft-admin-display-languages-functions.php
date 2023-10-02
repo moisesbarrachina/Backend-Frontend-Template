@@ -5,7 +5,7 @@
  *
  * @link		https://moisesbarrachina.online
  * @since		1.0.0
- * @version		1.0.0
+ * @version		1.1.0
  * @package		BFT
  * @subpackage	BFT/admin/lib/BFT/partials
  * @author		Moisés Barrachina Planelles <info@moisesbarrachina.online>
@@ -17,7 +17,7 @@ $this->admin_permission_check();
 	<h1><?=$this->esc_html_e($this->admin_title)?></h1>
 	<?=$this->html_tabs(false)?>
 	<h2><?=$this->esc_html_e($title)?></h2>
-	<p>B<?=$this->esc_html_e("Backend Frontend Template provides several functions about languages")?>:</p>
+	<p><?=$this->esc_html_e("Backend Frontend Template provides several functions about languages")?>:</p>
 	<ol>
 		<li>
 			<h3>$this->languages_codes_names_get()</h3>
@@ -35,14 +35,14 @@ $this->admin_permission_check();
 		</li>
 		<li>
 			<h3>$this->languages_get($country_code)</h3>
-			<p><?=$this->esc_html_e("Returns the data stored on the setting")?> $this->option_field_get("languages")</p>
+			<p><?=$this->esc_html_e("Returns the data stored in the setting")?> $this->option_field_get("languages")</p>
 		</li>
 		<li>
 			<h3>$this->language_admin_get($country_code)</h3>
-			<p><?=$this->esc_html_e("Returns the data stored on the setting")?> $this->option_field_get("language_admin") <?=$this->esc_html_e("if exists on")?> $this->option_field_get("languages")</p>
+			<p><?=$this->esc_html_e("Returns the data stored in the setting")?> $this->option_field_get("language_admin") <?=$this->esc_html_e("if exists on")?> $this->option_field_get("languages")</p>
 			<ul>
 				<li><?=$this->esc_html_e("If languages empty it will set the lenguages 'en' and 'es'")?></li>
-				<li><?=$this->esc_html_e("If language_admin empty or not found on languages, it will set the first language stored on languages")?></li>
+				<li><?=$this->esc_html_e("If language_admin empty or not found on languages, it will set the first language stored in languages")?></li>
 			</ul>
 		</li>
 	</ol>

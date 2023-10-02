@@ -5,7 +5,7 @@
  *
  * @link		https://moisesbarrachina.online
  * @since		1.0.0
- * @version		1.0.0
+ * @version		1.1.0
  * @package		BFT
  * @subpackage	BFT/includes/lib/BFT
  * @author		Moisés Barrachina Planelles <info@moisesbarrachina.online>
@@ -246,7 +246,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Initialize the class and set its properties.
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		array		$plugin_info 		title, id, slug and version of the plugin
 	 * @return		null
 	 */
@@ -270,7 +270,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Prepare the variables for the admin and public class
 	 *
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		null
 	 */
 	protected function custom_variables_admin_public_set() {
@@ -289,7 +289,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Get the admin language, fix it it's needed
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		array
 	 */
 	protected function language_admin_get()
@@ -320,7 +320,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Get the languages of the plugin
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		array
 	 */
 	protected function languages_get() {
@@ -337,7 +337,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Rerturn a language list
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		array
 	 */
 	protected function languages_codes_names_get() {
@@ -536,7 +536,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Rerturn a country list
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		array
 	 */
 	protected function countries_codes_names_get() {
@@ -796,7 +796,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Rerturn a country list
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string				$country_code				US, ES, etc.
 	 * @return		array
 	 */
@@ -819,7 +819,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Rerturn a currency list
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		array
 	 */
 	protected function currencies_array_get() {
@@ -1410,7 +1410,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Rerturn a currency list, only ids and names
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		array
 	 */
 	protected function currencies_selector_get() {
@@ -1429,7 +1429,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Rerturn the symbol of a currency
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string				$currency_id				USD, EUR, etc.
 	 * @return		array
 	 */
@@ -1448,7 +1448,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Rerturn the code of a currency
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string				$currency_id				USD, EUR, etc.
 	 * @return		array
 	 */
@@ -1468,7 +1468,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Detect if the values of a monodimensional array are repeated 
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		array				
 	 * @return		boolean
 	 */
@@ -1485,7 +1485,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Do a get_option with the id_wordpress calculated
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string				$id	
 	 * @param		null|string			$value_default	
 	 * @return		string|array|boolean
@@ -1503,10 +1503,10 @@ class Your_Plugin_BFT_Admin_Public {
 
 
 	/**
-	 * Echo on the log
+	 * Echo in the log
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string		$log		Text to insert
 	 * @return		echo					on the WordPress log if WP_DEBUG is ON
 	 */
@@ -1532,10 +1532,10 @@ class Your_Plugin_BFT_Admin_Public {
 
 
 	/**
-	 * Echo on the log, alternative name
+	 * Echo in the log, alternative name
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string		$log		Text to insert
 	 * @return		echo					on the WordPress log if WP_DEBUG is ON
 	 */
@@ -1548,7 +1548,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Generate a random string without special characters
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		int		$length		length of the string
 	 * @return		string
 	 */
@@ -1567,7 +1567,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Return the largest number
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		float|int		$number_1
 	 * @param		float|int		$number_2
 	 * @return		float
@@ -1586,7 +1586,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Return the smallest number
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		float|int		$number_1
 	 * @param		float|int		$number_2
 	 * @return		float
@@ -1604,10 +1604,10 @@ class Your_Plugin_BFT_Admin_Public {
 	
 
 	/**
-	 * Search the lenguage of the user	
+	 * Search the language of the user	
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @return		string
 	 */
 	protected function language_user_get() {
@@ -1653,7 +1653,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Check what internationalization domain to use
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string		$domain				domain to use
 	 * @return		string
 	 */
@@ -1676,7 +1676,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Adds the domain to the WordPress function __
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string			$text				text to translate
 	 * @param		string|null		$domain				domain to use
 	 * @return		string|echo
@@ -1690,7 +1690,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Adds the domain to the WordPress function _e
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string			$text				text to translate
 	 * @param		string|null		$domain				domain to use
 	 * @return		string|echo
@@ -1704,7 +1704,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Adds the domain to the WordPress function _x
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string			$text				text to translate
 	 * @param		string			$context			context of the translation
 	 * @param		string|null		$domain				domain to use
@@ -1719,7 +1719,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Adds the domain to the WordPress function _ex
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string			$text				text to translate
 	 * @param		string			$context			context of the translation
 	 * @param		string|null		$domain				domain to use
@@ -1734,7 +1734,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Adds the domain to the WordPress function _n
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string			$single
 	 * @param		string			$plural
 	 * @param		int				$number
@@ -1750,7 +1750,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Adds the domain to the WordPress function _nx
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string			$single
 	 * @param		string			$plural
 	 * @param		int				$number
@@ -1767,7 +1767,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Adds the domain to the WordPress function _n_noop
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string			$singular
 	 * @param		string			$plural
 	 * @param		string|null		$domain				domain to use
@@ -1782,7 +1782,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Adds the domain to the WordPress function _nx_noop
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string			$singular
 	 * @param		string			$plural
 	 * @param		string			$context			context of the translation
@@ -1798,7 +1798,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Adds the domain to the WordPress function translate_nooped_plural
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string			$nooped_plural
 	 * @param		string			$count
 	 * @param		string|null		$domain				domain to use
@@ -1813,7 +1813,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Adds the domain to the WordPress function esc_html__
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string			$text				text to translate
 	 * @param		string|null		$domain				domain to use
 	 * @return		string|echo
@@ -1827,7 +1827,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Adds the domain to the WordPress function esc_html_e
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string			$text				text to translate
 	 * @param		string|null		$domain				domain to use
 	 * @return		string|echo
@@ -1841,7 +1841,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Adds the domain to the WordPress function esc_html_x
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string			$text				text to translate
 	 * @param		string			$context			context of the translation
 	 * @param		string|null		$domain				domain to use
@@ -1856,7 +1856,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Adds the domain to the WordPress function esc_attr__
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string			$text				text to translate
 	 * @param		string|null		$domain				domain to use
 	 * @return		string|echo
@@ -1870,7 +1870,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Adds the domain to the WordPress function esc_attr_e
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string			$text				text to translate
 	 * @param		string|null		$domain				domain to use
 	 * @return		string|echo
@@ -1884,7 +1884,7 @@ class Your_Plugin_BFT_Admin_Public {
 	 * Adds the domain to the WordPress function esc_attr_x
 	 * 
 	 * @since		1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @param		string			$text				text to translate
 	 * @param		string			$context			context of the translation
 	 * @param		string|null		$domain				domain to use

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-03 23:35+0100\n"
-"PO-Revision-Date: 2023-09-28 19:10+0200\n"
+"PO-Revision-Date: 2023-10-03 00:02+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -129,8 +129,8 @@ msgstr "Explicación de los ajustes"
 
 #: admin/class-your-plugin-admin.php:541
 #: admin/lib/BFT-PRO/class-bft-admin.php:432
-msgid "The settings system"
-msgstr "El sistema de ajustes"
+msgid "The settings/data system stored via WP"
+msgstr "Sistema de ajustes/datos almacenados a través de WP"
 
 #: admin/class-your-plugin-admin.php:545 admin/class-your-plugin-admin.php:1128
 #: admin/lib/BFT-PRO/class-bft-admin.php:436
@@ -653,6 +653,11 @@ msgstr "Tu página"
 #: admin/lib/BFT-PRO/class-bft-admin.php:822
 msgid "Try to modify"
 msgstr "Prueba a modificar"
+
+#: admin/class-your-plugin-admin.php:931 admin/lib/BFT/class-bft-admin.php:892
+#: admin/lib/BFT-PRO/class-bft-admin.php:822
+msgid "Try to modify admin/partials/your-plugin-admin-display-hello-world.php"
+msgstr "Prueba a modificar admin/partials/your-plugin-admin-display-hello-world.php"
 
 #: admin/class-your-plugin-admin.php:1131
 #: admin/lib/BFT-PRO/class-bft-admin.php:934
@@ -1285,7 +1290,7 @@ msgstr "Interiorización al español"
 #: admin/lib/BFT/partials/bft-admin-display-do-more-with-bft-pro.php:30
 #: admin/lib/BFT-PRO/partials/bft-admin-display-changelog-bft.php:35
 #: admin/lib/BFT-PRO/partials/bft-admin-display-do-more-with-bft-pro.php:30
-msgid "Menú system with children"
+msgid "Menu system with children"
 msgstr "Sistema de menú con hijos"
 
 #: admin/lib/BFT/partials/bft-admin-display-changelog-bft.php:36
@@ -1297,9 +1302,8 @@ msgstr "Sistema de ajustes"
 
 #: admin/lib/BFT/partials/bft-admin-display-changelog-bft.php:37
 #: admin/lib/BFT-PRO/partials/bft-admin-display-changelog-bft.php:37
-#| msgid "Inputs system: text, textarea, number, select, select multiple, date, checkbox, checkbox multiple, radio, image, file and input comented"
 msgid "Inputs system: text, textarea, number, select, select multiple, date, checkbox, checkbox multiple, radio, image, file and input comented"
-msgstr "Sistema de ipunts:text, textarea, number, select, select multiple, fecha, checkbox, checkbox múltiple, radio, imagen, archivo e input compentado"
+msgstr "Sistema de ipunts:text, textarea, number, select, select multiple, fecha, checkbox, checkbox múltiple, radio, imagen, archivo e input comentado"
 
 #: admin/lib/BFT/partials/bft-admin-display-changelog-bft.php:39
 #: admin/lib/BFT-PRO/partials/bft-admin-display-changelog-bft.php:39
@@ -1346,7 +1350,7 @@ msgstr "Sistema AJAX por frontend"
 
 #: admin/lib/BFT/partials/bft-admin-display-checking-the-log.php:20
 #: admin/lib/BFT-PRO/partials/bft-admin-display-checking-the-log.php:20
-msgid "The log in WordPress is activated on"
+msgid "The log in WordPress is activated in"
 msgstr "El log en WordPress se activa en"
 
 #: admin/lib/BFT/partials/bft-admin-display-checking-the-log.php:20
@@ -1356,12 +1360,12 @@ msgstr "cambia"
 
 #: admin/lib/BFT/partials/bft-admin-display-checking-the-log.php:26
 #: admin/lib/BFT-PRO/partials/bft-admin-display-checking-the-log.php:26
-msgid "Now you can check the log on"
+msgid "Now you can check the log in"
 msgstr "Ahora puedes comprobar el log en"
 
 #: admin/lib/BFT/partials/bft-admin-display-checking-the-log.php:27
 #: admin/lib/BFT-PRO/partials/bft-admin-display-checking-the-log.php:27
-msgid "For printing on the log you can use the WordPress function"
+msgid "For printing to the log you can use the WordPress function"
 msgstr "Para imprimir en el log puedes usar la función de WordPress"
 
 #: admin/lib/BFT/partials/bft-admin-display-checking-the-log.php:27
@@ -1411,7 +1415,7 @@ msgstr "si es un array o un objeto"
 
 #: admin/lib/BFT/partials/bft-admin-display-checking-the-log.php:35
 #: admin/lib/BFT-PRO/partials/bft-admin-display-checking-the-log.php:35
-msgid "Now you can print on the log whatever variable you want"
+msgid "Now you can print in the log whatever variable you want"
 msgstr "Ahora puedes imprimir en el log la variable que quieras"
 
 #: admin/lib/BFT/partials/bft-admin-display-checking-the-log.php:36
@@ -1441,7 +1445,7 @@ msgstr "Devuelve la lista de países"
 
 #: admin/lib/BFT/partials/bft-admin-display-countries-functions.php:38
 #: admin/lib/BFT-PRO/partials/bft-admin-display-countries-functions.php:38
-msgid "Returns a country name through the country code"
+msgid "Returns the country name through the country code"
 msgstr "Devuelve el nombre del país a través del código del país"
 
 #: admin/lib/BFT/partials/bft-admin-display-credits.php:23
@@ -1471,7 +1475,6 @@ msgstr "Sistema para expandir las posibilidades de los formularios"
 
 #: admin/lib/BFT/partials/bft-admin-display-credits.php:38
 #: admin/lib/BFT-PRO/partials/bft-admin-display-credits.php:38
-#| msgid "the admin CSS is a handmade cut to make it less intrusive with the WordPress admin CSS"
 msgid "the admin CSS is a handmade cut to make it less intrusive with the WordPress admin CSS"
 msgstr "el CSS del administrador está hecho a mano para hacerlo menos intusivo con el CSS del administador de WordPress"
 
@@ -1492,7 +1495,6 @@ msgstr "Selección de un rango de fechas"
 
 #: admin/lib/BFT/partials/bft-admin-display-currencies-functions.php:24
 #: admin/lib/BFT-PRO/partials/bft-admin-display-currencies-functions.php:24
-#| msgid "Returns a currency list with all the data, including the numer of currency on the ISO 4217 standard"
 msgid "Returns a currency list with all the data, including the numer of currency on the ISO 4217 standard"
 msgstr "Devuelve a una lista de divisas con todos los datos, incluyendo el número de divisa según el estándard ISO 4217"
 
@@ -1503,12 +1505,12 @@ msgstr "Devuelve una lista de divisas"
 
 #: admin/lib/BFT/partials/bft-admin-display-currencies-functions.php:56
 #: admin/lib/BFT-PRO/partials/bft-admin-display-currencies-functions.php:56
-msgid "Returns a currency symbol through the currency code"
+msgid "Returns the currency symbol through the currency code"
 msgstr "Devuelve el símbolo de una divisa a través del código de divisa"
 
 #: admin/lib/BFT/partials/bft-admin-display-currencies-functions.php:60
 #: admin/lib/BFT-PRO/partials/bft-admin-display-currencies-functions.php:60
-msgid "Returns a the ISO 4217 number through the currency id"
+msgid "Returns the ISO 4217 number through the currency id"
 msgstr "Devuelve el número ISO 4217 a través de la ID de la divisa"
 
 #: admin/lib/BFT/partials/bft-admin-display-do-more-with-bft-pro.php:27
@@ -1528,9 +1530,8 @@ msgstr "Añade páginas hijas y organiza mejor tu plugin"
 
 #: admin/lib/BFT/partials/bft-admin-display-do-more-with-bft-pro.php:36
 #: admin/lib/BFT-PRO/partials/bft-admin-display-do-more-with-bft-pro.php:36
-#| msgid "Create, manage and store WordPress variables with setting pages, it's really easy"
 msgid "Create, manage and store WordPress variables with setting pages, it's really easy"
-msgstr "Crea, administra y guarda variables de WordPress con pagínas de ajustes"
+msgstr "Crea, administra y guarda variables de WordPress con páginas de ajustes"
 
 #: admin/lib/BFT/partials/bft-admin-display-do-more-with-bft-pro.php:58
 #: admin/lib/BFT-PRO/partials/bft-admin-display-do-more-with-bft-pro.php:58
@@ -1559,7 +1560,6 @@ msgstr "Añade menú para instalar/desinstala tu base de datos del plugin"
 
 #: admin/lib/BFT/partials/bft-admin-display-do-more-with-bft-pro.php:74
 #: admin/lib/BFT-PRO/partials/bft-admin-display-do-more-with-bft-pro.php:74
-#| msgid "Manage all the data only specifying the table and the fields. The table can have internationalized fields"
 msgid "Manage all the data only specifying the table and the fields. The table can have internationalized fields"
 msgstr "Administra tods los datos sólo especificando la tabla y los campos. La tabla puede tener campos internacionalizados"
 
@@ -1575,7 +1575,7 @@ msgstr "Listado paginado estilo WordPress gracias a una consulta SQL en piezas"
 
 #: admin/lib/BFT/partials/bft-admin-display-do-more-with-bft-pro.php:159
 #: admin/lib/BFT-PRO/partials/bft-admin-display-do-more-with-bft-pro.php:159
-msgid "A WordPress listing style thanks to a array"
+msgid "A WordPress listing style thanks to an array"
 msgstr "Listado estilo WordPress gracias a un array"
 
 #: admin/lib/BFT/partials/bft-admin-display-do-more-with-bft-pro.php:186
@@ -1630,7 +1630,6 @@ msgstr "Muestra un error"
 
 #: admin/lib/BFT/partials/bft-admin-display-errors-manage-show.php:28
 #: admin/lib/BFT-PRO/partials/bft-admin-display-errors-manage-show.php:28
-#| msgid "Backend Frontend Template can easily show errors, and it doesn't repeat the same error on the same load. Also: the plugin title will be add to the message"
 msgid "Backend Frontend Template can easily show errors, and it doesn't repeat the same error on the same load. Also: the plugin title will be add to the message"
 msgstr "Backend Frontend Template puede mostrar errores fácilmente, y no repite el mismo error en la misma carga. Además: el título del plugin ser añadirá al mensaje"
 
@@ -1691,7 +1690,7 @@ msgstr "error para enviar a"
 
 #: admin/lib/BFT/partials/bft-admin-display-errors-manage-show.php:43
 #: admin/lib/BFT-PRO/partials/bft-admin-display-errors-manage-show.php:43
-msgid "but first it will display the 'error_message' stored on the URL"
+msgid "but first it will display the 'error_message' stored in the URL"
 msgstr "pero primero mostrará el 'error_message' guardado en la URL"
 
 #: admin/lib/BFT/partials/bft-admin-display-errors-manage-show.php:44
@@ -1714,12 +1713,12 @@ msgstr "NULL por defecto"
 
 #: admin/lib/BFT/partials/bft-admin-display-errors-manage-show.php:45
 #: admin/lib/BFT-PRO/partials/bft-admin-display-errors-manage-show.php:45
-msgid "use this data instead of"
+msgid "it use this data instead of"
 msgstr "usa estos datos en vez de"
 
 #: admin/lib/BFT/partials/bft-admin-display-errors-manage-show.php:45
 #: admin/lib/BFT-PRO/partials/bft-admin-display-errors-manage-show.php:45
-msgid "for change the file displayed if error triggerred"
+msgid "for change the file displayed if error triggered"
 msgstr "para cambiar el archivo mostrado si se lanza un error"
 
 #: admin/lib/BFT/partials/bft-admin-display-errors-manage-show.php:46
@@ -1746,7 +1745,7 @@ msgstr "la clave/nombre de la página, si NULL será la página visualizada"
 #: admin/lib/BFT/partials/bft-admin-display-errors-manage-show.php:51
 #: admin/lib/BFT-PRO/partials/bft-admin-display-errors-manage-show.php:51
 msgid "Examples"
-msgstr "Ejempos"
+msgstr "Ejemplos"
 
 #: admin/lib/BFT/partials/bft-admin-display-errors-manage-show.php:54
 #: admin/lib/BFT-PRO/partials/bft-admin-display-errors-manage-show.php:54
@@ -1765,14 +1764,12 @@ msgstr "Un resumen rápido sobre qué visibilidad usar en las funciones de tu pl
 
 #: admin/lib/BFT/partials/bft-admin-display-functions-visibility.php:24
 #: admin/lib/BFT-PRO/partials/bft-admin-display-functions-visibility.php:24
-#| msgid "Don't use private functions, BFT use inheritance on the classes and a private function can't inheritance"
 msgid "Don't use private functions, BFT use inheritance on the classes and a private function can't inheritance"
 msgstr "No uses funciones privadas, BFT usa herencia en las clases y una función privada no puede heredarse"
 
 #: admin/lib/BFT/partials/bft-admin-display-functions-visibility.php:28
 #: admin/lib/BFT-PRO/partials/bft-admin-display-functions-visibility.php:28
-#| msgid "Ideal for the internal functions for security reasons, only your classes can use this functions"
-msgid "Ideal for the internal functions for security reasons, only your classes can use this functions"
+msgid "Ideal for the internal functions for security reasons, only your classes can use these functions"
 msgstr "Ideal para las funciones internas por razones de seguridad, sólo tus clases pueden usar estas funciones"
 
 #: admin/lib/BFT/partials/bft-admin-display-functions-visibility.php:32
@@ -1789,8 +1786,8 @@ msgstr "Funciones invocadas via"
 
 #: admin/lib/BFT/partials/bft-admin-display-functions-visibility.php:37
 #: admin/lib/BFT-PRO/partials/bft-admin-display-functions-visibility.php:37
-msgid "Functions called via install, upgrade or unistall"
-msgstr "Funciones invocadas via instalació, actualización o desistalación"
+msgid "Functions called via install, upgrade or uninstall"
+msgstr "Funciones invocadas via instalación, actualización o desistalación"
 
 #: admin/lib/BFT/partials/bft-admin-display-functions-visibility.php:38
 #: admin/lib/BFT-PRO/partials/bft-admin-display-functions-visibility.php:38
@@ -1810,7 +1807,6 @@ msgstr "Esta página está ubicada en"
 
 #: admin/lib/BFT/partials/bft-admin-display-internationalization-system.php:22
 #: admin/lib/BFT-PRO/partials/bft-admin-display-internationalization-system.php:25
-#| msgid "For specify a text that maybe needs translation, WordPress provides the functions"
 msgid "For specify a text that maybe needs translation, WordPress provides the functions"
 msgstr "Para especificar un texto que quizás necesita traducción, WordPress proporciona las funciones"
 
@@ -1822,7 +1818,7 @@ msgstr "para traducción directa y"
 #: admin/lib/BFT/partials/bft-admin-display-internationalization-system.php:25
 #: admin/lib/BFT-PRO/partials/bft-admin-display-internationalization-system.php:29
 #: admin/lib/BFT-PRO/partials/bft-admin-display-internationalization-system.php:39
-msgid "for translation and scape the HTML characters"
+msgid "for translation and escape the HTML characters"
 msgstr "para traducción y escapar los caracteres HTML"
 
 #: admin/lib/BFT/partials/bft-admin-display-internationalization-system.php:24
@@ -1842,12 +1838,10 @@ msgid "link here"
 msgstr "enlace aquí"
 
 #: admin/lib/BFT/partials/bft-admin-display-internationalization-system.php:28
-#| msgid "With that, a translation plugin will be able to translate your plugin into the visitor language"
 msgid "With that, a translation plugin will be able to translate your plugin into the visitor language"
 msgstr "Con eso, un plugin de traducción será capaz de traducir tu plugin al idioma del visitante"
 
 #: admin/lib/BFT/partials/bft-admin-display-internationalization-system.php:29
-#| msgid "But if you want make your own translation for your own plugin: you can allocate the language files on"
 msgid "But if you want make your own translation for your own plugin: you can allocate the language files on"
 msgstr "Pero si quieres hacer tu propia traducción para tu propio plugin: puedes alojar los archivos de idiomas en"
 
@@ -1889,7 +1883,7 @@ msgstr "Devuelve una lista de idiomas"
 #: admin/lib/BFT/partials/bft-admin-display-languages-functions.php:42
 #: admin/lib/BFT-PRO/partials/bft-admin-display-languages-functions.php:38
 #: admin/lib/BFT-PRO/partials/bft-admin-display-languages-functions.php:42
-msgid "Returns the data stored on the setting"
+msgid "Returns the data stored in the setting"
 msgstr "Devuelve los datos guardados en el ajuste"
 
 #: admin/lib/BFT/partials/bft-admin-display-languages-functions.php:42
@@ -1904,14 +1898,13 @@ msgstr "Si idiomas está vacío configurará los idiomas 'en' y 'es'"
 
 #: admin/lib/BFT/partials/bft-admin-display-languages-functions.php:45
 #: admin/lib/BFT-PRO/partials/bft-admin-display-languages-functions.php:45
-#| msgid "If language_admin empty or not found on languages, it will set the first language stored on languages"
-msgid "If language_admin empty or not found on languages, it will set the first language stored on languages"
+msgid "If language_admin empty or not found on languages, it will set the first language stored in languages"
 msgstr "Si language_admin está vacío o no es encontrado en los idiomas, se configurará el primer idioma guardado en languages"
 
 #: admin/lib/BFT/partials/bft-admin-display-menu-system.php:20
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:20
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system.php:20
-msgid "Edit your menu on the variable"
+msgid "Edit your menu in the variable"
 msgstr "Edita tu menú en la variable"
 
 #: admin/lib/BFT/partials/bft-admin-display-menu-system.php:20
@@ -1925,12 +1918,11 @@ msgstr "del archivo"
 #: admin/lib/BFT/partials/bft-admin-display-menu-system.php:21
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:21
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system.php:21
-msgid "Design a BFT menu look like this"
+msgid "Designing a BFT menu look like this"
 msgstr "Diseñar un menú BFT se ve así"
 
 #: admin/lib/BFT/partials/bft-admin-display-menu-system.php:36
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system.php:36
-#| msgid "can have all the pages you want, but in BFT the admin pages can't have children, that's only possible on"
 msgid "can have all the pages you want, but in BFT the admin pages can't have children, that's only possible on"
 msgstr "puede tener todas las páginas que quieras, pero en BFT las páginas de administración no pueden tener hijos, eso sólo es posible en"
 
@@ -1964,7 +1956,7 @@ msgstr "Eplicación del menú BFT"
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:57
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system.php:41
 #: admin/lib/BFT-PRO/partials/bft-admin-display-settings-system.php:48
-msgid "Automatic parametters added to the array"
+msgid "Automatic parameters added to the array"
 msgstr "Parámetros automáticos añadidos al array"
 
 #: admin/lib/BFT/partials/bft-admin-display-menu-system.php:43
@@ -1978,7 +1970,7 @@ msgstr "la clave del array"
 
 #: admin/lib/BFT/partials/bft-admin-display-menu-system.php:44
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system.php:44
-msgid "More automatic parametters on BFT Pro"
+msgid "More automatic parameters on BFT Pro"
 msgstr "Más parámetros automáticos en BFT Pro"
 
 #: admin/lib/BFT/partials/bft-admin-display-menu-system.php:48
@@ -1992,7 +1984,7 @@ msgstr "Parámetros con datos por defecto si no están"
 #: admin/lib/BFT/partials/bft-admin-display-menu-system.php:50
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:95
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system.php:50
-msgid "title of the page"
+msgid "page title"
 msgstr "título de la página"
 
 #: admin/lib/BFT/partials/bft-admin-display-menu-system.php:50
@@ -2030,44 +2022,43 @@ msgstr "título de la página"
 #: admin/lib/BFT-PRO/partials/bft-admin-display-settings-system.php:80
 #: admin/lib/BFT-PRO/partials/bft-admin-display-settings-system.php:81
 #: admin/lib/BFT-PRO/partials/bft-admin-display-settings-system.php:125
-#| msgid "Default"
 msgid "default"
 msgstr "por defecto"
 
 #: admin/lib/BFT/partials/bft-admin-display-menu-system.php:51
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:96
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system.php:51
-msgid "title of the tab of the page"
+msgid "page tab title"
 msgstr "título de la pestaña de la página"
 
 #: admin/lib/BFT/partials/bft-admin-display-menu-system.php:52
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:97
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system.php:52
-msgid "slug of the page"
+msgid "page slug"
 msgstr "slug de la página"
 
 #: admin/lib/BFT/partials/bft-admin-display-menu-system.php:52
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:97
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system.php:52
-msgid "key of the page"
+msgid "key page"
 msgstr "clave de la página"
 
 #: admin/lib/BFT/partials/bft-admin-display-menu-system.php:52
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:97
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system.php:52
-msgid "The Menu slug will be changed to"
+msgid "The menu slug will be changed to"
 msgstr "El menú slug se cambiará a"
 
 #: admin/lib/BFT/partials/bft-admin-display-menu-system.php:52
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:97
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system.php:52
-msgid "because it's needed a unike page name among the plugins"
+msgid "because it's needed a unique page name among the plugins"
 msgstr "porque es necesario un nombre de página único entre los plugins"
 
 #: admin/lib/BFT/partials/bft-admin-display-menu-system.php:53
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:98
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system.php:53
-msgid "if false it doesn't show the tab of the page, even if is the page selected"
+msgid "if false does not display the page tab, even if the page is selected"
 msgstr "si false no muestra la pestaña de la página, incluso si la página está seleccionada"
 
 #: admin/lib/BFT/partials/bft-admin-display-menu-system.php:54
@@ -2085,7 +2076,6 @@ msgstr "carga la función antes de que la página se muestre"
 #: admin/lib/BFT/partials/bft-admin-display-menu-system.php:56
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:103
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system.php:56
-#| msgid "The"
 msgid "the"
 msgstr "el"
 
@@ -2174,7 +2164,7 @@ msgstr "capacidades de WordPress"
 
 #: admin/lib/BFT/partials/bft-admin-display-menu-system.php:66
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system.php:66
-msgid "More parametters on BFT Pro"
+msgid "More parameters on BFT Pro"
 msgstr "Más parámetros en BFT Pro"
 
 #: admin/lib/BFT/partials/bft-admin-display-menu-system.php:70
@@ -2195,7 +2185,7 @@ msgstr "puedes crear cualquier función qué necesites"
 #: admin/lib/BFT/partials/bft-admin-display-menu-system.php:72
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:139
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system.php:72
-msgid "display the page selected on"
+msgid "displays the page selected on"
 msgstr "muestra la página seleccionada en"
 
 #: admin/lib/BFT/partials/bft-admin-display-menu-system.php:73
@@ -2217,30 +2207,28 @@ msgstr "Más functions load en"
 #: admin/lib/BFT/partials/bft-admin-display-menu-system.php:83
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:156
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system.php:83
-msgid "Optional parametters"
+msgid "Optional parameters"
 msgstr "Parámetros opcionales"
 
 #: admin/lib/BFT/partials/bft-admin-display-menu-system.php:85
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system.php:85
-#| msgid "copy the data of a page. Only copy the data not found on the page, neither copy id, is_child, page_parent, menu_slug and children"
 msgid "copy the data of a page. Only copy the data not found on the page, neither copy id, is_child, page_parent, menu_slug and children"
 msgstr "copia los datos de una página. Sólo copia los datos no encontrados en la página, tampoco copia el id, is_child, page_parent, menu_slug y children"
 
 #: admin/lib/BFT/partials/bft-admin-display-menu-system.php:86
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system.php:86
-msgid "More optional parametters on"
+msgid "More optional parameters on"
 msgstr "Más parámetros opcionales en"
 
 #: admin/lib/BFT/partials/bft-admin-display-menu-system.php:90
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:179
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system.php:90
-msgid "Your own parametters"
+msgid "Your own parameters"
 msgstr "Tus propios parámetros"
 
 #: admin/lib/BFT/partials/bft-admin-display-menu-system.php:93
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:182
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system.php:93
-#| msgid "You can create your own parameter, later on you can access to the info on a function or on a page with"
 msgid "You can create your own parameter, later on you can access to the info on a function or on a page with"
 msgstr "Puedes crear tu propio parámetros, después puedes acceder a la información desde una función o una página con"
 
@@ -2374,14 +2362,12 @@ msgstr "a"
 #: admin/lib/BFT/partials/bft-admin-display-preparing-the-plugin.php:40
 #: admin/lib/BFT-PRO/partials/bft-admin-display-preparing-the-plugin-pro.php:41
 #: admin/lib/BFT-PRO/partials/bft-admin-display-preparing-the-plugin.php:40
-#| msgid "Go to search and replace of your editor, active 'match case' and replace this strings"
-msgid "Go to search and replace of your editor, active 'match case' and replace this strings"
+msgid "Go to search and replace of your editor, active 'match case' and replace these strings"
 msgstr "Ve a buscar y reemplazar de tu editor, activa 'coincidir mayúsculas y minúsculas' y reemplaza estas cadenas"
 
 #: admin/lib/BFT/partials/bft-admin-display-preparing-the-plugin.php:48
 #: admin/lib/BFT-PRO/partials/bft-admin-display-preparing-the-plugin-pro.php:49
 #: admin/lib/BFT-PRO/partials/bft-admin-display-preparing-the-plugin.php:48
-#| msgid "Go to search and replace of your editor, active 'match case' and replace the words with the names and ids of your plugin"
 msgid "Go to search and replace of your editor, active 'match case' and replace the words with the names and ids of your plugin"
 msgstr "Ve a buscar y reemplazar de tu editor, activa \"coincidir mayúsculas y minúsculas\" y reemplaza estas palabas con los nombres e ids de tu plugin"
 
@@ -2389,7 +2375,7 @@ msgstr "Ve a buscar y reemplazar de tu editor, activa \"coincidir mayúsculas y 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-preparing-the-plugin-pro.php:63
 #: admin/lib/BFT-PRO/partials/bft-admin-display-preparing-the-plugin.php:62
 msgid "Replace the icon for you own on"
-msgstr "Reemplaza el icono por el tuyo propio"
+msgstr "Reemplaza el icono por el tuyo propio en"
 
 #: admin/lib/BFT/partials/bft-admin-display-preparing-the-plugin.php:66
 #: admin/lib/BFT-PRO/partials/bft-admin-display-preparing-the-plugin-pro.php:67
@@ -2424,7 +2410,7 @@ msgstr "archivos de traducción"
 #: admin/lib/BFT/partials/bft-admin-display-preparing-the-plugin.php:70
 #: admin/lib/BFT-PRO/partials/bft-admin-display-preparing-the-plugin-pro.php:71
 #: admin/lib/BFT-PRO/partials/bft-admin-display-preparing-the-plugin.php:70
-msgid "this binarian files are made with programs like"
+msgid "theses binarian files are made with programs like"
 msgstr "estos archivos binarios se crean con programas como"
 
 #: admin/lib/BFT/partials/bft-admin-display-preparing-the-plugin.php:71
@@ -2544,7 +2530,6 @@ msgstr "clase para la sección de administración"
 #: admin/lib/BFT/partials/bft-admin-display-preparing-the-plugin.php:94
 #: admin/lib/BFT-PRO/partials/bft-admin-display-preparing-the-plugin-pro.php:95
 #: admin/lib/BFT-PRO/partials/bft-admin-display-preparing-the-plugin.php:94
-#| msgid "it's an extension of the BFT admin-public class, your admin-public class and BFT admin class"
 msgid "it's an extension of the BFT admin-public class, your admin-public class and BFT admin class"
 msgstr "es una extensión de la clase BFT admin-public, tu clase admin-public y la clase BFT admin"
 
@@ -2557,7 +2542,6 @@ msgstr "clase para la sección pública"
 #: admin/lib/BFT/partials/bft-admin-display-preparing-the-plugin.php:95
 #: admin/lib/BFT-PRO/partials/bft-admin-display-preparing-the-plugin-pro.php:96
 #: admin/lib/BFT-PRO/partials/bft-admin-display-preparing-the-plugin.php:95
-#| msgid "it's an extension of the BFT admin-public class, your admin-public class and BFT public class"
 msgid "it's an extension of the BFT admin-public class, your admin-public class and BFT public class"
 msgstr "es una extensión de la clase BFT admin-public, tu clase admin-public y la clase BFT public"
 
@@ -2570,14 +2554,12 @@ msgstr "Mira los ejemplos"
 #: admin/lib/BFT/partials/bft-admin-display-preparing-the-plugin.php:101
 #: admin/lib/BFT-PRO/partials/bft-admin-display-preparing-the-plugin-pro.php:102
 #: admin/lib/BFT-PRO/partials/bft-admin-display-preparing-the-plugin.php:101
-#| msgid "On the next tabs you can see examples of how to work with Backend Frontend Template"
 msgid "On the next tabs you can see examples of how to work with Backend Frontend Template"
 msgstr "En las siguientes pestañas puedes ver como trabajar con Backend Frontend Template"
 
 #: admin/lib/BFT/partials/bft-admin-display-security-system.php:23
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system-pro.php:23
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system.php:23
-#| msgid "The 'function_load' option of the menu is the function that the page executes before sending the HTML headers"
 msgid "The 'function_load' option of the menu is the function that the page executes before sending the HTML headers"
 msgstr "La opción 'function_load' del menú es la función que la página ejecuta antes de enviar las cabeceras HTML"
 
@@ -2611,8 +2593,7 @@ msgstr "La función"
 #: admin/lib/BFT/partials/bft-admin-display-security-system.php:29
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system-pro.php:29
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system.php:29
-#| msgid "checks if the admin capabilities are correct and if the id required data is not missing. On this function it works the"
-msgid "checks if the admin capabilities are correct and if the id required data is not missing. On this function it works the"
+msgid "checks if the admin capabilities are correct and if the id required data is not missing. In this function it works the"
 msgstr "comprueba si las capacidades administrativas son correctas y si el id requerido está. En esta función funciona el"
 
 #: admin/lib/BFT/partials/bft-admin-display-security-system.php:29
@@ -2623,7 +2604,6 @@ msgstr "opción del menú (la comprobación del id sólo en Backend Frontend Tem
 #: admin/lib/BFT/partials/bft-admin-display-security-system.php:30
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system-pro.php:30
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system.php:30
-#| msgid "This function can be called at the beginning of a custom function_load to check all before save changes"
 msgid "This function can be called at the beginning of a custom function_load to check all before save changes"
 msgstr "Esta función puede llamarse al principio de una function_load personalizada para comprobar todo antes de guardar los cambios"
 
@@ -2648,21 +2628,18 @@ msgstr "La opción 'function' del menú is la función principal que la página 
 #: admin/lib/BFT/partials/bft-admin-display-security-system.php:42
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system-pro.php:40
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system.php:42
-#| msgid "checks if the admin capabilities are correct and if the id required data is not missing"
 msgid "checks if the admin capabilities are correct and if the id required data is not missing"
 msgstr "comprueba si las capacidades administrativas son correctas y si faltan los datos id requeridos"
 
 #: admin/lib/BFT/partials/bft-admin-display-security-system.php:43
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system-pro.php:41
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system.php:43
-#| msgid "On a custom function there are functions for checking the access and to retrieve the ids"
 msgid "On a custom function there are functions for checking the access and to retrieve the ids"
 msgstr "En una función personalizada hay funciones para comprobar el acceso y recuperar los ids"
 
 #: admin/lib/BFT/partials/bft-admin-display-security-system.php:45
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system-pro.php:43
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system.php:45
-#| msgid "check the admin permissions and throw an error if needed. Recommended for use at the beginning of the function"
 msgid "check the admin permissions and throw an error if needed. Recommended for use at the beginning of the function"
 msgstr "comprueba los permisos de administración y lanza un error si es necesario. Se recomienda usar al principio de la función"
 
@@ -2695,7 +2672,7 @@ msgstr "La estructura de un shortcode es"
 #: admin/lib/BFT-PRO/partials/bft-admin-display-ajax-system.php:122
 #: admin/lib/BFT-PRO/partials/bft-admin-display-shortcodes-system.php:31
 msgid "Defining a function"
-msgstr "Defininendo a función"
+msgstr "Defininendo un función"
 
 #: admin/lib/BFT/partials/bft-admin-display-shortcodes-system.php:32
 #: admin/lib/BFT-PRO/partials/bft-admin-display-shortcodes-system.php:32
@@ -2714,7 +2691,7 @@ msgstr "array con todos los datos especificados en el shortcode"
 
 #: admin/lib/BFT/partials/bft-admin-display-shortcodes-system.php:40
 #: admin/lib/BFT-PRO/partials/bft-admin-display-shortcodes-system.php:40
-msgid "the content inside the two tags, if the shortcode uses a clossing tag"
+msgid "the content within the two tags, if the shortcode uses a clossing tag"
 msgstr "el contenido dentro de las dos etiquetas, si el shortcode usa una etiqueta de cierre"
 
 #: admin/lib/BFT/partials/bft-admin-display-shortcodes-system.php:41
@@ -2755,7 +2732,7 @@ msgstr "Ejemplo completo"
 #: admin/lib/BFT-PRO/partials/bft-admin-display-ajax-form-system.php:177
 #: admin/lib/BFT-PRO/partials/bft-admin-display-ajax-system.php:179
 #: admin/lib/BFT-PRO/partials/bft-admin-display-shortcodes-system.php:85
-msgid "Test yourself"
+msgid "Try it for yourself"
 msgstr "Pruébalo tu mismo"
 
 #: admin/lib/BFT/partials/bft-admin-display-shortcodes-system.php:86
@@ -2772,7 +2749,7 @@ msgstr "O"
 
 #: admin/lib/BFT/partials/bft-admin-display-shortcodes-system.php:92
 #: admin/lib/BFT-PRO/partials/bft-admin-display-shortcodes-system.php:92
-msgid "This is an aditional text"
+msgid "This is an additional text"
 msgstr "Esto es un texto adicional"
 
 #: admin/lib/BFT/partials/bft-admin-display-shortcodes-system.php:92
@@ -2813,7 +2790,7 @@ msgstr "documentación para desarrollos de plugin para WordPress"
 #: admin/lib/BFT-PRO/partials/bft-admin-display-what-is-bft-pro.php:21
 #: admin/lib/BFT-PRO/partials/bft-admin-display-what-is-bft.php:21
 msgid "with this template/library you can develop your plugin now only following the"
-msgstr "con esta plantilla/librería puedes desarrollar tu plugin ya sólo siguiento la"
+msgstr "con esta plantilla/librería puedes desarrollar tu plugin ya sólo siguiendo la"
 
 #: admin/lib/BFT/partials/bft-admin-display-what-is-bft.php:21
 #: admin/lib/BFT-PRO/partials/bft-admin-display-what-is-bft-pro.php:21
@@ -2871,7 +2848,7 @@ msgid "Error finding the key of the form"
 msgstr "Error ecnontrando la key del formulario"
 
 #: admin/lib/BFT-PRO/class-bft-admin.php:3247
-msgid "Error finding the GET name of the key of the form"
+msgid "Error finding the GET key name of the form"
 msgstr "Error encontrando el nombre GET de la clave del formulario"
 
 #: admin/lib/BFT-PRO/class-bft-admin.php:3462
@@ -3101,12 +3078,10 @@ msgid "Explanation"
 msgstr "Explicación"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-ajax-form-system.php:27
-#| msgid "On the HTML data will be a form with the 'action' data, the data will be read with"
 msgid "On the HTML data will be a form with the 'action' data, the data will be read with"
 msgstr "En los datos HTML estará el formulario con el dato 'action', los datos se leerán con"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-ajax-form-system.php:31
-#| msgid "Besides, the form data will have a nonce if the user is logged, for additional security"
 msgid "Besides, the form data will have a nonce if the user is logged, for additional security"
 msgstr "Además, los datos del formulario tendrán un nonce si el usuario está logueado, para seguridad adicional"
 
@@ -3120,7 +3095,7 @@ msgid "AJAX response"
 msgstr "respuesta AJAX"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-ajax-form-system.php:122
-msgid "A AJAX form will check the nonce for logged users before use the data with"
+msgid "An AJAX form will check the nonce for logged users before use the data with"
 msgstr "Un formulario AJAX comprobará el nonce para usuario logeados antes de usar los datos con"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-ajax-form-system.php:122
@@ -3132,37 +3107,34 @@ msgid "It's easy to add AJAX on your shortcodes"
 msgstr "Es fácil añadir AJAX en tus shortcodes"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-ajax-system.php:27
-#| msgid "The shortcode will not change, the only change is on the partial page, that page will have the JavaScript AJAX data"
 msgid "The shortcode will not change, the only change is on the partial page, that page will have the JavaScript AJAX data"
 msgstr "El shortcode no cambiará,el único cambio está en la página parcial, esa página tendrá los datos JavaScript AJAX"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-ajax-system.php:28
-msgid "You can use your own method, but BFT uses jQuery, the functions provide by"
+msgid "You can use your own method, but BFT uses jQuery, the functions provided by"
 msgstr "Puedes usar tu propio método, pero BFT usa jQuery, las funciones proporcionadas por"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-ajax-system.php:28
 msgid "are designed for be printed inside of a jQuery script"
-msgstr "estás preparadas para ser impresas dentro de un script jQuery"
+msgstr "están preparadas para ser impresas dentro de un script jQuery"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-ajax-system.php:29
-#| msgid "provides JavaScript functions to show error on the designed container and erase the HTML data on the main container"
 msgid "provides JavaScript functions to show error on the designed container and erase the HTML data on the main container"
 msgstr "provee funcioens JavaScript para mostrar error en el contenedor seleccionado y borrar los datos HTML en el contenedor principal"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-ajax-system.php:34
-msgid "For the WordPress side, is needed"
+msgid "For the WordPress side is needed"
 msgstr "Para la parte WordPress, es necesario"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-ajax-system.php:110
 msgid "Defining an AJAX WordPress Action"
-msgstr "Defininedo una Acción AJAX de WordPress"
+msgstr "Definiendo una Acción AJAX de WordPress"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-ajax-system.php:111
 msgid "The AJAX responses are defined on"
 msgstr "Las respuestas AJAX son definidas en"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-ajax-system.php:112
-#| msgid "The structure of a AJAX response is double, WordPress separates the logged ussers of non logged users"
 msgid "The structure of a AJAX response is double, WordPress separates the logged ussers of non logged users"
 msgstr "La estructura de una respuesta AJAX es doble, WordPress separa los usuarios logeados de los usuarios no logeados"
 
@@ -3184,23 +3156,26 @@ msgstr "Devolviendo un error"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-ajax-system.php:142
 msgid "Backend Frontend Template provides the function"
-msgstr "Backend Frontend Template provee l"
+msgstr "Backend Frontend Template provee la función"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-ajax-system.php:143
 msgid "will return the JSON and will stop the execution of the code"
 msgstr "devolverá el JSON y parará la ejecución del código"
 
+#: admin/lib/BFT-PRO/partials/bft-admin-display-ajax-system.php:36
+msgid "it's provided by Backend Frontend Template with the variable"
+msgstr "lo proporciona Backend Frontend Template con la variable"
+
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:22
-msgid "Needed fields on the database table"
+msgid "Required fields on the database table"
 msgstr "Campos necesarios en la tabla de la base de datos"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:23
-#| msgid "For display and manipulate the data automatically we need a few dedicated fields on a table"
-msgid "For display and manipulate the data automatically we need a few dedicated fields on a table"
+msgid "For display and manipulate the data automatically we need a few dedicated fields in a table"
 msgstr "Para mostrar y manipular los datos automáticamente necesitaremos unos pocos campos dedicados en una tabla"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:25
-msgid "Status, enum type, name of the field decided on"
+msgid "Status, enum type, field name decided in"
 msgstr "Estado, tipo enumerado, nombre del campo decidido en"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:25
@@ -3208,19 +3183,18 @@ msgid "for the enum options use the stored data on"
 msgstr "para las opciones del enumerado usa los datos almacenados en"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:26
-msgid "Created time, datetime type, name of the field decided on"
+msgid "Created time, datetime type, field name decided in"
 msgstr "Tiempo de creación, tipo datetime, nombre del campo decidido en"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:27
-msgid "Modified time, datetime type, name of the field decided on"
+msgid "Modified time, datetime type, field name decided in"
 msgstr "Tiempo de modificación, tipo datetime, nombre del campo decidido en"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:28
-msgid "Removed time (moved to bin), datetime type, name of the field decided on"
+msgid "Removed time (moved to bin), datetime type, field name decided in"
 msgstr "Tiemp ode eliminación (movido a la papelera), tipo datetime, nombre del campo decidido en"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:30
-#| msgid "Plus the table can have an internationalization (i18n) table, that table will have a foreign_key pointing to id of the main table"
 msgid "Plus the table can have an internationalization (i18n) table, that table will have a foreign_key pointing to id of the main table"
 msgstr "Además la tabla puede tener una tabla de internalización (i18n), esa tabla tendrá una foreign_key apuntando al id de la tabla principal"
 
@@ -3229,34 +3203,31 @@ msgid "An example of a table with an internationalization table"
 msgstr "Un ejemplo de una tabla con tabla de internalización"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:59
-#| msgid "Note: don't use 'wp_', a WordPress installation maybe use other prefix, use instead"
 msgid "Note: don't use 'wp_', a WordPress installation maybe use other prefix, use instead"
-msgstr "Nota_ no usar 'wp_', una instalación de WordPress quizás usa otro prefijo, usar en su lugar"
+msgstr "Nota: no usar 'wp_', una instalación de WordPress quizás usa otro prefijo, usar en su lugar"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:60
 msgid "Warning"
 msgstr "Aviso"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:60
-#| msgid "'name' can't be used for a column a i18n table. WordPress clean the data automatically of all 'name' appearances and WordPress doesn't expect an array of data"
 msgid "'name' can't be used for a column a i18n table. WordPress clean the data automatically of all 'name' appearances and WordPress doesn't expect an array of data"
 msgstr "'name' no puede ser usado en una columna de una tabla i18n. WordPress limpia los datos automáticamente de todas las apariciones de 'name' y WordPress no espera datos array"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:60
-msgid "it's an array because its the text for every language"
-msgstr "es un array porque es el texto en cada idiomaOn the many on many relatinships is needed the created time and modified time"
+msgid "it's an array because its the text in each language"
+msgstr "es un array porque es el texto en cada idioma"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:61
-msgid "On the many on many relatinships is needed the created time and modified time"
+msgid "On the many to many relationships is needed the created time and modified time"
 msgstr "En las relaciones muchos a muchos is necesario la fecha de creación y fecha de modificación"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:63
-#| msgid "Students doesn't described on this page example, the foreign key can't work if you copy the query"
 msgid "Students doesn't described on this page example, the foreign key can't work if you copy the query"
 msgstr "Estudiantes no descritos en esta página de ejemplo, la clave foránea no puede funcionar si copias la query"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:81
-msgid "The forms are described on"
+msgid "The forms are described in"
 msgstr "Los formularios son descritos en"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:81
@@ -3264,32 +3235,31 @@ msgid "a form it's the union of a table and its internationalization"
 msgstr "un formulario es la unicón de su tabla y su internalización"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:82
-msgid "Design a BFT form look like this"
+msgid "Designing a BFT form looks like this"
 msgstr "Diseñar un formulario BFT se ve así"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:178
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:304
-msgid "Parametters of the form"
+msgid "Form parameters"
 msgstr "Parámetros del formulario"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:180
-msgid "internal id of the form"
+msgid "internal form id"
 msgstr "internal id del formulario"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:181
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:307
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:56
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:69
-msgid "name of the table"
+msgid "table name"
 msgstr "nombre de la tabla"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:182
-msgid "name of the key ('id' usually)"
-msgstr "nombre de la clabe ('id' normalmente)"
+msgid "key name ('id' usually)"
+msgstr "nombre de la clave ('id' normalmente)"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:183
-#| msgid "field where it's stored the name of the row (the name of a user, the name of a book, etc.)"
-msgid "field where it's stored the name of the row (the name of a user, the name of a book, etc.)"
+msgid "field where it's stored the row name (the name of a user, the name of a book, etc.)"
 msgstr "campo donde se guarda el nombre de la fila (el nombre de un usuario, el nombre de un libro, etc.)"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:184
@@ -3301,7 +3271,7 @@ msgid "list of fields"
 msgstr "lista de campos"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:187
-msgid "Optional parametters of the fields"
+msgid "Optional field parameters"
 msgstr "Parámetro opcional de los campos"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:189
@@ -3312,24 +3282,23 @@ msgstr "texto a mostrar en la administración"
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system-pro.php:70
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system-pro.php:71
 #: admin/lib/BFT-PRO/partials/bft-admin-display-settings-system.php:82
-#| msgid "default"
 msgid "Default"
 msgstr "Por defecto"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:190
-msgid "placeholder if the type data can have placeholder"
-msgstr "placeholder si el tipo de data puede tener placeholder"
+msgid "placeholder if the data type can have placeholder"
+msgstr "placeholder si el tipo de dato puede tener placeholder"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:191
 msgid "display the field on the list table"
 msgstr "muestra el campo en la tabla-lista"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:191
-msgid "display_table doesn't work for now with relation_many_to_many fields"
-msgstr "display_table no funciona por ahora con campos relation_many_to_many"
+msgid "display_table doesn't work for now with many_to_many_relationship fields"
+msgstr "display_table no funciona por ahora con campos many_to_many_relationship"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:192
-msgid "if the data of the field is stored on a internationalization table"
+msgid "if the data of the field is stored in a internationalization table"
 msgstr "si los datos del campo están almacenados en una tabla de internalización"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:193
@@ -3341,17 +3310,15 @@ msgid "display the field only if the data is on the bin"
 msgstr "muestra el campo sólo si los datos están la papelera"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:195
-msgid "readonly field, for column key for example"
+msgid "readonly field, for the column key for example"
 msgstr "campo de sólo lectura, para la columna clave por ejemplo"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:196
-#| msgid "catch the data from the GET data on the URL if there aren't data stored of this field. For a dependand data, example: teachers notes, a new note need to know the teacher id of the note"
-msgid "catch the data from the GET data on the URL if there aren't data stored of this field. For a dependand data, example: teachers notes, a new note need to know the teacher id of the note"
+msgid "catch the data from the GET data on the URL if there aren't data stored of this field. For a dependant data, example: teachers' notes, a new note needs to know the teacher id of the note"
 msgstr "coge el dato de los datos GET en la URL si no hay dato guardado de este campo. Para datos dependientes, ejemplo: notas de profesores, una nueva nota necesita saber el id del profesor de la nota"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:197
-#| msgid "a empty data will be transform to NULL (the NULL data always is printed like value='')"
-msgid "a empty data will be transform to NULL (the NULL data always is printed like value='')"
+msgid "a empty data will be transformed to NULL (the NULL data always is printed like value='')"
 msgstr "un dato vacío se transformará a NULL (el dato NULL siempre se mostrará como value='')"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:198
@@ -3359,7 +3326,7 @@ msgid "it stores a foreign key"
 msgstr "guarda una clave foránea"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:199
-msgid "text to show when NULL is stored on a foreign key with optional NULL"
+msgid "text to show when NULL is stored in a foreign key with optional NULL"
 msgstr "texto para mostrar cuando NULL es guardado en una clave foránea con NULL opcional"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:200
@@ -3367,7 +3334,7 @@ msgid "the input options of BFT plus the option"
 msgstr "las opciones de inputs de BFT y además la opción"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:200
-msgid "it's a select for link the relation"
+msgid "it's a select for link the relationship"
 msgstr "es un select para enlazar la relación"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:200
@@ -3375,7 +3342,7 @@ msgid "Default 'text'"
 msgstr "'text' por defecto"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:202
-msgid "uses the data stored on"
+msgid "uses the data stored in"
 msgstr "usa los datos guardados en"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:210
@@ -3389,35 +3356,30 @@ msgid "input textarea, rows and cols are optionals"
 msgstr "input textarea, rows y cols son opcionales"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:222
-#| msgid "input number, optional args: min, max and step. Default of step: 1, alternative: 'decimal' or 'decimals', this option calculate the needed steps"
 msgid "input number, optional args: min, max and step. Default of step: 1, alternative: 'decimal' or 'decimals', this option calculate the needed steps"
 msgstr "input number, args opcionales: min, max y step. Por defecto en step: 1, alternativo: 'decimal' o 'decimals', esta opción calculate los steps necesarios"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:230
-#| msgid "input select, args mut have 'options', it stores string wiht checked options, ej: 'en,es' , optional args: search (default false), multiple (default false)"
-msgid "input select, args mut have 'options', it stores string wiht checked options, ej: 'en,es' , optional args: search (default false), multiple (default false)"
-msgstr "input select, args tiene que tener 'options', guarda una cadena con las opciones seleccionadas, ej: 'en,es', optional args: search (false por defecto), multiple (false por defecto)"
+msgid "input select, args must have 'options', it stores string wiht checked options, ej: 'en,es' , optional args: search (default false), multiple (default false)"
+msgstr "input select, args tiene que tener 'options', guarda una cadena con las opciones seleccionadas, ej: 'en,es', args opcionales: search (false por defecto), multiple (false por defecto)"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:250
-msgid "input text with a calendar, the date will be the MySQL style '2023-01-01'"
+msgid "input text with a calendar, the date will be in MySQL style '2023-01-01'"
 msgstr "input text con un calendario, la fecha será en estilo MySQL '2023-01-01'"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:255
-msgid "single and multiple, on multiple is needed 'options' on args"
+msgid "single and multiple, in multiple is needed 'options' on args"
 msgstr "single y multiple, en multiple es necesario 'options' en args"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:269
-#| msgid "radio buttons, stores string wiht checked options, ej: 'en,es', it requieres 'options'"
 msgid "radio buttons, stores string wiht checked options, ej: 'en,es', it requieres 'options'"
 msgstr "radio buttons, guarda cadena con las opciones seleccionadas, ej: 'en, es', requiere 'options'"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:280
-#| msgid "store is needed and select and image of the WordPress Media Library, the data saved is the ID of the file. One selected shows the image"
 msgid "store is needed and select and image of the WordPress Media Library, the data saved is the ID of the file. One selected shows the image"
 msgstr "guarda si es necesario y selecciona una imagen de la Biblioteca de Medios de WordPress, el dato guardado es el ID del archivo. Una vez seleccionado muestra la imagen"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:285
-#| msgid "the same as the image type but don't try to display an image, only shows a download button"
 msgid "the same as the image type but don't try to display an image, only shows a download button"
 msgstr "igual que con la el tipo imagen, pero no intenta mostrar una imagen, sólo muestra un botón de descarga"
 
@@ -3432,10 +3394,10 @@ msgstr "Este formulario describe una relación mucho a mucho entre dos tablas"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:306
 msgid "internal id of the many to many relationship"
-msgstr "id intero de la relación mucho a mucho"
+msgstr "id interno  de la relación mucho a mucho"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:308
-msgid "array of the two forms of the relationship"
+msgid "array of the two relationship form"
 msgstr "array de los dos formulario de la relación"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:312
@@ -3455,17 +3417,15 @@ msgid "Example of the array"
 msgstr "Ejemplo del array"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:330
-msgid "The system will works with the data of above"
-msgstr "El sistema sólo funciona con los datos de arriba"
+msgid "The system will works with the above data"
+msgstr "El sistema funcionará con los datos de arriba"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:352
-#| msgid "BFT needs to know what function and function_load use on the page. The system needs to know how to read the GET data from the URL too"
-msgid "BFT needs to know what function and function_load use on the page. The system needs to know how to read the GET data from the URL too"
-msgstr "BFT necesita saber qué function y function_load usar en la página. El sistema saber también cómo leer los datos GET de la URL"
+msgid "BFT needs to know what function and function_load to use on the page. The system needs to know how to read the GET data from the URL too"
+msgstr "BFT necesita saber qué function y function_load usar en la página. El sistema también necesita saber cómo leer los datos GET de la URL"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:353
-#| msgid "There are list pages and form pages. It's posible to nest list pages that use the data of the previous form, per example: notes of a theacher, first select a teacher (or create a new one), then you go to the notes of that teacher"
-msgid "There are list pages and form pages. It's posible to nest list pages that use the data of the previous form, per example: notes of a theacher, first select a teacher (or create a new one), then you go to the notes of that teacher"
+msgid "There are listing pages and form pages. It's posible to nest listing pages that use the data of the previous form, per example: notes of a theacher, first select a teacher (or create a new one), then you go to the notes of that teacher"
 msgstr "Hay páginas de listados y páginas de formularios. Es posible anidar páginas de listas para usar los datos del formulario anterior, por ejemplo: notas del profesor, primero selecciona un profesor (o crea uno nuevo), entonces vas a las notas de ese profesor"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:354
@@ -3473,12 +3433,12 @@ msgid "The explanation of"
 msgstr "La explicación de"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:354
-msgid "is on the 'Menu' tag, here we have a complex example of use"
-msgstr "está en la pestaña 'Menu', aquí tenemos un ejemplo completo de uso"
+msgid "is on the 'Menu' tag, there is a complex example of use"
+msgstr "está en la pestaña 'Menu', allí hay un ejemplo completo de uso"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:356
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:412
-msgid "Display a list"
+msgid "Display a listing"
 msgstr "Mostrar un listado"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:357
@@ -3495,7 +3455,7 @@ msgid "A form normally is a children page of a list, the form needs"
 msgstr "Un formulario norlmamente es una página hija de un listado, el formulario necesita"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:382
-msgid "An exmaple of a list and a form"
+msgid "An exmaple of a listing and a form"
 msgstr "Un ejemplo de un listado y un formulario"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:409
@@ -3503,14 +3463,17 @@ msgid "Nest a form"
 msgstr "Anidar un formulario"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:410
-#| msgid "For nesting a BFT form it's needed to specify the foreig GET data always, don't put 'id' on the foreig id"
-msgid "For nesting a BFT form it's needed to specify the foreig GET data always, don't put 'id' on the foreig id"
+msgid "To nest a BFT form it's needed always to specify the external GET data, don't put 'id' in the foreig id"
 msgstr "Para anidar un formulario BFT se necesita especifiar siempre el dato GET ajeno, no pongas 'id' en el id ajeno"
+
+#: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:414
+msgid "is the same as the parent form"
+msgstr "es igual que el formulario padre"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:421
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:440
 msgid "optional, works with ids_aux_required"
-msgstr "optional, funciona con ids_aux_required"
+msgstr "opcional, funciona con ids_aux_required"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:422
 #: admin/lib/BFT-PRO/partials/bft-admin-display-settings-system.php:125
@@ -3518,8 +3481,7 @@ msgid "optional"
 msgstr "opcional"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:429
-#| msgid "The main difference is that it has two ids: the main id, and the foreig id. Don't put 'id' on the foreig id. Plus it can show"
-msgid "The main difference is that it has two ids: the main id, and the foreig id. Don't put 'id' on the foreig id. Plus it can show"
+msgid "The main difference is that it has two ids: the main id, and the foreig id. Don't put 'id' in the foreig id. Plus it can show"
 msgstr "La diferencia principal es que tiene dos ids: el id principal y el id foráneo. No poner 'id' en el id foráneo. Además puede mostrar"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-automated-data-manipulation-system.php:451
@@ -3587,7 +3549,7 @@ msgstr "busca el dato get 'file' en la URL"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-download-private-files-system.php:37
 msgid "that's why it's needed to filter the URL calls without 'file' data"
-msgstr "por eso es necesario filtrar las llamadas URLs win dato 'file'"
+msgstr "por eso es necesario filtrar las llamadas URLs sin dato 'file'"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-download-private-files-system.php:39
 msgid "Remember"
@@ -3598,8 +3560,7 @@ msgid "The menu don't show a tab with GET data missing"
 msgstr "El menú no muestra una pestaña con datos GET no encontrados"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-download-private-files-system.php:44
-#| msgid "WordPress admin menu can't filter a existing page, don't use it on the parent page"
-msgid "WordPress admin menu can't filter a existing page, don't use it on the parent page"
+msgid "WordPress admin menu can't filter a existing page, don't use it on a parent page"
 msgstr "El menú administarción de WordPress no puede filtrar una página existente, no usarlo en una página padre"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-download-private-files-system.php:49
@@ -3623,13 +3584,11 @@ msgid "Courses and students have a many to many relationship "
 msgstr "Cursos y estudiantes tienen una relación muchos a muchos"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-example_database.php:28
-#| msgid "Courses has a soft foreig key, teacher_id can be NULL, a course can exists without a teacher"
 msgid "Courses has a soft foreig key, teacher_id can be NULL, a course can exists without a teacher"
 msgstr "Cursos tiene una clave foránea suave, teacher_id puede ser NULL, un curso puede existir sin un profesor"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-example_database.php:29
-#| msgid "Teachers notes has a hard foreig key, teacher_id can't be NULL, a note it can't exist without a teacher"
-msgid "Teachers notes has a hard foreig key, teacher_id can't be NULL, a note it can't exist without a teacher"
+msgid "Teachers' notes has a hard foreig key, teacher_id can't be NULL, a note it can't exist without a teacher"
 msgstr "Notas de los profesores tiene una clave foránea dura, teacher_id no puede ser NULL, una nota no puede existir sin un profesor"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-example_database.php:31
@@ -3666,7 +3625,6 @@ msgid "There are two types of iframes"
 msgstr "Hay dos tipos de iframes"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-iframes-system.php:45
-#| msgid "This method needs two pages: one is the main page with the iframe, the other is the iframe itself"
 msgid "This method needs two pages: one is the main page with the iframe, the other is the iframe itself"
 msgstr "Este método necesita dos páginas: una es la página principal con el iframe, the other is the iframe itself"
 
@@ -3687,8 +3645,7 @@ msgid "Iframe page"
 msgstr "Página iframe"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-iframes-system.php:62
-#| msgid "The iframe page will call a function_load with a die, a function load executes before show the WordPress Admin Menu"
-msgid "The iframe page will call a function_load with a die, a function load executes before show the WordPress Admin Menu"
+msgid "The iframe page will call a function_load with a die, a function load executes before displaying the WordPress Admin Menu"
 msgstr "La página iframe llamará a una function_load con un die, una function_load se ejecuta antes de mostrar el Menú de Administración de Wordpress"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-iframes-system.php:62
@@ -3696,7 +3653,7 @@ msgid "With"
 msgstr "Con"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-iframes-system.php:62
-msgid "we ignores the page on the BFT tabs menu"
+msgid "we ignore the page on the BFT tabs menu"
 msgstr "ignoramos la página on el menú de pestaña de BFT"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-iframes-system.php:74
@@ -3712,16 +3669,15 @@ msgid "and the display iframe page"
 msgstr "y la página que muestra el iframe"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-iframes-system.php:84
-#| msgid "points to the WordPress Admin Menu, it's used on this example because normally a external iframe will fail"
-msgid "points to the WordPress Admin Menu, it's used on this example because normally a external iframe will fail"
+msgid "points to the WordPress Admin Menu, it's used on this example because normally an external iframe will not work"
 msgstr "apunta al Menú de Administración de Wordpress, es usado en este ejemplo porque normalmente un iframe externo no funcionará"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-iframes-system.php:87
-msgid "Show PDF on ifame"
+msgid "Display PDF on ifame"
 msgstr "Mostrar PDF en un iframe"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-iframes-system.php:88
-msgid "With all this we can show a private PDF via a slug iframe with"
+msgid "With all this we can show a private PDF via slug iframe with"
 msgstr "Con todo esto podemos mostrar un PDF privado a través de un iframe por slug con"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-install-deinstall-upgrade-database-system.php:21
@@ -3730,7 +3686,6 @@ msgstr "Controlamos la instalación, desinstalación y actualización de la base
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-install-deinstall-upgrade-database-system.php:26
 #: admin/lib/BFT-PRO/partials/bft-admin-display-install-deinstall-upgrade-database-system.php:30
-#| msgid "the"
 msgid "The"
 msgstr "El"
 
@@ -3740,12 +3695,10 @@ msgid "function"
 msgstr "función"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-install-deinstall-upgrade-database-system.php:26
-#| msgid "is launched when the plugin is installed, here we define whether to start the plugin installation database and whether to set up a cronjob"
 msgid "is launched when the plugin is installed, here we define whether to start the plugin installation database and whether to set up a cronjob"
 msgstr "se lanza cuando el plugin es instalado, aquí definimos tanto empezar la instalación de la base de datos del plugin como programar un cronjob"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-install-deinstall-upgrade-database-system.php:30
-#| msgid "is launched when the plugin is deactivated, here we stop the cronjobs and we delete the plugin database is needed"
 msgid "is launched when the plugin is deactivated, here we stop the cronjobs and we delete the plugin database is needed"
 msgstr "se lanza cuando el plugin es desactivado, aquí paramos los cronjobs y borramos la base de datos del plugin si es necesario"
 
@@ -3778,7 +3731,6 @@ msgid "the system use WordPress Cronjobs, they are not real cronjobs"
 msgstr "el sistema usa los Cronjobs de WordPress, no son cronjobs reales"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-install-deinstall-upgrade-database-system.php:66
-#| msgid "WordPress check all pending cronjobs when a page is loaded, then the cronjobs do not run exactly when scheduled unlike a Unix cronjob"
 msgid "WordPress check all pending cronjobs when a page is loaded, then the cronjobs do not run exactly when scheduled unlike a Unix cronjob"
 msgstr "WordPress comprueba todos los cronjobs pendientes cuando se carga una página, por lo tanto los cronjobs no se ejecutan exactamente cuando están programados a diferencia de un cronjob de Unix"
 
@@ -3807,7 +3759,6 @@ msgid "to ensure the data is not deleted"
 msgstr "para asegurar que los datos no son eliminados"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-install-deinstall-upgrade-database-system.php:77
-#| msgid "But then it's needed a system for delete the plugin tables if the user don't want the plugin installed"
 msgid "But then it's needed a system for delete the plugin tables if the user don't want the plugin installed"
 msgstr " Pero entonces es necesario un sistema para borrar las tablas del plugin si el usuario no quiere el plugin instalado"
 
@@ -3820,7 +3771,7 @@ msgid "INSTALL example data of Backend Frontend Template"
 msgstr "INSTALAR datos de ejmplo de Backend Frontend Template"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-install-deinstall.php:26
-msgid "Example data is unistalled, install the BFT database"
+msgid "Example data is uninstalled, install the BFT database"
 msgstr "Datos de ejemplo no instalados, instalar la base de datos de BFT"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-install-deinstall.php:29
@@ -3864,17 +3815,15 @@ msgstr "para traducción directa y mostrar el texto traducido"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-internationalization-system.php:30
 #: admin/lib/BFT-PRO/partials/bft-admin-display-internationalization-system.php:40
-msgid "for translation, scape the HTML characters and display the resulting text"
+msgid "for translation, escape the HTML characters and display the resulting text"
 msgstr "para traducción, escapar los carácteres HTML y mostrar el texto resultante "
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-internationalization-system.php:33
-#| msgid "With that, WordPress will use a translation file if it exists and has that sentence, or a external plugin will be able to translate your plugin into the visitor language"
 msgid "With that, WordPress will use a translation file if it exists and has that sentence, or a external plugin will be able to translate your plugin into the visitor language"
 msgstr "Con eso, WordPress usará el archivo de traducción si existe y tiene la frase, o un plugin externo será capaz de traducir tu plugin al idioma del visitante"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-internationalization-system.php:34
-#| msgid "BFT also provides the option of use its intermediary functions to avoid having to put the domain on every string prepared for a future translation"
-msgid "BFT also provides the option of use its intermediary functions to avoid having to put the domain on every string prepared for a future translation"
+msgid "BFT also provides the option of use its intermediary functions to avoid having to put the domain in every string prepared for a future translation"
 msgstr "BFT además ofrece la opción de use sus funciones intermediarias para evitar tener que poner el dominio en cada cadena preparada para una futura traducción "
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-internationalization-system.php:34
@@ -3890,8 +3839,7 @@ msgid "and don't put the translation domain"
 msgstr "y no pontas el dominio de traducción"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-internationalization-system.php:42
-#| msgid "the functions allow the domain field, if you put a domain that domain will be use"
-msgid "the functions allow the domain field, if you put a domain that domain will be use"
+msgid "the functions allow the domain field, if you put a domain then that domain will be use"
 msgstr "las funciones admiten el campo dominio, si pones un dominio se usará ese dominio"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-internationalization-system.php:45
@@ -3916,19 +3864,17 @@ msgstr "Actualiza/combina el .pot original con el nuevo archivo .pot"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-internationalization-system.php:57
 msgid "Delete the old .pot files and rename the new merged file if needed"
-msgstr "Bora los archivos .pot antiguos y renombra el archivo combinado si es necesario"
+msgstr "Borra los archivos .pot antiguos y renombra el archivo combinado si es necesario"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-internationalization-system.php:59
 msgid "Prepare the .po language file"
 msgstr "Prepara el archivo de idioma .po"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-internationalization-system.php:61
-#| msgid "If it's a new translation language: duplicate the .pot file and change the name and extension to the designed lenguage, like"
-msgid "If it's a new translation language: duplicate the .pot file and change the name and extension to the designed lenguage, like"
+msgid "If it's a new translation language: duplicate the .pot file and change the name and extension to the designed language, like"
 msgstr "Si es una nueva traducción de idioma: duplica el archivo .pot y cambia el nombre y la extensión al idioma seleccionado, como"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-internationalization-system.php:62
-#| msgid "If it's a existing translation language: update/merge the file with the new .pot file"
 msgid "If it's a existing translation language: update/merge the file with the new .pot file"
 msgstr "Si es una traducción de idioma existente: actualiza/combina el archivo con el nuevo archivo .pot"
 
@@ -3941,13 +3887,11 @@ msgid "Create the .mo file from the .po file"
 msgstr "Crea el archivo .mo desde el archivo .po"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-internationalization-system.php:68
-#| msgid "To create and merge the files and translate the sentences it can be use programs like"
-msgid "To create and merge the files and translate the sentences it can be use programs like"
+msgid "To create and merge the files and translate the sentences you can use programs such as"
 msgstr "Para crear y combinar los archivos y traducir las oraciones se pueden usar programas como"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-form-system.php:20
-#| msgid "A manual form is possible thanks to point the page to a custom function for show the form and a custom function_load for store the changes on the form"
-msgid "A manual form is possible thanks to point the page to a custom function for show the form and a custom function_load for store the changes on the form"
+msgid "A manual form is possible by pointing the page to a custom function for show the form and a custom function_load for store the changes on the form"
 msgstr "Un formulario manual es posible gracias a apuntar la página a una function personalizada para mostrar el formulario y a una function_load personalizada para guardar los cambios del formulario"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-form-system.php:22
@@ -3955,7 +3899,7 @@ msgid "You can use the page"
 msgstr "Puedes usar la página"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-form-system.php:22
-msgid "to show the form or create your own page"
+msgid "to display the form or create your own page"
 msgstr "para mostrar el formulario o crear tu propia página"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-form-system.php:26
@@ -3975,7 +3919,7 @@ msgid "If the page uses"
 msgstr "Si la página usa"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-form-system.php:43
-msgid "the data will be formed this way"
+msgid "the data will be formed in this way"
 msgstr "los datos se formarán de esta manera"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-form-system.php:84
@@ -3983,32 +3927,26 @@ msgid "Custom function_load"
 msgstr "function_load personalizada"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-form-system.php:85
-#| msgid "This function is executed first, POST data sended from the browser or not, break the function if post data not sent or some error was found, example"
-msgid "This function is executed first, POST data sended from the browser or not, break the function if post data not sent or some error was found, example"
+msgid "This function is executed first, POST data sent from the browser or not, break the function if post data not sent or some error was found, example"
 msgstr "Esta función se ejecuta primero, se envíen datos POST por el navegador o no, parar la función si no se han enviado datos POST o se encuentra algún error, ejemplo"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-form-system.php:92
-#| msgid "At the end of the function use redirect if needed. For redirect it can be used"
 msgid "At the end of the function use redirect if needed. For redirect it can be used"
 msgstr "Al final de la función usa redirección si es necsario. Para redireccionar puede usarse"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-form-system.php:97
-#| msgid "This function of WordPress needs the full URL, for that it can be used the BFT functions"
-msgid "This function of WordPress needs the full URL, for that it can be used the BFT functions"
-msgstr "Esta función de WordPress necesita la URL completa, para ello puede suarse las funciones WPT"
+msgid "This function of WordPress needs the full URL, that's why BFT provides better alternatives"
+msgstr "Esta función de WordPress necesita la URL completa, por eso BFT ofrece mejores alternativas"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-form-system.php:101
-#| msgid "Return the actual display page without aditional GET data, only the page GET data"
-msgid "Return the actual display page without aditional GET data, only the page GET data"
-msgstr "Devuelve la página mostrada actualmente win datos GET adicionales, sólo el dato GET de la página"
+msgid "Return the actual display page without additional GET data, only the page GET data"
+msgstr "Devuelve la página mostrada actualmente sin datos GET adicionales, sólo el dato GET de la página"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-form-system.php:108
-#| msgid "Returns the GET data needed for the form of the page. Ej: if a page uses the form 'courses', send it the id '1' and it will retrieve"
 msgid "Returns the GET data needed for the form of the page. Ej: if a page uses the form 'courses', send it the id '1' and it will retrieve"
 msgstr "Devuelve los datos GET necesarios para el formulario de la página. Ej: si una página usa el formulario 'courses', envíale el id '1' y devolverá"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-form-system.php:117
-#| msgid "This BFT function does a redirect to the full URL with the ID needed for the form and adds"
 msgid "This BFT function does a redirect to the full URL with the ID needed for the form and adds"
 msgstr "Esta función BFT hace una redirección a la URL compelta con el ID necesario para el formulario y añade"
 
@@ -4018,14 +3956,14 @@ msgstr "dependiendo en si se le ha pasado ID"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-form-system.php:122
 msgid "Full example"
-msgstr "Ejempo completo"
+msgstr "Ejemplo completo"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-listing-by-array-system.php:20
-msgid "A direct listing by array is possible sending all the needed data to"
-msgstr "Un listado directo por array es posible enfiando todos los datos necsearios a"
+msgid "A direct listing by array is possible by sending all the needed data to"
+msgstr "Un listado directo por array es posible enviando todos los datos necsearios a"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-listing-by-array-system.php:21
-msgid "It's also necessary use"
+msgid "It's also necessary to use"
 msgstr "También es necesario usar"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-listing-by-array-system.php:24
@@ -4037,8 +3975,7 @@ msgid "Required data"
 msgstr "Datos requeridos"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-listing-by-array-system.php:31
-#| msgid "Array with every row of data, without id. Within each row, each column of data has the column keys"
-msgid "Array with every row of data, without id. Within each row, each column of data has the column keys"
+msgid "Array with each row of data, without id. Within each row, each column of data has the column keys"
 msgstr "Array con cada fila de datos, sin id. Dentro de cada fila, cada columna de datos tiene la clave de la columna"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-listing-by-array-system.php:35
@@ -4065,7 +4002,7 @@ msgid "the slug page"
 msgstr "el slug de la página"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-listing-by-array-system.php:82
-msgid "Array with data to add on the GET data on the links"
+msgid "Array with data to add on the GET data of the links"
 msgstr "Array con data a añadir en los datos GET de los links"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-listing-by-array-system.php:93
@@ -4081,9 +4018,8 @@ msgid "Total items count, for data not paginated it's not needed this data"
 msgstr "Recuento total de elementos, para datos no paginados no es necesario este dato"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-listing-by-array-system.php:105
-#| msgid "Total items count with the search, for data without search it's not needed this data"
 msgid "Total items count with the search, for data without search it's not needed this data"
-msgstr "Recuento total de elementos con la búsquedapara datos sin búsqueda no es necesario este dato"
+msgstr "Recuento total de elementos con la búsqueda, para datos sin búsqueda no es necesario este dato"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-listing-by-array-system.php:109
 msgid "The search label, for data without search it's not needed this data"
@@ -4099,7 +4035,7 @@ msgstr "Ids usados en esta página"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-listing-by-array-system.php:124
 msgid "Sending the data"
-msgstr "Enviado los datos"
+msgstr "Enviando los datos"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-listing-by-array-system.php:125
 msgid "For display a table the function"
@@ -4114,54 +4050,50 @@ msgid "with the listing data"
 msgstr "con los datos del listado"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-listing-by-array-system.php:137
-msgid "A full example of a custom listing by array data used on a function"
+msgid "A full example of a custom listing by array data used in a function"
 msgstr "Un ejemplo completo de listado personalizado por datos array usado en una función"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-listing-by-query-system.php:20
-#| msgid "A paginated listing by query is possible thanks to point the page to a custom function, and using inside the function"
-msgid "A paginated listing by query is possible thanks to point the page to a custom function, and using inside the function"
+msgid "A paginated listing by query is possible by pointing the page to a custom function, and use inside the function"
 msgstr " Un listado paginado por consulta es posible gracias a apuntar la página a una función personalizada, y usar dentro de la función"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-listing-by-query-system.php:20
-msgid "and finally showing the page with"
+msgid "and finally display the page with"
 msgstr "y finalmente mostrar la página con"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-listing-by-query-system.php:21
-msgid "It's also necessary using the file"
+msgid "It's also necessary to use the file"
 msgstr "También es necsario usar el archivo"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-listing-by-query-system.php:43
-msgid "SELECT part of the query, whitout the SELECT tag"
+msgid "SELECT part of the query, without the SELECT tag"
 msgstr "Parte SELECT de la consulta, sin la etiqueta SELECT"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-listing-by-query-system.php:48
-msgid "FROM part of the query, whitout the FROM tag"
+msgid "FROM part of the query, without the FROM tag"
 msgstr "Parte FROM de la consulta, sin la etiqueta FROM"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-listing-by-query-system.php:53
-msgid "WHERE part of the query, whitout the WHERE tag"
+msgid "WHERE part of the query, without the WHERE tag"
 msgstr "Parte WHERE de la consulta, sin ls etiqueta WHERE"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-listing-by-query-system.php:58
-msgid "GROUP BY part of the query, whitout the FROM tag"
+msgid "GROUP BY part of the query, without the FROM tag"
 msgstr "Parte GROUP BY de la consulta, sin la etiqueta FROM"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-listing-by-query-system.php:63
-msgid "Ids to search, the indexes will be the column key"
+msgid "Ids to search for, the indexes will be the column key"
 msgstr "Ids a buscar, los índices serán la clave de la columna"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-listing-by-query-system.php:64
-#| msgid "It can be a empty array, a array with manual data, or an automatic array with the ids_required_get_data thanks to"
-msgid "It can be a empty array, a array with manual data, or an automatic array with the ids_required_get_data thanks to"
+msgid "It can be an empty array, an array with manual data, or an automatic array with the ids_required_get_data thanks to"
 msgstr "Puede ser un array vacío, un array con datos manuales, o un array automático con el  ids_required_get_data gracias a"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-listing-by-query-system.php:80
-#| msgid "Don't search the search string on this columns. The indexes will be the column key"
-msgid "Don't search the search string on this columns. The indexes will be the column key"
+msgid "Don't search the search string in these columns. The indexes will be the column key"
 msgstr "No buscar la cadena de búsqueda en las columnas. Los índices serán la clave de la columna"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-listing-by-query-system.php:90
-#| msgid "Two dimensional array, first dimension is the final column, the second dimension are the colums of the CONCAT, for search the string on merged columns"
 msgid "Two dimensional array, first dimension is the final column, the second dimension are the colums of the CONCAT, for search the string on merged columns"
 msgstr "Array bidimensional, primera dimensión es la columna final, la segunda dimensión son las columnas del CONCAT, para buscar la cadena en columnas combinadas"
 
@@ -4186,7 +4118,7 @@ msgid "The table uses the column"
 msgstr "La table usa la columna"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-listing-by-query-system.php:157
-msgid "Write on the log the base query"
+msgid "It writes to the registry the base query"
 msgstr "Escribe en el log la consulta base"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-listing-by-query-system.php:160
@@ -4194,7 +4126,7 @@ msgid "A full example of"
 msgstr "Un ejemplo completo de"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-listing-by-query-system.php:160
-msgid "used on a function"
+msgid "used in a function"
 msgstr "usado en una función"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:23
@@ -4243,12 +4175,12 @@ msgid "the last id inserted"
 msgstr "último id insertado"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:31
-msgid "delete entries that matches  the array search data"
+msgid "delete entries that match  the array search data"
 msgstr "eliminar entradas que coincidan con los datos del array de búsqueda"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:32
-msgid "update the data on the entries that matches the array data"
-msgstr "actualiza los datos en las entradas que coincidan los datos de larray"
+msgid "update the data in the entries that match the array data"
+msgstr "actualiza los datos en las entradas que coincidan los datos de array"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:33
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:41
@@ -4269,21 +4201,18 @@ msgid "Backend Frontend Template functions"
 msgstr "Funciones de Backend Frontend Template"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:39
-#| msgid "BFT provides aditional functions for the programmers that preffer this database access style"
-msgid "BFT provides aditional functions for the programmers that preffer this database access style"
+msgid "BFT provides additional functions for the programmers that prefer this database access style"
 msgstr "BFT ofrece funciones adicionales para los programadores que prefieran este estilo de acceso a la base de datos"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:42
-#| msgid "returns a two dimensional array with all the data, the index of every row will be the first column data"
-msgid "returns a two dimensional array with all the data, the index of every row will be the first column data"
-msgstr "devuelve un array dimensional con todos los datos, el índice de cada fila será el dato de la primera columna"
+msgid "returns a two dimensional array with all the data, the index of each row will be the first column data"
+msgstr "devuelve un array bidimensional con todos los datos, el índice de cada fila será el dato de la primera columna"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:43
-msgid "returns a mono dimensional array, only returns the first column of every row"
+msgid "returns a mono dimensional array, only returns the first column of each row"
 msgstr "devuelve un array mono dimensional, sólo devuelve la primera columna de cada fila"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:44
-#| msgid "returns a mono dimensional array, the first column data will be the index, the second the data"
 msgid "returns a mono dimensional array, the first column data will be the index, the second the data"
 msgstr "devuelve un array mono dimensional, el dato de la primera columna será el índice, la segunda será el dato"
 
@@ -4292,36 +4221,33 @@ msgid "returns a string, only return the first column of the first row"
 msgstr "devuelve una cadena, sólo devuelve la primera columna de la primera línea"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:46
-msgid "insert or update several data, more explanation below"
+msgid "insert or update multiple data, more explanation below"
 msgstr "inserta o actualiza varios datos, más explicación debajo"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:47
-#| msgid "insert or update several data, then delete the not updated rows, more explanation below"
-msgid "insert or update several data, then delete the not updated rows, more explanation below"
+msgid "insert or update multiple data, then delete the non updated rows, more explanation below"
 msgstr "inserta o actualiza varios datos, entonces elimina las filas no actualizadas, más información debajo"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:49
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system-pro.php:48
-msgid "Extra explanations"
+msgid "Additional explanations"
 msgstr "Explicaciones adicionales"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:54
-#| msgid "This function can insert or update a single or several rows, when updating the data can use extra data or only use the data used to insert"
 msgid "This function can insert or update a single or several rows, when updating the data can use extra data or only use the data used to insert"
 msgstr "Esta función puede insertar o actualizar una o varias filas, cuando actualizando los datos puede usar datos extras o sólo usar los datos usados en la inserción"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:57
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:70
-#| msgid "array mono dimensional (one insert) or two dimensional (several inserts), the data can have true NULL or string 'NULL'"
 msgid "array mono dimensional (one insert) or two dimensional (several inserts), the data can have true NULL or string 'NULL'"
-msgstr "array mono dimensional (una inserción) o bidimensional (varias inserciones), lso datods pueden tener verdadero NULL o string 'NULL'"
+msgstr "array mono dimensional (un insert) o bidimensional (varias inserciones), los datos pueden tener verdadero NULL o string 'NULL'"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:58
 msgid "true if it's needed several inserts"
 msgstr "true si se necesitan varios inserciones"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:59
-msgid "datetime of the modifcaction, it will use the colum"
+msgid "modification datetime, it will use the colum"
 msgstr "datetime de la modificación, usará la columna"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:59
@@ -4329,7 +4255,6 @@ msgid "if NULL it will use the current time"
 msgstr "si NULL usará el tiempo actual"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:60
-#| msgid "the data used for an update case, if the array is empty the update will use the"
 msgid "the data used for an update case, if the array is empty the update will use the"
 msgstr "los datos usados para el caso de actualización, si el array está vacio la actualización usará la"
 
@@ -4359,10 +4284,9 @@ msgstr "etc."
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:72
 msgid "the id to check on column_where_delete"
-msgstr "el id a comprobar en ccolumn_where_delete"
+msgstr "el id a comprobar en column_where_delete"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:74
-#| msgid "This functions is equivalent to delete all the data and insert the new data, the problem is the database abuse, with this the database update all the data"
 msgid "This functions is equivalent to delete all the data and insert the new data, the problem is the database abuse, with this the database update all the data"
 msgstr "Esta función es equivalente a eliminar todos losdatos e insertar los nuevos datos, el problema es el abuso de la base de datos, con esto la base de datos actualiza todos los datos"
 
@@ -4375,7 +4299,6 @@ msgid "and then delete the not updated data. Less UPDATE/INSERTS, less DELETES"
 msgstr "y entonces elimina todos los datos no actualizados. Menos UPDATE/INSERTS, menos DELETES"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:77
-#| msgid "due to how WordPress works the BFT functions are not accesible from create/update/delete database in"
 msgid "due to how WordPress works the BFT functions are not accesible from create/update/delete database in"
 msgstr "debido a como WordPress trabbaja las funciones BFT no son accesible desde crear/atualizar/eliminar base de datos en"
 
@@ -4383,9 +4306,12 @@ msgstr "debido a como WordPress trabbaja las funciones BFT no son accesible desd
 msgid "only use the oficial WordPress functions"
 msgstr "sólo usar las funciones oficiales de WordPress"
 
+#: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:80
+msgid "Data sanitization"
+msgstr "Saneamiento de datos"
+
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:81
-#| msgid "For input sanitization WordPress provide several sanitization function on the class"
-msgid "For input sanitization WordPress provide several sanitization function on the class"
+msgid "For input sanitization WordPress provide several sanitization functions in the class"
 msgstr "Para sanear las entradas WordPress  proporciona varias funciones de saneamiento en la clase"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:82
@@ -4393,7 +4319,7 @@ msgid "Some sanitization functions of"
 msgstr "Algunas funciones de saneamiento de"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:84
-msgid "sanitize a id"
+msgid "sanitize an id"
 msgstr "sanea un id"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-manual-data-manipulation-system.php:85
@@ -4421,15 +4347,15 @@ msgid "check the info"
 msgstr "comprueba la información"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:36
-msgid "The BFT menu can has child pages, example"
-msgstr "El menú BFT puede tener páginas hijas, ejempo"
+msgid "The BFT menu can have child pages, example"
+msgstr "El menú BFT puede tener páginas hijas, ejemplo"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:60
-msgid "isset and true if is a child"
+msgid "isset and true if it's a child"
 msgstr "añadido y true si es hija"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:61
-msgid "isset with the key of the parent if is a child"
+msgid "isset with the key of the parent if it's a child"
 msgstr "añadido con la clave del padre si es hija"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:62
@@ -4441,7 +4367,7 @@ msgstr "añadido con la clave del padre si es hija"
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:85
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:87
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:89
-msgid "the GET data found with the ids"
+msgid "the GET data found within the ids"
 msgstr "los datos GET encontrados dentro de los ids"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:66
@@ -4486,7 +4412,7 @@ msgid "it adds"
 msgstr "añade"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:99
-msgid "on the link of a tab. New if there are an id detected on the GET data"
+msgid "in the tab link. New if there are an id detected on the GET data"
 msgstr "en el link de la pestaña. New si hay un id detectado en los datos GET"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:100
@@ -4540,24 +4466,23 @@ msgid "if it's a children page there may be automatic ids"
 msgstr "si es una página hija quizás habrán ids automáticos"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:133
-#| msgid "if a parent have an id or id aux that it's not found on the children page, then the children has the id like an id optional on ids_optional"
 msgid "if a parent have an id or id aux that it's not found on the children page, then the children has the id like an id optional on ids_optional"
 msgstr "if un padre tiene un id o id auxiliar que no se ha encontrado en la página hija, entonces el hijo tiene el id como un id opcional en ids_optional"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:140
-msgid "display a table with the data of the first child and the form stored on"
+msgid "displays a table with the data of the first child and the form stored in"
 msgstr "muestra una tabla con los datos del primer hijo y el formulario almacenado en"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:141
-msgid "display a table with the data of the display page"
+msgid "displays a table with the data of the displayed page"
 msgstr "muestra una tabla con los datos de la página mostrada"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:142
-msgid "display a custom automated form stored on"
+msgid "displays a custom automated form stored in"
 msgstr "mostrar un formulario personalizado automático almacenado en"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:148
-msgid "redirect to the first child page of the actual page"
+msgid "redirects to the first child page of the current page"
 msgstr "redirecciona a la primera página hija de la página actual"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:148
@@ -4565,8 +4490,7 @@ msgid "executes admin_permission_check_and_ids_required_check_function_load firs
 msgstr "ejecuta  admin_permission_check_and_ids_required_check_function_load first"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:149
-#| msgid "check admin premissions and check required and optionals ids of the page specified on the URL, principal and aux ids type checked, prepared for"
-msgid "check admin premissions and check required and optionals ids of the page specified on the URL, principal and aux ids type checked, prepared for"
+msgid "checks admin premissions and checks required and optionals ids of the page specified on the URL, principal and aux ids type checked, prepared for"
 msgstr "comprueba los permisos de administración y comprueba los ids requeridos y opcionales especificados en la URL, tipos de ids princpiales y auxilizares seleccionados, preparado para"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:149
@@ -4575,13 +4499,12 @@ msgid "used if needed"
 msgstr "usaso si es necesario"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:150
-#| msgid "check required and optionals ids of the page specified on the URL, principal and aux ids type checked, prepared for"
 msgid "check required and optionals ids of the page specified on the URL, principal and aux ids type checked, prepared for"
 msgstr "comprueba ids requeridos y opcionales de la página especificada en la URL, tipos de ids principales y auxiliares seleccionados, preparado para"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:151
 msgid "donwload a private file"
-msgstr "descargar achivo privado"
+msgstr "descargar archivo privado"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:152
 msgid "send a form for automated data manipulation"
@@ -4601,7 +4524,7 @@ msgstr "esa función es usada en"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:159
 msgid "the full URL of the inside iframe, to use with"
-msgstr "la URL compreta de dentro del iframe, para usar con"
+msgstr "la URL completa de dentro del iframe, para usar con"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:160
 msgid "the slug of the inside iframe, the iframe slug will be changed to"
@@ -4624,8 +4547,7 @@ msgid "generates the variable"
 msgstr "genera la variable"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:162
-#| msgid "the text of the new entry button, it can be added on the parent or on the child, the priority is on the child data, for use on the function"
-msgid "the text of the new entry button, it can be added on the parent or on the child, the priority is on the child data, for use on the function"
+msgid "the text of the new entry button, it can be added on the parent or on the child, the priority is on the child data, for use in the function"
 msgstr "el texto del botón de nueva entrada, puede añadirse en el padre o en el hijo, la prioridad será en los datos del hijo, para usarse con la función"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:162
@@ -4677,17 +4599,14 @@ msgid "but only is used the key_initial (the key_get)"
 msgstr "pero sólo es usado la key_inicial (la key_get)"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:174
-#| msgid "array with the children pages. A children page can has descent, the maximun of levels is"
 msgid "array with the children pages. A children page can has descent, the maximun of levels is"
 msgstr "array con las páginas hijas. Una página hija puede tener descendencia, el máximo de niveles es"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:174
-#| msgid "counting the parent page. The're are limit because is not recursive, that kills the performance of the server"
-msgid "counting the parent page. The're are limit because is not recursive, that kills the performance of the server"
-msgstr "contando la página padre. Hay un límite porque no es recursivo, esto mata el rendimiento del servidor"
+msgid "counting the parent page. There is limit because is not recursive, that kills the performance of the server"
+msgstr "contando la página padre. Hay un límite porque no es recursivo, eso mata el rendimiento del servidor"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:175
-#| msgid "copy the data of a page. Only copy the data not found on the page, neither copy"
 msgid "copy the data of a page. Only copy the data not found on the page, neither copy"
 msgstr "copia los datos de una página.Sólo los datos no encontrado en la página, nunca copia"
 
@@ -4696,7 +4615,6 @@ msgid "How to start"
 msgstr "Cómo empezar"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:201
-#| msgid "Use the examples of the beginning, the majority of the options are not needed initially"
 msgid "Use the examples of the beginning, the majority of the options are not needed initially"
 msgstr "Usa los ejemplos del principio, la mayoría de las opciones no se necesitan inicialmente"
 
@@ -4705,16 +4623,15 @@ msgid "Except all the"
 msgstr "Extepto todo el"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:202
-#| msgid "part, that's important, but that is only for children pages. You can see detailed  examples on other pages where is needed, because the idea is to have a list page with all the items, and then see a single item on the children"
 msgid "part, that's important, but that is only for children pages. You can see detailed  examples on other pages where is needed, because the idea is to have a list page with all the items, and then see a single item on the children"
-msgstr "parte, eso es importante, pero sólo para páginas hijas. Puedes ver ejemplos detalladosen otras páginas donde se necesita, porque la idea es tener una página listado con todas las entradas, y entonces ver una simpre entrada en el hijo"
+msgstr "parte, eso es importante, pero sólo para páginas hijas. Puedes ver ejemplos detallados en otras páginas donde se necesita, porque la idea es tener una página listado con todas las entradas, y entonces ver una simpre entrada en el hijo"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:226
-msgid "On this quick example there are a page that display all the books"
-msgstr "En este ejempo rápido hay una página que muestra todos los libros"
+msgid "In this quick example there are a page that display all the books"
+msgstr "En este ejemplo rápido hay una página que muestra todos los libros"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:226
-msgid "and every item/book links to"
+msgid "and each item/book links to"
 msgstr "y cada item/libro enlaza a"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:227
@@ -4728,6 +4645,10 @@ msgstr "tiene"
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:227
 msgid "the page throw error automatically if a GET required data is not found"
 msgstr "la página lanza error automáticamente si un dato GET requerido no es encontrado"
+
+#: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:226
+msgid "id of the book"
+msgstr "id del libro"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-menu-system-pro.php:227
 msgid "in this case"
@@ -4754,7 +4675,7 @@ msgid "Deinstall the database example on"
 msgstr "Desinstala la base de datos de ejemplo en"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-preparing-the-plugin-pro.php:24
-msgid "You can reinstall the database example later"
+msgid "You can reinstall the sample database later"
 msgstr "Puedes reinstalar la base de datos de ejemplo después"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-preparing-the-plugin-pro.php:25
@@ -4778,12 +4699,11 @@ msgid "This is an alternative method to retrieve manually the data with"
 msgstr "Esto es un método alternativo para recuperar manualmente los datos con"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system-pro.php:62
-#| msgid "But this method check if there are ids requiered missing, also can add GET data not define on the ids"
 msgid "But this method check if there are ids requiered missing, also can add GET data not define on the ids"
 msgstr "Pero este método comprueba si hay ids requeridos no encontrados, también añade datos GET no definidos en los ids"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system-pro.php:63
-msgid "Variables of the function"
+msgid "Function variables "
 msgstr "Variables de la función"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system-pro.php:65
@@ -4792,14 +4712,14 @@ msgstr "Qué ids recibir"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system-pro.php:66
 msgid "Select if only principal ids or add the optionals"
-msgstr "Selecciona si sólo idsp rincipales o añadir los opcionales"
+msgstr "Selecciona si sólo ids principales o añadir los opcionales"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system-pro.php:66
 msgid "If both"
 msgstr "Si ambos"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system-pro.php:67
-msgid "Read all the GET data on the URL and add the aditional options"
+msgid "Read all the GET data on the URL and add the additional options"
 msgstr "Leer todos los datos GET de la URL y añadir las opciones adicionales"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system-pro.php:67
@@ -4807,15 +4727,15 @@ msgid "GET data will not be added"
 msgstr "datos GET no se añadirá"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system-pro.php:67
-msgid "the GET data key needs to has more than"
-msgstr "la clave del dato GET necesita tener más"
+msgid "the GET data key needs to be more than"
+msgstr "la clave del dato GET necesita tener más de"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system-pro.php:67
 msgid "characters"
 msgstr "caracteres"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system-pro.php:68
-msgid "don't return false, instead it returns a empty array if error found"
+msgid "don't return false, instead it returns an empty array if error found"
 msgstr "no devuelve false, en su lugar devuelve un array vacío si se ha encontrado un error"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system-pro.php:68
@@ -4831,7 +4751,7 @@ msgid "If true adds"
 msgstr "Si true añade"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system-pro.php:70
-msgid "on a error trow"
+msgid "in a error throw"
 msgstr "en un error lanza"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system-pro.php:71
@@ -4839,23 +4759,26 @@ msgid "If triggered on a"
 msgstr "Si es ejecutado en un"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system-pro.php:71
-msgid "select false on a main function"
+msgid "select false in a main function"
 msgstr "selecciona false en una función principal"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-security-system-pro.php:73
 msgid "Example of use"
-msgstr "Ejepmlo de uso"
+msgstr "Ejemplo de uso"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-settings-system.php:21
-msgid "Edit your WordPress settings pages on the variable"
-msgstr "Edita tus pagínas de ajustes de WordPress en la variable"
+msgid "Wordpress allows you to store data with its settings system, thanks to BFT Pro you can create settings pages with its data fields"
+msgstr "Wordpress permite almacenar datos con su sistema de ajustes, gracias a BFT Pro puedes crear páginas de ajustes con sus campos de datos"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-settings-system.php:22
-#| msgid "On every page we drescribe the fields, and several pages can repeat the same fields"
-msgid "On every page we drescribe the fields, and several pages can repeat the same fields"
-msgstr "En cada página describimos los campos, y varias páginas pueden repetir los mismos campos"
+msgid "Edit your WordPress settings pages on the variable"
+msgstr "Edita tus páginas de ajustes de WordPress en la variable"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-settings-system.php:23
+msgid "On each page we describe the fields, and several pages can repeat the same fields"
+msgstr "En cada página describimos los campos, y varias páginas pueden repetir los mismos campos"
+
+#: admin/lib/BFT-PRO/partials/bft-admin-display-settings-system.php:24
 msgid "Design BFT Settings looks like this"
 msgstr "Diseñar Ajustes BFT se ve así"
 
@@ -4872,16 +4795,12 @@ msgid "Page field"
 msgstr "Campo de la página"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-settings-system.php:70
-msgid "Automatic parametters added on the field array part"
-msgstr "Parámetros automáticos en"
-
 #: admin/lib/BFT-PRO/partials/bft-admin-display-settings-system.php:80
 msgid "array key"
 msgstr "clave del array"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-settings-system.php:82
-#| msgid "array where we define the type of data, if it's multiple, the options for the select, etc."
-msgid "array where we define the type of data, if it's multiple, the options for the select, etc."
+msgid "array where we define the data type, if it's multiple, the options for the select, etc."
 msgstr "array donde definimos el tipo de datos, si es múltiple, las opciones del select, etc."
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-settings-system.php:91
@@ -4890,7 +4809,7 @@ msgstr "Tipos de entradas"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-settings-system.php:112
 msgid "input number, optional"
-msgstr "inpu number, opcional"
+msgstr "input number, opcional"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-settings-system.php:112
 msgid "Default of"
@@ -4921,7 +4840,7 @@ msgid "ej"
 msgstr "ej"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-settings-system.php:154
-msgid "input text with a calendar, the date will be the MySQL style"
+msgid "input text with a calendar, the date will be in MySQL style"
 msgstr "input text con un calendario, la fecha será estilo MySQL"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-settings-system.php:164
@@ -4937,12 +4856,10 @@ msgid "radio buttons, stores string wiht checked options, ej: 'en,es', it requir
 msgstr "radio buttons, guarda cadena con las opciones seleeccionadas, ej: 'en,es', requiere"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-settings-system.php:203
-#| msgid "store a image on the WordPress Media Library, the data saved on settings is the WordPress ID of the file. Once selected shows the image"
 msgid "store a image on the WordPress Media Library, the data saved on settings is the WordPress ID of the file. Once selected shows the image"
 msgstr "guarda una imagen en  la Biblioteca de Medios de WordPress, el dato al almacenado en los ajustes es el ID de WordPress del archivo. Una vez seleccionado muestra la imagen"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-settings-system.php:213
-#| msgid "store a file on the WordPress Media Library, the data saved on settings is the WordPress ID of the file. Once selected shows a download button"
 msgid "store a file on the WordPress Media Library, the data saved on settings is the WordPress ID of the file. Once selected shows a download button"
 msgstr "guarda una archivo  en  la Biblioteca de Medios de WordPress, el dato al almacenado en los ajustes es el ID de WordPress del archivo. Una vez seleccionado muestraun botón de descarga"
 
@@ -4959,7 +4876,7 @@ msgid "etc"
 msgstr "etc"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-settings-system.php:240
-msgid "but BFT stores like"
+msgid "but BFT stores it as"
 msgstr "pero BFT lo almacena como"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-settings-system.php:240
@@ -4967,14 +4884,12 @@ msgid "then it will be"
 msgstr "entonces será"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-settings-system.php:241
-#| msgid "That's because WordPress doesn't isolate the settings by plugins, the plugin itself needs to isolate and secure the settings"
 msgid "That's because WordPress doesn't isolate the settings by plugins, the plugin itself needs to isolate and secure the settings"
 msgstr "Eso es porque WordPress no aisla los ajustes por plugins, el propio plugin necesita aislar y asegurar los ajustes"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-settings-system.php:242
-#| msgid "Knowing this, there are two styles to access, update and delete this data by code"
-msgid "Knowing this, there are two styles to access, update and delete this data by code"
-msgstr "Sabiendo esto, hay dos estilos de acceso, actualización y eliminación de los datos por código"
+msgid "Knowing this, there are two styles to access for updating and deleting this data by code"
+msgstr "Sabiendo esto, hay dos estilos de acceso para actualizar y eliminar los datos por código"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-settings-system.php:245
 msgid "BFT style"
@@ -4990,7 +4905,7 @@ msgid "WordPress style"
 msgstr "Estilo WordPress"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-settings-system.php:261
-msgid "use 'update' for create a new entry"
+msgid "use 'update' to create a new entry"
 msgstr "usa 'update' para crear una nueva entrada"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-settings-system.php:266
@@ -5002,12 +4917,10 @@ msgid "Thanks for purchase"
 msgstr "Gracias por su compra"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-what-is-bft-pro.php:23
-#| msgid "with your support it will continue to grow and expand the functionalities and save you more time on the future"
 msgid "with your support it will continue to grow and expand the functionalities and save you more time on the future"
 msgstr "con tu soporte continuará creciendo y expandiéndo las funcionalidades y te ahorrar más tiempo en el futuro"
 
 #: admin/lib/BFT-PRO/partials/bft-admin-display-what-is-bft-pro.php:24
-#| msgid "BFT Pro library can be used in any plugin created by the license purchaser as long as it isn't a direct competition of BFT Pro (a plugin/template/library for creating WordPress plugins)"
 msgid "BFT Pro library can be used in any plugin created by the license purchaser as long as it isn't a direct competition of BFT Pro (a plugin/template/library for creating WordPress plugins)"
 msgstr "La librería BFT puede ser usada en cualquier plugin creado por el comprador de la licencia mientras no sea competencia directa de BFT Pro(un plugin/plantilla/librería para la creación de plugins de WordPress)"
 
@@ -5024,7 +4937,7 @@ msgid "INSTALL database"
 msgstr "INSTALAR base de datos"
 
 #: admin/partials/your-plugin-admin-display-install-deinstall.php:31
-msgid "Needed data is unistalled"
+msgid "Needed data is uninstalled"
 msgstr "Datos necesarios no están instalados"
 
 #: admin/partials/your-plugin-admin-display-install-deinstall.php:45
@@ -7372,7 +7285,6 @@ msgstr "AJAX falló"
 
 #: public/lib/BFT-PRO/partials/bft-shortcode-form-test-response.php:15
 #: public/partials/your-plugin-shortcode-form-test-response.php:20
-#| msgid "this is a dynamic text, a cache plugin doesn't interfere with the response of the form"
 msgid "this is a dynamic text, a cache plugin doesn't interfere with the response of the form"
 msgstr "este es un texto dinámico, un plugin de caché no interfiere con la respuesta del formulario"
 
@@ -7393,3 +7305,7 @@ msgstr "El plugin NO SE PUEDE ACTIVAR si Backend Frontend Template (versión no 
 #: backend-frontend-template-pro.php:11
 msgid "first deactive it"
 msgstr "primero desactívelo"
+
+#: admin/lib/BFT-PRO/partials/bft-admin-display-errors-manage-show.php:84
+msgid "Test the children page with this link"
+msgstr "Prueba la pagína hija con este link"

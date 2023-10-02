@@ -17,7 +17,7 @@ class BFT {
 	 * The loader that's responsible for maintaining and registering all hooks
 	 *
 	 * @since	 	1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @access		protected
 	 * @var	Your_Plugin_BFT_Loader	 $loader	 Maintains and registers all hooks for the plugin.
 	 */
@@ -36,7 +36,7 @@ class BFT {
 	 * The id of this plugin.
 	 *
 	 * @since	 	1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @access		protected
 	 * @var			string	 $plugin_id	 	"bft-pro"
 	 */
@@ -59,7 +59,7 @@ class BFT {
 	 * The current version of the plugin.
 	 *
 	 * @since	 	1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @access		protected
 	 * @var			string	 		$plugin_version	 The current version of the plugin.
 	 */
@@ -70,7 +70,7 @@ class BFT {
 	 * Define the core functionality of the plugin.
 	 * 
 	 * @since	 	1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 */
 	public function __construct() {
 		
@@ -105,7 +105,7 @@ class BFT {
 	 * Create an instance of the loader which will be used to register the hooks with WordPress.
 	 *
 	 * @since	 	1.0.0
-	 * @version		1.0.0
+	 * @version		1.1.0
 	 * @access		private
 	 */
 	private function load_dependencies() {
