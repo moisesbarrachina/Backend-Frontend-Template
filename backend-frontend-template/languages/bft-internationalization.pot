@@ -1290,6 +1290,31 @@ msgstr ""
 
 #: admin/lib/BFT/partials/bft-admin-display-changelog-bft.php:23
 #: admin/lib/BFT-PRO/partials/bft-admin-display-changelog-bft.php:23
+msgid "Example images are now loaded from moisesbarrachina.online to make the plugin lighter"
+msgstr ""
+
+#: admin/lib/BFT/partials/bft-admin-display-changelog-bft.php:23
+#: admin/lib/BFT-PRO/partials/bft-admin-display-changelog-bft.php:23
+msgid "Improved explanation and readability of texts"
+msgstr ""
+
+#: admin/lib/BFT/partials/bft-admin-display-changelog-bft.php:23
+#: admin/lib/BFT-PRO/partials/bft-admin-display-changelog-bft.php:23
+msgid "Fixed typos"
+msgstr ""
+
+#: admin/lib/BFT/partials/bft-admin-display-changelog-bft.php:23
+#: admin/lib/BFT-PRO/partials/bft-admin-display-changelog-bft.php:23
+msgid "Upgrade guide"
+msgstr ""
+
+#: admin/lib/BFT/partials/bft-admin-display-changelog-bft.php:23
+#: admin/lib/BFT-PRO/partials/bft-admin-display-changelog-bft.php:23
+msgid "Select the entire plugin, give to find and replace, select Caps Match and Replace"
+msgstr ""
+
+#: admin/lib/BFT/partials/bft-admin-display-changelog-bft.php:23
+#: admin/lib/BFT-PRO/partials/bft-admin-display-changelog-bft.php:23
 msgid "First stable version of Backend Frontend Template"
 msgstr ""
 
@@ -1958,7 +1983,7 @@ msgstr ""
 
 #: admin/lib/BFT/partials/bft-admin-display-languages-functions.php:44
 #: admin/lib/BFT-PRO/partials/bft-admin-display-languages-functions.php:44
-msgid "If languages empty it will set the lenguages 'en' and 'es'"
+msgid "If languages empty it will set the languages 'en' and 'es'"
 msgstr ""
 
 #: admin/lib/BFT/partials/bft-admin-display-languages-functions.php:45

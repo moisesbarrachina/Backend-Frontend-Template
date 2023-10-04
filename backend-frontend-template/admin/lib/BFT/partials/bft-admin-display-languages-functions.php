@@ -41,7 +41,7 @@ $this->admin_permission_check();
 			<h3>$this->language_admin_get($country_code)</h3>
 			<p><?=$this->esc_html_e("Returns the data stored in the setting")?> $this->option_field_get("language_admin") <?=$this->esc_html_e("if exists on")?> $this->option_field_get("languages")</p>
 			<ul>
-				<li><?=$this->esc_html_e("If languages empty it will set the lenguages 'en' and 'es'")?></li>
+				<li><?=$this->esc_html_e("If languages empty it will set the languages 'en' and 'es'")?></li>
 				<li><?=$this->esc_html_e("If language_admin empty or not found on languages, it will set the first language stored in languages")?></li>
 			</ul>
 		</li>

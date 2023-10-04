@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-03 23:35+0100\n"
-"PO-Revision-Date: 2023-10-03 00:02+0200\n"
+"PO-Revision-Date: 2023-10-04 10:50+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -1250,6 +1250,31 @@ msgstr "Error en el menú principal de las páginas de administración"
 
 #: admin/lib/BFT/partials/bft-admin-display-changelog-bft.php:23
 #: admin/lib/BFT-PRO/partials/bft-admin-display-changelog-bft.php:23
+msgid "Example images are now loaded from moisesbarrachina.online to make the plugin lighter"
+msgstr "Las imágenes de ejemplo ahora se cargan desde moisesbarrachina.online para hacer más liviano el plugin"
+
+#: admin/lib/BFT/partials/bft-admin-display-changelog-bft.php:23
+#: admin/lib/BFT-PRO/partials/bft-admin-display-changelog-bft.php:23
+msgid "Improved explanation and readability of texts"
+msgstr "Mejorada la explicación y legibilidad del los textos"
+
+#: admin/lib/BFT/partials/bft-admin-display-changelog-bft.php:23
+#: admin/lib/BFT-PRO/partials/bft-admin-display-changelog-bft.php:23
+msgid "Fixed typos"
+msgstr "Corregidos errores tipográficos"
+
+#: admin/lib/BFT/partials/bft-admin-display-changelog-bft.php:23
+#: admin/lib/BFT-PRO/partials/bft-admin-display-changelog-bft.php:23
+msgid "Upgrade guide"
+msgstr "Guía de upgrade"
+
+#: admin/lib/BFT/partials/bft-admin-display-changelog-bft.php:23
+#: admin/lib/BFT-PRO/partials/bft-admin-display-changelog-bft.php:23
+msgid "Select the entire plugin, give to find and replace, select Caps Match and Replace"
+msgstr "Seleccionar todo el plugin, darle a buscar y reemplazar, seleccionar concordancia de mayúsculas y reempazar"
+
+#: admin/lib/BFT/partials/bft-admin-display-changelog-bft.php:23
+#: admin/lib/BFT-PRO/partials/bft-admin-display-changelog-bft.php:23
 msgid "First stable version of Backend Frontend Template"
 msgstr "Primera versión estable de Backend Frontend Template"
 
@@ -1893,7 +1918,7 @@ msgstr "si existe en"
 
 #: admin/lib/BFT/partials/bft-admin-display-languages-functions.php:44
 #: admin/lib/BFT-PRO/partials/bft-admin-display-languages-functions.php:44
-msgid "If languages empty it will set the lenguages 'en' and 'es'"
+msgid "If languages empty it will set the languages 'en' and 'es'"
 msgstr "Si idiomas está vacío configurará los idiomas 'en' y 'es'"
 
 #: admin/lib/BFT/partials/bft-admin-display-languages-functions.php:45

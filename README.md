@@ -448,7 +448,7 @@ Download the code, copy the folder 'backend-frontend-template' on your WordPress
 
     Returns the data stored in the setting $this->option_field_get("language_admin") if exists in $this->option_field_get("languages")
 
-    If languages empty it will set the lenguages 'en' and 'es'
+    If languages empty it will set the languages 'en' and 'es'
     If language_admin empty or not found on languages, it will set the first language stored in languages
 </details>
 
