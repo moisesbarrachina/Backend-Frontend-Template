@@ -550,7 +550,7 @@ Backend Frontend Template uses the basic structure [WordPress Plugin Boilerplate
 
 ___
 
-# Backend Frontend Template Pro
+# Backend Frontend Template Pro: the WordPress Plugin Template
 
 You can save even more time with [BFT Pro](https://moisesbarrachina.online/en/producto/backend-frontend-template-pro/), upgrade now and you will be able to make submenus, automated or manual data lists, forms without coding, AJAX on the frontend and many more possibilities
 
