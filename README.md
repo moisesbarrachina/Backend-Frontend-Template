@@ -172,8 +172,11 @@ Download the code, copy the folder 'backend-frontend-template' on your WordPress
 
     The log in WordPress is activated in wp-config.php, change:
 
+```php
     define( 'WP_DEBUG', true );
     define( 'WP_DEBUG_LOG', true );
+```
+
     Now you can check the log in wp-content/debug.log
 
     For printing to the log you can use the WordPress function error_log($string_or_number), but with Backend Frontend Template you can use: $this->debug_log_write($whatever)
