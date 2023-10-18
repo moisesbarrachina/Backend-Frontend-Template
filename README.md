@@ -1,3 +1,5 @@
+For beginners is recommended the gide: [How to create a WordPress plugin step by step](https://moisesbarrachina.online/en/2023/10/17/como-crear-un-plugin-de-wordpress-paso-a-paso/)
+
 # Backend Frontend Template: the WordPress Plugin Template
 
 Backend Frontend Template Pro is a template and library with which to develop plugins for WordPress easily and quickly. You won't have to reinvent the wheel to get a WordPress plugin created, just develop your idea.
