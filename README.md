@@ -31,10 +31,10 @@ Client side: shortcode system
 ![Backend Frontend Template: client side: shortcode system](https://moisesbarrachina.online/wp-content/uploads/2023/09/bft-screenshot-5.png)
 
 Client side: shortcode complete example
-![Backend Frontend Template: client side: shortcode complete example](https://moisesbarrachina.online/wp-content/uploads/2023/09/bft-screenshot-6.png)
+![Backend Frontend Template: client side: shortcode complete example](https://moisesbarrachina.online/wp-content/uploads/2023/10/Shortcode-simple-on-editor-V3.png)
 
 Client side: shortcode results
-![Backend Frontend Template: client side: shortcode results](https://moisesbarrachina.online/wp-content/uploads/2023/09/bft-screenshot-7.png)
+![Backend Frontend Template: client side: shortcode results](https://moisesbarrachina.online/wp-content/uploads/2023/10/Shortcode-simple-on-visitor-side-V3.png)
 
 ## Installation
 
@@ -417,10 +417,10 @@ Download the code, copy the folder 'backend-frontend-template' on your WordPress
     [bft-shortcode-test additional_text="This is an additional text"]The text inside de tags[/bft-shortcode-test]
 ```
 
-  ![Backend Frontend Template: client side: shortcode complete example](https://moisesbarrachina.online/wp-content/uploads/2023/09/bft-screenshot-6.png)
+  ![Backend Frontend Template: client side: shortcode complete example](https://moisesbarrachina.online/wp-content/uploads/2023/10/Shortcode-simple-on-editor-V3.png)
 
   Client side: shortcode results
-  ![Backend Frontend Template: client side: shortcode results](https://moisesbarrachina.online/wp-content/uploads/2023/09/bft-screenshot-7.png)
+  ![Backend Frontend Template: client side: shortcode results](https://moisesbarrachina.online/wp-content/uploads/2023/10/Shortcode-simple-on-visitor-side-V3.png)
 </details>
 
 <details>

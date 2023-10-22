@@ -94,9 +94,9 @@ $this->admin_permission_check();
 		</li>
 	</ol>
 	<p>
-		<img src="https://moisesbarrachina.online/wp-content/uploads/2023/09/bft-screenshot-6.png" class="bft_image_80"/>
+		<img src="https://moisesbarrachina.online/wp-content/uploads/2023/10/Shortcode-simple-on-editor-V3.png" class="bft_image_80"/>
 	</p>
 	<p>
-		<img src="https://moisesbarrachina.online/wp-content/uploads/2023/09/bft-screenshot-7.png" class="bft_image_80"/>
+		<img src="https://moisesbarrachina.online/wp-content/uploads/2023/10/Shortcode-simple-on-visitor-side-V3.png" class="bft_image_80"/>
 	</p>
 </div>
